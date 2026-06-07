@@ -1,5 +1,5 @@
 window.LIVE_LOG_DATA = {
-  "generatedAt": "2026-06-07T23:45:38",
+  "generatedAt": "2026-06-08T00:05:48",
   "source": "Live記録 310f761cd0b980718203f48524874968_all.csv",
   "lives": [
     {
@@ -30,7 +30,7 @@ window.LIVE_LOG_DATA = {
       "date": "2026/07/05",
       "year": 2026,
       "artist": "Ado",
-      "artistUrl": "",
+      "artistUrl": "https://www.universal-music.co.jp/ado/",
       "venue": "日産スタジアム",
       "ticketPrice": "￥10,000",
       "ticketPriceValue": 10000,
