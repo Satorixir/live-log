@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T21:27:55",
+  "generatedAt": "2026-06-07T21:46:41",
   "source": "Live記録 310f761cd0b980718203f48524874968_all.csv",
   "lives": [
     {
@@ -810,7 +810,7 @@
       "date": "2006/03/31",
       "year": 2006,
       "artist": "Bivattchee",
-      "artistUrl": "",
+      "artistUrl": "https://ja.wikipedia.org/wiki/Bivattchee",
       "venue": "新宿Loft",
       "ticketPrice": "",
       "ticketPriceValue": null,
@@ -846,7 +846,7 @@
       "date": "2006/01/10",
       "year": 2006,
       "artist": "Bivattchee",
-      "artistUrl": "",
+      "artistUrl": "https://ja.wikipedia.org/wiki/Bivattchee",
       "venue": "新宿Loft",
       "ticketPrice": "",
       "ticketPriceValue": null,
@@ -858,7 +858,7 @@
       "date": "2005/12/31",
       "year": 2005,
       "artist": "COUNTDOWN JAPAN 05-06",
-      "artistUrl": "",
+      "artistUrl": "https://rockinon.com/quick/cdj0506",
       "venue": "幕張メッセ",
       "ticketPrice": "",
       "ticketPriceValue": null,
@@ -870,7 +870,7 @@
       "date": "2005/12/29",
       "year": 2005,
       "artist": "COUNTDOWN JAPAN 05-06",
-      "artistUrl": "",
+      "artistUrl": "https://rockinon.com/quick/cdj0506",
       "venue": "幕張メッセ",
       "ticketPrice": "",
       "ticketPriceValue": null,
