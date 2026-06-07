@@ -108,6 +108,15 @@ function artistCell(live) {
   return `<a class="artist-link" href="${escapeHtml(live.artistUrl)}" target="_blank" rel="noreferrer">${label}</a>`;
 }
 
+function venueCell(live) {
+  const label = escapeHtml(live.venue || "-");
+  const query = live.mapQuery || live.venue || live.place;
+  if (!query || query === "?") {
+    return label;
+  }
+  return `<a class="venue-link" href="${mapUrl(live)}" target="_blank" rel="noreferrer">${label}</a>`;
+}
+
 function renderRows() {
   const filters = currentFilters();
   const rows = state.lives.filter((live) => matchesFilters(live, filters));
@@ -115,7 +124,7 @@ function renderRows() {
   elements.resultCount.textContent = `${rows.length}件表示`;
 
   if (!rows.length) {
-    elements.liveRows.innerHTML = `<tr><td class="empty" colspan="6">該当する記録がありません</td></tr>`;
+    elements.liveRows.innerHTML = `<tr><td class="empty" colspan="5">該当する記録がありません</td></tr>`;
     return;
   }
 
@@ -125,10 +134,9 @@ function renderRows() {
         <tr>
           <td class="date">${escapeHtml(live.date || "-")}</td>
           <td>${artistCell(live)}</td>
-          <td>${escapeHtml(live.venue || "-")}</td>
+          <td>${venueCell(live)}</td>
           <td class="price">${escapeHtml(live.ticketPrice || "-")}</td>
           <td>${escapeHtml(live.note || "-")}</td>
-          <td><a class="map-link" href="${mapUrl(live)}" target="_blank" rel="noreferrer">開く</a></td>
         </tr>
       `
     )

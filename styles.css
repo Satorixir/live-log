@@ -174,7 +174,7 @@ button:hover {
 
 table {
   width: 100%;
-  min-width: 860px;
+  min-width: 760px;
   border-collapse: collapse;
 }
 
@@ -208,19 +208,15 @@ td {
   white-space: nowrap;
 }
 
-.map-link,
-.artist-link {
+.artist-link,
+.venue-link {
   color: var(--accent-dark);
   font-weight: 700;
   text-decoration: none;
 }
 
-.map-link {
-  white-space: nowrap;
-}
-
-.map-link:hover,
-.artist-link:hover {
+.artist-link:hover,
+.venue-link:hover {
   text-decoration: underline;
 }
 
