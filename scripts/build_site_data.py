@@ -1,15 +1,22 @@
 import csv
 import json
+import os
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
 
-BASE_DIR = Path(__file__).resolve().parents[2]
-CSV_PATH = BASE_DIR / "Live記録 310f761cd0b980718203f48524874968_all.csv"
-OUTPUT_PATH = BASE_DIR / "site" / "data" / "lives.json"
-SCRIPT_OUTPUT_PATH = BASE_DIR / "site" / "data" / "lives.js"
-ARTIST_LINKS_PATH = BASE_DIR / "site" / "data" / "artist_links.json"
+REPO_DIR = Path(__file__).resolve().parents[1]
+DEFAULT_CSV_PATH = Path(
+    "/Users/satorunagasawa/Library/CloudStorage/"
+    "GoogleDrive-satoru.nagasawa1220@gmail.com/"
+    "マイドライブ/#Lifelogging/Live Log/"
+    "Live記録 310f761cd0b980718203f48524874968_all.csv"
+)
+CSV_PATH = Path(os.environ.get("LIVE_LOG_CSV", DEFAULT_CSV_PATH)).expanduser()
+OUTPUT_PATH = REPO_DIR / "data" / "lives.json"
+SCRIPT_OUTPUT_PATH = REPO_DIR / "data" / "lives.js"
+ARTIST_LINKS_PATH = REPO_DIR / "data" / "artist_links.json"
 
 
 def clean(value):
