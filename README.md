@@ -8,7 +8,7 @@ GitHub Pagesで公開するための静的サイトです。
 2. 次のコマンドでサイト用データを再生成します。
 
 ```sh
-cd /Users/satorunagasawa/Documents/live-log
+cd /Users/satorunagasawa/Documents/life-logging/live-log
 python3 scripts/build_site_data.py
 ```
 
@@ -16,7 +16,7 @@ python3 scripts/build_site_data.py
 
 ## 公開方法
 
-このリポジトリは `/Users/satorunagasawa/Documents/live-log` に置き、Google Drive同期フォルダの外でGit管理します。
+このリポジトリは `/Users/satorunagasawa/Documents/life-logging/live-log` に置き、Google Drive同期フォルダの外でGit管理します。
 
 ```text
 repo-root/
@@ -26,8 +26,6 @@ repo-root/
   data/
   scripts/
 ```
-
-GitHub Pagesの設定では、`main` ブランチの `/root` を公開対象にします。
 
 GitHub Pagesの設定では、`main` ブランチの `/root` を公開対象にします。
 

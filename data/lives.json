@@ -1,7 +1,43 @@
 {
-  "generatedAt": "2026-06-07T22:04:38",
+  "generatedAt": "2026-06-07T23:45:38",
   "source": "Live記録 310f761cd0b980718203f48524874968_all.csv",
   "lives": [
+    {
+      "date": "2026/12/19",
+      "year": 2026,
+      "artist": "藤井風",
+      "artistUrl": "https://fujiikaze.com/",
+      "venue": "東京ドーム",
+      "ticketPrice": "￥15,000",
+      "ticketPriceValue": 15000,
+      "place": "東京ドーム",
+      "note": "",
+      "mapQuery": "東京ドーム"
+    },
+    {
+      "date": "2026/10/12",
+      "year": 2026,
+      "artist": "tuki.",
+      "artistUrl": "https://tuki-official.net/",
+      "venue": "SGC HALL ARIAKE",
+      "ticketPrice": "￥9,900",
+      "ticketPriceValue": 9900,
+      "place": "SGC HALL ARIAKE",
+      "note": "",
+      "mapQuery": "SGC HALL ARIAKE"
+    },
+    {
+      "date": "2026/07/05",
+      "year": 2026,
+      "artist": "Ado",
+      "artistUrl": "",
+      "venue": "日産スタジアム",
+      "ticketPrice": "￥10,000",
+      "ticketPriceValue": 10000,
+      "place": "Nissan Stadium",
+      "note": "",
+      "mapQuery": "日産スタジアム Nissan Stadium"
+    },
     {
       "date": "2026/04/09",
       "year": 2026,
@@ -35,7 +71,7 @@
       "ticketPrice": "￥9,000",
       "ticketPriceValue": 9000,
       "place": "Zepp Haneda (TOKYO)",
-      "note": "",
+      "note": "都合により参加できず",
       "mapQuery": "Zepp Haneda Zepp Haneda (TOKYO)"
     },
     {
@@ -71,7 +107,7 @@
       "ticketPrice": "￥7,800",
       "ticketPriceValue": 7800,
       "place": "13-17 Udagawacho, Shibuya-ku, Tokyo 150-0042, Japan",
-      "note": "",
+      "note": "都合により参加できず",
       "mapQuery": "Shibuya WWW X 13-17 Udagawacho, Shibuya-ku, Tokyo 150-0042, Japan"
     },
     {
@@ -95,7 +131,7 @@
       "ticketPrice": "￥6,000",
       "ticketPriceValue": 6000,
       "place": "Club Quattro",
-      "note": "",
+      "note": "都合により参加できず",
       "mapQuery": "渋谷 CLUB QUATTRO Club Quattro"
     },
     {
@@ -974,6 +1010,7 @@
     "artists": [
       "10-FEET",
       "9mm Parabellum Bullet",
+      "Ado",
       "albert Live",
       "amazarashi",
       "B-DASH",
@@ -1039,6 +1076,7 @@
       "LINE CUBE SHIBUYA",
       "Live House FNV",
       "NHKホール",
+      "SGC HALL ARIAKE",
       "Shibuya WWW X",
       "Spotify O-nest",
       "Zepp Haneda",
@@ -1060,6 +1098,7 @@
       "日比谷野外音楽堂",
       "日産スタジアム",
       "東京キネマ倶楽部",
+      "東京ドーム",
       "東京ビッグサイト",
       "東宝ビルトスタジオ",
       "渋谷 CLUB QUATTRO",
@@ -1072,11 +1111,11 @@
     ]
   },
   "summary": {
-    "total": 79,
+    "total": 82,
     "firstDate": "2005/07/16",
-    "latestDate": "2026/04/09",
-    "venueCount": 37,
-    "artistCount": 58,
+    "latestDate": "2026/12/19",
+    "venueCount": 39,
+    "artistCount": 59,
     "topVenues": [
       [
         "千葉Look",
@@ -1121,6 +1160,10 @@
         4
       ],
       [
+        "tuki.",
+        3
+      ],
+      [
         "DADARAY",
         3
       ],
@@ -1137,11 +1180,7 @@
         3
       ],
       [
-        "tuki.",
-        2
-      ],
-      [
-        "優里",
+        "藤井風",
         2
       ]
     ]
