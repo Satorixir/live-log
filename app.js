@@ -186,6 +186,6 @@ async function init() {
 }
 
 init().catch((error) => {
-  elements.liveRows.innerHTML = `<tr><td class="empty" colspan="6">データを読み込めませんでした</td></tr>`;
+  elements.liveRows.innerHTML = `<tr><td class="empty" colspan="5">データを読み込めませんでした</td></tr>`;
   console.error(error);
 });
