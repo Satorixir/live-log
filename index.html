@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ライブ参戦記録</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Live Log</p>
+        <h1>ライブ参戦記録</h1>
+      </div>
+      <div class="summary-strip" aria-label="サマリー">
+        <div>
+          <span id="totalCount">-</span>
+          <small>参戦</small>
+        </div>
+        <div>
+          <span id="yearRange">-</span>
+          <small>期間</small>
+        </div>
+        <div>
+          <span id="venueCount">-</span>
+          <small>会場</small>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="検索とフィルタ">
+        <label class="search-field">
+          <span>検索</span>
+          <input id="searchInput" type="search" placeholder="アーティスト、会場、備考">
+        </label>
+        <label>
+          <span>年</span>
+          <select id="yearFilter">
+            <option value="">すべて</option>
+          </select>
+        </label>
+        <label>
+          <span>アーティスト</span>
+          <select id="artistFilter">
+            <option value="">すべて</option>
+          </select>
+        </label>
+        <label>
+          <span>会場</span>
+          <select id="venueFilter">
+            <option value="">すべて</option>
+          </select>
+        </label>
+        <button id="resetButton" type="button">リセット</button>
+      </section>
+
+      <section class="content-grid">
+        <div class="table-panel">
+          <div class="panel-heading">
+            <h2>一覧</h2>
+            <p id="resultCount">-</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>開演日</th>
+                  <th>アーティスト</th>
+                  <th>会場</th>
+                  <th>チケット</th>
+                  <th>備考</th>
+                  <th>地図</th>
+                </tr>
+              </thead>
+              <tbody id="liveRows"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="side-panel">
+          <section>
+            <h2>よく行く会場</h2>
+            <ol id="topVenues" class="ranking"></ol>
+          </section>
+          <section>
+            <h2>よく観るアーティスト</h2>
+            <ol id="topArtists" class="ranking"></ol>
+          </section>
+          <section>
+            <h2>会場マップ</h2>
+            <ul id="venueMapList" class="venue-links"></ul>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="data/lives.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
