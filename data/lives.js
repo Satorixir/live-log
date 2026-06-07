@@ -1,5 +1,5 @@
 window.LIVE_LOG_DATA = {
-  "generatedAt": "2026-06-07T21:46:41",
+  "generatedAt": "2026-06-07T21:55:20",
   "source": "Live記録 310f761cd0b980718203f48524874968_all.csv",
   "lives": [
     {
@@ -761,13 +761,13 @@ window.LIVE_LOG_DATA = {
     {
       "date": "2006/05/27",
       "year": 2006,
-      "artist": "10-FEET 「OVERCOME」 PV撮影",
-      "artistUrl": "",
+      "artist": "10-FEET",
+      "artistUrl": "https://10-feet.kyoto/",
       "venue": "東宝ビルトスタジオ",
       "ticketPrice": "",
       "ticketPriceValue": null,
       "place": "1-4-1 Seijo, Setagaya-ku, Tokyo 157-8561, Japan",
-      "note": "",
+      "note": "「OVERCOME」 PV撮影",
       "mapQuery": "東宝ビルトスタジオ 1-4-1 Seijo, Setagaya-ku, Tokyo 157-8561, Japan"
     },
     {
@@ -973,7 +973,6 @@ window.LIVE_LOG_DATA = {
     ],
     "artists": [
       "10-FEET",
-      "10-FEET 「OVERCOME」 PV撮影",
       "9mm Parabellum Bullet",
       "albert Live",
       "amazarashi",
@@ -1077,7 +1076,7 @@ window.LIVE_LOG_DATA = {
     "firstDate": "2005/07/16",
     "latestDate": "2026/04/09",
     "venueCount": 37,
-    "artistCount": 59,
+    "artistCount": 58,
     "topVenues": [
       [
         "千葉Look",
@@ -1134,15 +1133,15 @@ window.LIVE_LOG_DATA = {
         3
       ],
       [
+        "10-FEET",
+        3
+      ],
+      [
         "tuki.",
         2
       ],
       [
         "優里",
-        2
-      ],
-      [
-        "サカナクション",
         2
       ]
     ]
