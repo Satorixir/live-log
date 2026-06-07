@@ -208,14 +208,19 @@ td {
   white-space: nowrap;
 }
 
-.map-link {
+.map-link,
+.artist-link {
   color: var(--accent-dark);
   font-weight: 700;
   text-decoration: none;
+}
+
+.map-link {
   white-space: nowrap;
 }
 
-.map-link:hover {
+.map-link:hover,
+.artist-link:hover {
   text-decoration: underline;
 }
 

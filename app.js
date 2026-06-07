@@ -100,6 +100,14 @@ function mapUrl(live) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
+function artistCell(live) {
+  const label = escapeHtml(live.artist || "-");
+  if (!live.artistUrl) {
+    return label;
+  }
+  return `<a class="artist-link" href="${escapeHtml(live.artistUrl)}" target="_blank" rel="noreferrer">${label}</a>`;
+}
+
 function renderRows() {
   const filters = currentFilters();
   const rows = state.lives.filter((live) => matchesFilters(live, filters));
@@ -116,7 +124,7 @@ function renderRows() {
       (live) => `
         <tr>
           <td class="date">${escapeHtml(live.date || "-")}</td>
-          <td>${escapeHtml(live.artist || "-")}</td>
+          <td>${artistCell(live)}</td>
           <td>${escapeHtml(live.venue || "-")}</td>
           <td class="price">${escapeHtml(live.ticketPrice || "-")}</td>
           <td>${escapeHtml(live.note || "-")}</td>

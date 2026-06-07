@@ -9,6 +9,7 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 CSV_PATH = BASE_DIR / "Live記録 310f761cd0b980718203f48524874968_all.csv"
 OUTPUT_PATH = BASE_DIR / "site" / "data" / "lives.json"
 SCRIPT_OUTPUT_PATH = BASE_DIR / "site" / "data" / "lives.js"
+ARTIST_LINKS_PATH = BASE_DIR / "site" / "data" / "artist_links.json"
 
 
 def clean(value):
@@ -30,6 +31,10 @@ def yen_number(value):
 with CSV_PATH.open("r", encoding="utf-8-sig", newline="") as csv_file:
     rows = list(csv.DictReader(csv_file))
 
+artist_links = {}
+if ARTIST_LINKS_PATH.exists():
+    artist_links = json.loads(ARTIST_LINKS_PATH.read_text(encoding="utf-8"))
+
 lives = []
 for row in rows:
     played_at = clean(row.get("開演日時"))
@@ -49,6 +54,7 @@ for row in rows:
             "date": played_at,
             "year": parsed.year if parsed != datetime.min else None,
             "artist": artist,
+            "artistUrl": artist_links.get(artist, ""),
             "venue": venue,
             "ticketPrice": ticket_price,
             "ticketPriceValue": yen_number(ticket_price),
