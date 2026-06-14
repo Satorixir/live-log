@@ -414,10 +414,17 @@ async function init() {
     artistProfiles = await response.json();
   }
 
-  let spotifyArtistStats = window.LIVE_LOG_SPOTIFY_ARTIST_STATS || {};
-  if (!window.LIVE_LOG_SPOTIFY_ARTIST_STATS) {
+  let spotifyArtistStats = {};
+  try {
     const response = await fetch("data/spotify_artist_stats.json");
-    spotifyArtistStats = await response.json();
+    if (response.ok) {
+      spotifyArtistStats = await response.json();
+    }
+  } catch (error) {
+    spotifyArtistStats = window.LIVE_LOG_SPOTIFY_ARTIST_STATS || {};
+  }
+  if (!spotifyArtistStats.summary) {
+    spotifyArtistStats = window.LIVE_LOG_SPOTIFY_ARTIST_STATS || {};
   }
 
   state.lives = data.lives;
