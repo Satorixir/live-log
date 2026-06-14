@@ -134,6 +134,19 @@ button:hover {
   background: var(--accent-dark);
 }
 
+.ghost-button {
+  min-height: 34px;
+  padding: 0 12px;
+  background: var(--surface);
+  color: var(--accent-dark);
+  border-color: var(--line);
+  font-size: 13px;
+}
+
+.ghost-button:hover {
+  background: var(--surface-soft);
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;
@@ -230,6 +243,22 @@ td {
   padding: 18px;
 }
 
+.side-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.side-heading h2 {
+  margin: 0;
+}
+
+.side-heading .ghost-button[hidden] {
+  display: none;
+}
+
 .ranking,
 .venue-links {
   display: grid;
@@ -253,6 +282,150 @@ td {
 .ranking span {
   color: var(--muted);
   font-size: 13px;
+}
+
+.inline-button,
+.artist-button {
+  min-height: auto;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--accent-dark);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.inline-button:hover,
+.artist-button:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+.artist-detail {
+  display: grid;
+  gap: 14px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-list span {
+  padding: 3px 8px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.artist-memo {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.artist-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.artist-stats div {
+  min-width: 0;
+  padding: 10px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.artist-stats dt {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.artist-stats dd {
+  margin: 2px 0 0;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.artist-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.external-button {
+  display: inline-grid;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.external-button:hover {
+  background: var(--accent-dark);
+}
+
+.artist-subsection {
+  display: grid;
+  gap: 8px;
+}
+
+.artist-subsection h3 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.compact-list,
+.mini-timeline {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.compact-list li,
+.mini-timeline li {
+  padding-left: 2px;
+  font-size: 13px;
+}
+
+.compact-list span,
+.mini-timeline span,
+.mini-timeline em {
+  color: var(--muted);
+}
+
+.mini-timeline span {
+  display: block;
+  font-variant-numeric: tabular-nums;
+}
+
+.mini-timeline strong,
+.mini-timeline em {
+  display: block;
+}
+
+.mini-timeline em {
+  font-style: normal;
+  font-size: 12px;
 }
 
 .venue-links a {

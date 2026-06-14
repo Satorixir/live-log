@@ -2,6 +2,8 @@ const state = {
   lives: [],
   facets: {},
   summary: {},
+  artistProfiles: {},
+  selectedArtist: "",
 };
 
 const elements = {
@@ -18,6 +20,9 @@ const elements = {
   topVenues: document.querySelector("#topVenues"),
   topArtists: document.querySelector("#topArtists"),
   venueMapList: document.querySelector("#venueMapList"),
+  artistDetailTitle: document.querySelector("#artistDetailTitle"),
+  artistDetail: document.querySelector("#artistDetail"),
+  clearArtistButton: document.querySelector("#clearArtistButton"),
 };
 
 function escapeHtml(value) {
@@ -49,6 +54,19 @@ function renderSummary() {
 function renderRanking(target, rows) {
   target.innerHTML = rows
     .map(([name, count]) => `<li>${escapeHtml(name)} <span>${count}回</span></li>`)
+    .join("");
+}
+
+function renderArtistRanking(target, rows) {
+  target.innerHTML = rows
+    .map(
+      ([name, count]) => `
+        <li>
+          <button class="inline-button" type="button" data-artist="${escapeHtml(name)}">${escapeHtml(name)}</button>
+          <span>${count}回</span>
+        </li>
+      `
+    )
     .join("");
 }
 
@@ -102,10 +120,10 @@ function mapUrl(live) {
 
 function artistCell(live) {
   const label = escapeHtml(live.artist || "-");
-  if (!live.artistUrl) {
+  if (!live.artist) {
     return label;
   }
-  return `<a class="artist-link" href="${escapeHtml(live.artistUrl)}" target="_blank" rel="noreferrer">${label}</a>`;
+  return `<button class="artist-button" type="button" data-artist="${label}">${label}</button>`;
 }
 
 function venueCell(live) {
@@ -143,6 +161,105 @@ function renderRows() {
     .join("");
 }
 
+function countValues(rows, key) {
+  const counts = new Map();
+  rows.forEach((row) => {
+    const value = row[key];
+    if (value) {
+      counts.set(value, (counts.get(value) || 0) + 1);
+    }
+  });
+  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja"));
+}
+
+function renderTagList(tags) {
+  if (!tags?.length) {
+    return "";
+  }
+  return `<div class="tag-list">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>`;
+}
+
+function renderMiniTimeline(rows) {
+  return rows
+    .slice(0, 5)
+    .map(
+      (live) => `
+        <li>
+          <span>${escapeHtml(live.date || "-")}</span>
+          <strong>${escapeHtml(live.venue || "-")}</strong>
+          ${live.note ? `<em>${escapeHtml(live.note)}</em>` : ""}
+        </li>
+      `
+    )
+    .join("");
+}
+
+function renderArtistDetail(name) {
+  const artist = name || state.summary.topArtists?.[0]?.[0] || "";
+  state.selectedArtist = artist;
+
+  if (!artist) {
+    elements.artistDetailTitle.textContent = "アーティスト";
+    elements.artistDetail.innerHTML = "";
+    elements.clearArtistButton.hidden = true;
+    return;
+  }
+
+  const rows = state.lives.filter((live) => live.artist === artist);
+  const profile = state.artistProfiles[artist] || {};
+  const venues = countValues(rows, "venue");
+  const first = rows.at(-1)?.date || "-";
+  const latest = rows[0]?.date || "-";
+  const officialUrl = profile.officialUrl || rows.find((live) => live.artistUrl)?.artistUrl || "";
+  const noteCount = rows.filter((live) => live.note).length;
+
+  elements.artistDetailTitle.textContent = artist;
+  elements.clearArtistButton.hidden = artist === state.summary.topArtists?.[0]?.[0];
+  elements.artistDetail.innerHTML = `
+    ${renderTagList(profile.tags)}
+    ${profile.memo ? `<p class="artist-memo">${escapeHtml(profile.memo)}</p>` : ""}
+    <dl class="artist-stats">
+      <div>
+        <dt>記録</dt>
+        <dd>${rows.length}回</dd>
+      </div>
+      <div>
+        <dt>期間</dt>
+        <dd>${escapeHtml(first)} - ${escapeHtml(latest)}</dd>
+      </div>
+      <div>
+        <dt>会場</dt>
+        <dd>${venues.length}箇所</dd>
+      </div>
+      <div>
+        <dt>メモ</dt>
+        <dd>${noteCount}件</dd>
+      </div>
+    </dl>
+    <div class="artist-actions">
+      ${
+        officialUrl
+          ? `<a class="external-button" href="${escapeHtml(officialUrl)}" target="_blank" rel="noreferrer">公式サイト</a>`
+          : ""
+      }
+      <button class="ghost-button" type="button" data-filter-artist="${escapeHtml(artist)}">一覧を絞る</button>
+    </div>
+    <div class="artist-subsection">
+      <h3>よく行く会場</h3>
+      <ol class="compact-list">
+        ${venues
+          .slice(0, 4)
+          .map(([venue, count]) => `<li>${escapeHtml(venue)} <span>${count}回</span></li>`)
+          .join("")}
+      </ol>
+    </div>
+    <div class="artist-subsection">
+      <h3>ライブ履歴</h3>
+      <ol class="mini-timeline">${renderMiniTimeline(rows)}</ol>
+    </div>
+  `;
+}
+
 function bindEvents() {
   [
     elements.searchInput,
@@ -161,6 +278,32 @@ function bindEvents() {
     elements.venueFilter.value = "";
     renderRows();
   });
+
+  elements.liveRows.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-artist]");
+    if (button) {
+      renderArtistDetail(button.dataset.artist);
+    }
+  });
+
+  elements.topArtists.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-artist]");
+    if (button) {
+      renderArtistDetail(button.dataset.artist);
+    }
+  });
+
+  elements.artistDetail.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-filter-artist]");
+    if (button) {
+      elements.artistFilter.value = button.dataset.filterArtist;
+      renderRows();
+    }
+  });
+
+  elements.clearArtistButton.addEventListener("click", () => {
+    renderArtistDetail();
+  });
 }
 
 async function init() {
@@ -170,17 +313,25 @@ async function init() {
     data = await response.json();
   }
 
+  let artistProfiles = window.LIVE_LOG_ARTIST_PROFILES || {};
+  if (!window.LIVE_LOG_ARTIST_PROFILES) {
+    const response = await fetch("data/artist_profiles.json");
+    artistProfiles = await response.json();
+  }
+
   state.lives = data.lives;
   state.facets = data.facets;
   state.summary = data.summary;
+  state.artistProfiles = artistProfiles;
 
   fillSelect(elements.yearFilter, state.facets.years);
   fillSelect(elements.artistFilter, state.facets.artists);
   fillSelect(elements.venueFilter, state.facets.venues);
   renderSummary();
   renderRanking(elements.topVenues, state.summary.topVenues);
-  renderRanking(elements.topArtists, state.summary.topArtists);
+  renderArtistRanking(elements.topArtists, state.summary.topArtists);
   renderVenueLinks(state.summary.topVenues);
+  renderArtistDetail();
   bindEvents();
   renderRows();
 }
