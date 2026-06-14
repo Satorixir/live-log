@@ -73,6 +73,11 @@ function renderArtistRanking(target, rows) {
 }
 
 function renderSpotifyArtistRanking(target, rows) {
+  if (!rows.length) {
+    target.innerHTML = `<li class="muted">Spotifyの集計データを読み込めませんでした</li>`;
+    return;
+  }
+
   target.innerHTML = rows
     .map(
       (row) => `
@@ -83,6 +88,21 @@ function renderSpotifyArtistRanking(target, rows) {
       `
     )
     .join("");
+}
+
+function getTopSpotifyArtists(stats) {
+  if (stats.summary?.topArtists?.length) {
+    return stats.summary.topArtists;
+  }
+
+  return Object.entries(stats.artists || {})
+    .map(([name, artist]) => ({
+      name,
+      plays: artist.streaming?.plays || 0,
+    }))
+    .filter((artist) => artist.plays > 0)
+    .sort((a, b) => b.plays - a.plays)
+    .slice(0, 10);
 }
 
 function renderVenueLinks(rows) {
@@ -416,7 +436,7 @@ async function init() {
 
   let spotifyArtistStats = {};
   try {
-    const response = await fetch("data/spotify_artist_stats.json?v=20260614-spotify-ranking-json");
+    const response = await fetch("data/spotify_artist_stats.json?v=20260614-spotify-ranking-fallback");
     if (response.ok) {
       spotifyArtistStats = await response.json();
     }
@@ -425,6 +445,12 @@ async function init() {
   }
   if (!spotifyArtistStats.summary) {
     spotifyArtistStats = window.LIVE_LOG_SPOTIFY_ARTIST_STATS || {};
+  }
+  if (!spotifyArtistStats.summary && !Object.keys(spotifyArtistStats.artists || {}).length) {
+    const response = await fetch("data/spotify_artist_stats.json");
+    if (response.ok) {
+      spotifyArtistStats = await response.json();
+    }
   }
 
   state.lives = data.lives;
@@ -439,7 +465,7 @@ async function init() {
   renderSummary();
   renderRanking(elements.topVenues, state.summary.topVenues);
   renderArtistRanking(elements.topArtists, state.summary.topArtists);
-  renderSpotifyArtistRanking(elements.topSpotifyArtists, spotifyArtistStats.summary?.topArtists || []);
+  renderSpotifyArtistRanking(elements.topSpotifyArtists, getTopSpotifyArtists(spotifyArtistStats));
   renderVenueLinks(state.summary.topVenues);
   renderArtistDetail();
   bindEvents();
