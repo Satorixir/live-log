@@ -1,10 +1,73 @@
 {
-  "generatedAt": "2026-06-14T17:59:47",
+  "generatedAt": "2026-06-14T18:09:00",
   "source": "Spotify Extended Streaming History",
   "summary": {
-    "matchedArtists": 33,
-    "plays": 38320,
-    "knownMs": 7160136462
+    "artists": 132,
+    "totalSpotifyArtists": 4884,
+    "plays": 94888,
+    "knownMs": 17379866940,
+    "topArtists": [
+      {
+        "name": "優里",
+        "plays": 6996,
+        "knownMs": 1466973178
+      },
+      {
+        "name": "菅田将暉",
+        "plays": 4430,
+        "knownMs": 829522298
+      },
+      {
+        "name": "藤井風",
+        "plays": 4099,
+        "knownMs": 722223181
+      },
+      {
+        "name": "yama",
+        "plays": 3727,
+        "knownMs": 758095756
+      },
+      {
+        "name": "Ado",
+        "plays": 3447,
+        "knownMs": 655366088
+      },
+      {
+        "name": "Ratrium",
+        "plays": 3052,
+        "knownMs": 470337817
+      },
+      {
+        "name": "King Gnu",
+        "plays": 2916,
+        "knownMs": 511484631
+      },
+      {
+        "name": "back number",
+        "plays": 2617,
+        "knownMs": 515906347
+      },
+      {
+        "name": "DADARAY",
+        "plays": 2499,
+        "knownMs": 510619018
+      },
+      {
+        "name": "majiko",
+        "plays": 2386,
+        "knownMs": 476744356
+      },
+      {
+        "name": "Groovy groove",
+        "plays": 2165,
+        "knownMs": 342595342
+      },
+      {
+        "name": "ヨルシカ",
+        "plays": 2130,
+        "knownMs": 373695318
+      }
+    ]
   },
   "artists": {
     "10-FEET": {
@@ -176,6 +239,549 @@
         }
       ]
     },
+    "Aimer": {
+      "plays": 917,
+      "knownMs": 167134755,
+      "firstPlayedAt": "2018/02/02",
+      "latestPlayedAt": "2026/02/17",
+      "topTracks": [
+        {
+          "name": "蝶々結び",
+          "plays": 311,
+          "knownMs": 67297098
+        },
+        {
+          "name": "糸",
+          "plays": 87,
+          "knownMs": 12427696
+        },
+        {
+          "name": "Brave Shine",
+          "plays": 63,
+          "knownMs": 8555761
+        },
+        {
+          "name": "雪の降る街",
+          "plays": 54,
+          "knownMs": 8813586
+        },
+        {
+          "name": "Black Bird",
+          "plays": 35,
+          "knownMs": 5392687
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 241
+        },
+        {
+          "year": "2019",
+          "plays": 65
+        },
+        {
+          "year": "2020",
+          "plays": 259
+        },
+        {
+          "year": "2021",
+          "plays": 27
+        },
+        {
+          "year": "2022",
+          "plays": 166
+        },
+        {
+          "year": "2023",
+          "plays": 34
+        },
+        {
+          "year": "2024",
+          "plays": 24
+        },
+        {
+          "year": "2025",
+          "plays": 76
+        },
+        {
+          "year": "2026",
+          "plays": 25
+        }
+      ]
+    },
+    "AKASAKI": {
+      "plays": 2034,
+      "knownMs": 366339246,
+      "firstPlayedAt": "2024/10/18",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "Bunny Girl",
+          "plays": 737,
+          "knownMs": 133095145
+        },
+        {
+          "name": "弾きこもり",
+          "plays": 253,
+          "knownMs": 39751768
+        },
+        {
+          "name": "夏実",
+          "plays": 119,
+          "knownMs": 30493948
+        },
+        {
+          "name": "波まかせ",
+          "plays": 91,
+          "knownMs": 17060007
+        },
+        {
+          "name": "ルーツ",
+          "plays": 87,
+          "knownMs": 14969085
+        }
+      ],
+      "years": [
+        {
+          "year": "2024",
+          "plays": 652
+        },
+        {
+          "year": "2025",
+          "plays": 1271
+        },
+        {
+          "year": "2026",
+          "plays": 111
+        }
+      ]
+    },
+    "All That Jazz": {
+      "plays": 1357,
+      "knownMs": 262560517,
+      "firstPlayedAt": "2018/09/14",
+      "latestPlayedAt": "2026/03/22",
+      "topTracks": [
+        {
+          "name": "海の見える街",
+          "plays": 43,
+          "knownMs": 8087206
+        },
+        {
+          "name": "カントリーロード",
+          "plays": 40,
+          "knownMs": 7098130
+        },
+        {
+          "name": "君をのせて",
+          "plays": 38,
+          "knownMs": 5286518
+        },
+        {
+          "name": "人生のメリーゴーランド",
+          "plays": 37,
+          "knownMs": 5576490
+        },
+        {
+          "name": "FLY ME TO THE MOON",
+          "plays": 36,
+          "knownMs": 6522195
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 248
+        },
+        {
+          "year": "2019",
+          "plays": 455
+        },
+        {
+          "year": "2020",
+          "plays": 248
+        },
+        {
+          "year": "2021",
+          "plays": 135
+        },
+        {
+          "year": "2022",
+          "plays": 53
+        },
+        {
+          "year": "2023",
+          "plays": 78
+        },
+        {
+          "year": "2024",
+          "plays": 8
+        },
+        {
+          "year": "2025",
+          "plays": 43
+        },
+        {
+          "year": "2026",
+          "plays": 89
+        }
+      ]
+    },
+    "amazarashi": {
+      "plays": 513,
+      "knownMs": 83655942,
+      "firstPlayedAt": "2018/06/28",
+      "latestPlayedAt": "2026/02/17",
+      "topTracks": [
+        {
+          "name": "ヒーロー",
+          "plays": 60,
+          "knownMs": 14263189
+        },
+        {
+          "name": "空に歌えば",
+          "plays": 31,
+          "knownMs": 3349362
+        },
+        {
+          "name": "季節は次々死んでいく",
+          "plays": 26,
+          "knownMs": 5845578
+        },
+        {
+          "name": "多数決",
+          "plays": 21,
+          "knownMs": 3917257
+        },
+        {
+          "name": "月曜日",
+          "plays": 17,
+          "knownMs": 3244628
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 184
+        },
+        {
+          "year": "2019",
+          "plays": 81
+        },
+        {
+          "year": "2020",
+          "plays": 60
+        },
+        {
+          "year": "2021",
+          "plays": 13
+        },
+        {
+          "year": "2022",
+          "plays": 50
+        },
+        {
+          "year": "2023",
+          "plays": 49
+        },
+        {
+          "year": "2024",
+          "plays": 59
+        },
+        {
+          "year": "2025",
+          "plays": 13
+        },
+        {
+          "year": "2026",
+          "plays": 4
+        }
+      ]
+    },
+    "angela": {
+      "plays": 167,
+      "knownMs": 26212675,
+      "firstPlayedAt": "2018/09/14",
+      "latestPlayedAt": "2026/02/19",
+      "topTracks": [
+        {
+          "name": "Different colors",
+          "plays": 49,
+          "knownMs": 10356382
+        },
+        {
+          "name": "Shangri-La",
+          "plays": 33,
+          "knownMs": 6914788
+        },
+        {
+          "name": "イグジスト",
+          "plays": 18,
+          "knownMs": 2282588
+        },
+        {
+          "name": "シドニア",
+          "plays": 8,
+          "knownMs": 1143132
+        },
+        {
+          "name": "Separation",
+          "plays": 4,
+          "knownMs": 424629
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 41
+        },
+        {
+          "year": "2019",
+          "plays": 64
+        },
+        {
+          "year": "2020",
+          "plays": 27
+        },
+        {
+          "year": "2021",
+          "plays": 7
+        },
+        {
+          "year": "2022",
+          "plays": 4
+        },
+        {
+          "year": "2023",
+          "plays": 10
+        },
+        {
+          "year": "2025",
+          "plays": 5
+        },
+        {
+          "year": "2026",
+          "plays": 9
+        }
+      ]
+    },
+    "Aooo": {
+      "plays": 504,
+      "knownMs": 84329573,
+      "firstPlayedAt": "2025/12/29",
+      "latestPlayedAt": "2026/03/22",
+      "topTracks": [
+        {
+          "name": "サラダボウル",
+          "plays": 49,
+          "knownMs": 7993764
+        },
+        {
+          "name": "スターサイン",
+          "plays": 39,
+          "knownMs": 6938985
+        },
+        {
+          "name": "イエロートイ",
+          "plays": 38,
+          "knownMs": 5448694
+        },
+        {
+          "name": "Yankeee",
+          "plays": 37,
+          "knownMs": 4778278
+        },
+        {
+          "name": "アパシー",
+          "plays": 34,
+          "knownMs": 6151936
+        }
+      ],
+      "years": [
+        {
+          "year": "2025",
+          "plays": 23
+        },
+        {
+          "year": "2026",
+          "plays": 481
+        }
+      ]
+    },
+    "asaco": {
+      "plays": 175,
+      "knownMs": 36663629,
+      "firstPlayedAt": "2018/06/26",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "花火の魔法",
+          "plays": 92,
+          "knownMs": 26599191
+        },
+        {
+          "name": "天気雨の中の私たち",
+          "plays": 66,
+          "knownMs": 9132448
+        },
+        {
+          "name": "ケチャップチャップ",
+          "plays": 4,
+          "knownMs": 160168
+        },
+        {
+          "name": "マイダーリン - re-recording",
+          "plays": 3,
+          "knownMs": 608466
+        },
+        {
+          "name": "Look At Me!!",
+          "plays": 2,
+          "knownMs": 24316
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 97
+        },
+        {
+          "year": "2019",
+          "plays": 47
+        },
+        {
+          "year": "2020",
+          "plays": 9
+        },
+        {
+          "year": "2021",
+          "plays": 13
+        },
+        {
+          "year": "2022",
+          "plays": 5
+        },
+        {
+          "year": "2023",
+          "plays": 1
+        },
+        {
+          "year": "2025",
+          "plays": 3
+        }
+      ]
+    },
+    "ATARASHII GAKKO!": {
+      "plays": 413,
+      "knownMs": 64742336,
+      "firstPlayedAt": "2023/04/03",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "オトナブルー",
+          "plays": 174,
+          "knownMs": 24011824
+        },
+        {
+          "name": "恋の遮断機 feat.H ZETTRIO",
+          "plays": 45,
+          "knownMs": 9512731
+        },
+        {
+          "name": "Suki Lie",
+          "plays": 24,
+          "knownMs": 3271115
+        },
+        {
+          "name": "恋ゲバ",
+          "plays": 14,
+          "knownMs": 2859981
+        },
+        {
+          "name": "WOO! GO!",
+          "plays": 12,
+          "knownMs": 2255040
+        }
+      ],
+      "years": [
+        {
+          "year": "2023",
+          "plays": 352
+        },
+        {
+          "year": "2024",
+          "plays": 56
+        },
+        {
+          "year": "2025",
+          "plays": 5
+        }
+      ]
+    },
+    "Awesome City Club": {
+      "plays": 175,
+      "knownMs": 28624583,
+      "firstPlayedAt": "2018/07/14",
+      "latestPlayedAt": "2025/11/17",
+      "topTracks": [
+        {
+          "name": "今夜だけ間違いじゃないことにしてあげる",
+          "plays": 49,
+          "knownMs": 8576182
+        },
+        {
+          "name": "yesから二人始めましょう",
+          "plays": 14,
+          "knownMs": 2218346
+        },
+        {
+          "name": "勿忘",
+          "plays": 14,
+          "knownMs": 1705062
+        },
+        {
+          "name": "ダンシングファイター",
+          "plays": 13,
+          "knownMs": 1895600
+        },
+        {
+          "name": "Girls Don't Cry",
+          "plays": 10,
+          "knownMs": 1320389
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 49
+        },
+        {
+          "year": "2019",
+          "plays": 69
+        },
+        {
+          "year": "2020",
+          "plays": 13
+        },
+        {
+          "year": "2021",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 4
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 32
+        }
+      ]
+    },
     "B-DASH": {
       "plays": 27,
       "knownMs": 3537800,
@@ -196,6 +802,116 @@
         {
           "year": "2024",
           "plays": 1
+        }
+      ]
+    },
+    "back number": {
+      "plays": 2617,
+      "knownMs": 515906347,
+      "firstPlayedAt": "2020/01/15",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "水平線",
+          "plays": 623,
+          "knownMs": 135261602
+        },
+        {
+          "name": "高嶺の花子さん",
+          "plays": 455,
+          "knownMs": 105097818
+        },
+        {
+          "name": "花束",
+          "plays": 326,
+          "knownMs": 65258693
+        },
+        {
+          "name": "ハッピーエンド",
+          "plays": 317,
+          "knownMs": 60514526
+        },
+        {
+          "name": "ベルベットの詩",
+          "plays": 314,
+          "knownMs": 56944632
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 3
+        },
+        {
+          "year": "2021",
+          "plays": 47
+        },
+        {
+          "year": "2022",
+          "plays": 884
+        },
+        {
+          "year": "2023",
+          "plays": 570
+        },
+        {
+          "year": "2024",
+          "plays": 988
+        },
+        {
+          "year": "2025",
+          "plays": 86
+        },
+        {
+          "year": "2026",
+          "plays": 39
+        }
+      ]
+    },
+    "Bakrou": {
+      "plays": 272,
+      "knownMs": 30442075,
+      "firstPlayedAt": "2023/03/02",
+      "latestPlayedAt": "2025/10/06",
+      "topTracks": [
+        {
+          "name": "Unohana BANKAI \"MINAZUKI\" (Bleach TYBW) - Trap Remix",
+          "plays": 22,
+          "knownMs": 2794875
+        },
+        {
+          "name": "Yamamoto Bankai \"Zanka no Tachi\" (Bleach TYWB) - Trap Remix",
+          "plays": 14,
+          "knownMs": 1111507
+        },
+        {
+          "name": "GOLDEN FRIEZA THEME (From \"DRAGON BALL SUPER\") - REMIX",
+          "plays": 13,
+          "knownMs": 1495688
+        },
+        {
+          "name": "Zoro King Of Hell (One Piece)",
+          "plays": 11,
+          "knownMs": 1265868
+        },
+        {
+          "name": "Might+U (My Hero Academia) - Lofi Hip-Hop Remix",
+          "plays": 10,
+          "knownMs": 880778
+        }
+      ],
+      "years": [
+        {
+          "year": "2023",
+          "plays": 258
+        },
+        {
+          "year": "2024",
+          "plays": 8
+        },
+        {
+          "year": "2025",
+          "plays": 6
         }
       ]
     },
@@ -305,6 +1021,230 @@
         }
       ]
     },
+    "Billie Eilish": {
+      "plays": 295,
+      "knownMs": 48214272,
+      "firstPlayedAt": "2018/06/21",
+      "latestPlayedAt": "2026/01/21",
+      "topTracks": [
+        {
+          "name": "bad guy",
+          "plays": 50,
+          "knownMs": 7075632
+        },
+        {
+          "name": "everything i wanted",
+          "plays": 24,
+          "knownMs": 3272927
+        },
+        {
+          "name": "bad guy (with Justin Bieber)",
+          "plays": 17,
+          "knownMs": 2532775
+        },
+        {
+          "name": "lovely (with Khalid)",
+          "plays": 13,
+          "knownMs": 2400521
+        },
+        {
+          "name": "when the party's over",
+          "plays": 13,
+          "knownMs": 2200180
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 2
+        },
+        {
+          "year": "2019",
+          "plays": 51
+        },
+        {
+          "year": "2020",
+          "plays": 168
+        },
+        {
+          "year": "2021",
+          "plays": 35
+        },
+        {
+          "year": "2022",
+          "plays": 29
+        },
+        {
+          "year": "2023",
+          "plays": 7
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        },
+        {
+          "year": "2026",
+          "plays": 1
+        }
+      ]
+    },
+    "BimBamBoom": {
+      "plays": 212,
+      "knownMs": 45562809,
+      "firstPlayedAt": "2019/12/19",
+      "latestPlayedAt": "2020/09/30",
+      "topTracks": [
+        {
+          "name": "Million times Flashback",
+          "plays": 44,
+          "knownMs": 9524993
+        },
+        {
+          "name": "Lowrider",
+          "plays": 20,
+          "knownMs": 4327516
+        },
+        {
+          "name": "Shinzo BakuBaku Ochokochoi",
+          "plays": 17,
+          "knownMs": 3520869
+        },
+        {
+          "name": "Soul Makossa",
+          "plays": 15,
+          "knownMs": 2953094
+        },
+        {
+          "name": "King & Joker",
+          "plays": 13,
+          "knownMs": 2798814
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 127
+        },
+        {
+          "year": "2020",
+          "plays": 85
+        }
+      ]
+    },
+    "BIN": {
+      "plays": 436,
+      "knownMs": 67747158,
+      "firstPlayedAt": "2021/03/12",
+      "latestPlayedAt": "2024/08/28",
+      "topTracks": [
+        {
+          "name": "チルドレン",
+          "plays": 56,
+          "knownMs": 7601528
+        },
+        {
+          "name": "灰燼",
+          "plays": 49,
+          "knownMs": 6700075
+        },
+        {
+          "name": "シニカル",
+          "plays": 45,
+          "knownMs": 6766547
+        },
+        {
+          "name": "因果",
+          "plays": 44,
+          "knownMs": 7265068
+        },
+        {
+          "name": "籠の鳥",
+          "plays": 44,
+          "knownMs": 7800913
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 408
+        },
+        {
+          "year": "2023",
+          "plays": 26
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        }
+      ]
+    },
+    "BiSH": {
+      "plays": 189,
+      "knownMs": 28277739,
+      "firstPlayedAt": "2018/07/28",
+      "latestPlayedAt": "2025/11/07",
+      "topTracks": [
+        {
+          "name": "Primitive",
+          "plays": 74,
+          "knownMs": 12980169
+        },
+        {
+          "name": "プロミスザスター",
+          "plays": 68,
+          "knownMs": 10761683
+        },
+        {
+          "name": "BiSH-星が瞬く夜に '16",
+          "plays": 5,
+          "knownMs": 342762
+        },
+        {
+          "name": "OTNK '16",
+          "plays": 4,
+          "knownMs": 277620
+        },
+        {
+          "name": "身勝手あいにーじゅー",
+          "plays": 4,
+          "knownMs": 24522
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 108
+        },
+        {
+          "year": "2019",
+          "plays": 37
+        },
+        {
+          "year": "2020",
+          "plays": 9
+        },
+        {
+          "year": "2021",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 7
+        },
+        {
+          "year": "2023",
+          "plays": 11
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 7
+        }
+      ]
+    },
     "Bivattchee": {
       "plays": 13,
       "knownMs": 2418066,
@@ -349,6 +1289,329 @@
         {
           "year": "2022",
           "plays": 1
+        }
+      ]
+    },
+    "Boku no Lyric no Boyomi": {
+      "plays": 205,
+      "knownMs": 31453891,
+      "firstPlayedAt": "2018/07/11",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "朝焼けと熱帯魚",
+          "plays": 46,
+          "knownMs": 7306661
+        },
+        {
+          "name": "sub/objective",
+          "plays": 35,
+          "knownMs": 4556018
+        },
+        {
+          "name": "Black Bird",
+          "plays": 27,
+          "knownMs": 4043822
+        },
+        {
+          "name": "僕はもういない",
+          "plays": 11,
+          "knownMs": 2021339
+        },
+        {
+          "name": "SKY's the limit",
+          "plays": 8,
+          "knownMs": 667572
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 84
+        },
+        {
+          "year": "2019",
+          "plays": 50
+        },
+        {
+          "year": "2020",
+          "plays": 29
+        },
+        {
+          "year": "2021",
+          "plays": 26
+        },
+        {
+          "year": "2022",
+          "plays": 4
+        },
+        {
+          "year": "2023",
+          "plays": 9
+        },
+        {
+          "year": "2025",
+          "plays": 3
+        }
+      ]
+    },
+    "BUMP OF CHICKEN": {
+      "plays": 152,
+      "knownMs": 18096940,
+      "firstPlayedAt": "2019/07/02",
+      "latestPlayedAt": "2025/12/12",
+      "topTracks": [
+        {
+          "name": "天体観測",
+          "plays": 26,
+          "knownMs": 3302063
+        },
+        {
+          "name": "sailing day",
+          "plays": 20,
+          "knownMs": 1994051
+        },
+        {
+          "name": "ラフ・メイカー",
+          "plays": 12,
+          "knownMs": 1524010
+        },
+        {
+          "name": "ハルジオン",
+          "plays": 10,
+          "knownMs": 2060834
+        },
+        {
+          "name": "ray",
+          "plays": 5,
+          "knownMs": 113820
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 28
+        },
+        {
+          "year": "2020",
+          "plays": 39
+        },
+        {
+          "year": "2022",
+          "plays": 29
+        },
+        {
+          "year": "2023",
+          "plays": 52
+        },
+        {
+          "year": "2024",
+          "plays": 3
+        },
+        {
+          "year": "2025",
+          "plays": 1
+        }
+      ]
+    },
+    "Cidergirl": {
+      "plays": 276,
+      "knownMs": 42635154,
+      "firstPlayedAt": "2018/07/07",
+      "latestPlayedAt": "2025/10/26",
+      "topTracks": [
+        {
+          "name": "メランコリー",
+          "plays": 104,
+          "knownMs": 19331682
+        },
+        {
+          "name": "エバーグリーン",
+          "plays": 67,
+          "knownMs": 10086511
+        },
+        {
+          "name": "成長痛",
+          "plays": 15,
+          "knownMs": 2049946
+        },
+        {
+          "name": "パレット",
+          "plays": 14,
+          "knownMs": 2120501
+        },
+        {
+          "name": "リバーシブル",
+          "plays": 10,
+          "knownMs": 1269189
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 174
+        },
+        {
+          "year": "2019",
+          "plays": 50
+        },
+        {
+          "year": "2020",
+          "plays": 19
+        },
+        {
+          "year": "2021",
+          "plays": 14
+        },
+        {
+          "year": "2022",
+          "plays": 4
+        },
+        {
+          "year": "2023",
+          "plays": 7
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 4
+        }
+      ]
+    },
+    "Creepy Nuts": {
+      "plays": 142,
+      "knownMs": 17930992,
+      "firstPlayedAt": "2019/07/25",
+      "latestPlayedAt": "2025/10/19",
+      "topTracks": [
+        {
+          "name": "Bling-Bang-Bang-Born",
+          "plays": 95,
+          "knownMs": 12509898
+        },
+        {
+          "name": "サントラ",
+          "plays": 12,
+          "knownMs": 1488139
+        },
+        {
+          "name": "Bling-Bang-Bang-Born - Instrumental",
+          "plays": 8,
+          "knownMs": 803411
+        },
+        {
+          "name": "よふかしのうた",
+          "plays": 4,
+          "knownMs": 610924
+        },
+        {
+          "name": "ばかまじめ",
+          "plays": 3,
+          "knownMs": 132133
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 1
+        },
+        {
+          "year": "2020",
+          "plays": 4
+        },
+        {
+          "year": "2021",
+          "plays": 3
+        },
+        {
+          "year": "2022",
+          "plays": 8
+        },
+        {
+          "year": "2023",
+          "plays": 1
+        },
+        {
+          "year": "2024",
+          "plays": 116
+        },
+        {
+          "year": "2025",
+          "plays": 9
+        }
+      ]
+    },
+    "Cö shu Nie": {
+      "plays": 206,
+      "knownMs": 27781046,
+      "firstPlayedAt": "2018/09/10",
+      "latestPlayedAt": "2026/03/09",
+      "topTracks": [
+        {
+          "name": "asphyxia",
+          "plays": 40,
+          "knownMs": 4004462
+        },
+        {
+          "name": "最終列車",
+          "plays": 19,
+          "knownMs": 2093840
+        },
+        {
+          "name": "SAKURA BURST",
+          "plays": 14,
+          "knownMs": 2015214
+        },
+        {
+          "name": "PERSON.",
+          "plays": 11,
+          "knownMs": 1902522
+        },
+        {
+          "name": "絶体絶命",
+          "plays": 10,
+          "knownMs": 916059
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 44
+        },
+        {
+          "year": "2019",
+          "plays": 31
+        },
+        {
+          "year": "2020",
+          "plays": 9
+        },
+        {
+          "year": "2021",
+          "plays": 9
+        },
+        {
+          "year": "2022",
+          "plays": 62
+        },
+        {
+          "year": "2023",
+          "plays": 10
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 7
+        },
+        {
+          "year": "2026",
+          "plays": 30
         }
       ]
     },
@@ -423,6 +1686,181 @@
         }
       ]
     },
+    "Daoko": {
+      "plays": 145,
+      "knownMs": 20656287,
+      "firstPlayedAt": "2018/02/01",
+      "latestPlayedAt": "2025/10/21",
+      "topTracks": [
+        {
+          "name": "拝啓グッバイさようなら",
+          "plays": 70,
+          "knownMs": 9282282
+        },
+        {
+          "name": "燐光",
+          "plays": 14,
+          "knownMs": 2620393
+        },
+        {
+          "name": "打上花火",
+          "plays": 13,
+          "knownMs": 1832018
+        },
+        {
+          "name": "Cinderella step",
+          "plays": 4,
+          "knownMs": 492774
+        },
+        {
+          "name": "終わらない世界で",
+          "plays": 4,
+          "knownMs": 636692
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 70
+        },
+        {
+          "year": "2019",
+          "plays": 26
+        },
+        {
+          "year": "2020",
+          "plays": 10
+        },
+        {
+          "year": "2021",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 5
+        },
+        {
+          "year": "2023",
+          "plays": 19
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 5
+        }
+      ]
+    },
+    "DIR EN GREY": {
+      "plays": 238,
+      "knownMs": 37784358,
+      "firstPlayedAt": "2019/04/19",
+      "latestPlayedAt": "2026/01/13",
+      "topTracks": [
+        {
+          "name": "Cage",
+          "plays": 89,
+          "knownMs": 21064598
+        },
+        {
+          "name": "予感",
+          "plays": 24,
+          "knownMs": 4327365
+        },
+        {
+          "name": "ゆらめき (YURAMEKI)",
+          "plays": 12,
+          "knownMs": 1299567
+        },
+        {
+          "name": "予感 (YOKAN)",
+          "plays": 8,
+          "knownMs": 1310934
+        },
+        {
+          "name": "-I’ll-",
+          "plays": 6,
+          "knownMs": 1296320
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 3
+        },
+        {
+          "year": "2020",
+          "plays": 41
+        },
+        {
+          "year": "2021",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 2
+        },
+        {
+          "year": "2024",
+          "plays": 141
+        },
+        {
+          "year": "2025",
+          "plays": 44
+        },
+        {
+          "year": "2026",
+          "plays": 1
+        }
+      ]
+    },
+    "Eito": {
+      "plays": 609,
+      "knownMs": 133167078,
+      "firstPlayedAt": "2020/08/11",
+      "latestPlayedAt": "2024/11/12",
+      "topTracks": [
+        {
+          "name": "香水",
+          "plays": 368,
+          "knownMs": 72620218
+        },
+        {
+          "name": "Love Forever",
+          "plays": 240,
+          "knownMs": 60537350
+        },
+        {
+          "name": "HIPHOPは歌えない",
+          "plays": 1,
+          "knownMs": 9510
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 2
+        },
+        {
+          "year": "2021",
+          "plays": 232
+        },
+        {
+          "year": "2022",
+          "plays": 254
+        },
+        {
+          "year": "2023",
+          "plays": 86
+        },
+        {
+          "year": "2024",
+          "plays": 35
+        }
+      ]
+    },
     "ELLEGARDEN": {
       "plays": 351,
       "knownMs": 44033013,
@@ -494,6 +1932,1177 @@
         }
       ]
     },
+    "Eve": {
+      "plays": 302,
+      "knownMs": 46917727,
+      "firstPlayedAt": "2018/11/16",
+      "latestPlayedAt": "2025/11/02",
+      "topTracks": [
+        {
+          "name": "ドラマツルギー",
+          "plays": 108,
+          "knownMs": 17976542
+        },
+        {
+          "name": "廻廻奇譚",
+          "plays": 30,
+          "knownMs": 4909184
+        },
+        {
+          "name": "あの娘シークレット",
+          "plays": 17,
+          "knownMs": 2707815
+        },
+        {
+          "name": "ナンセンス文学",
+          "plays": 11,
+          "knownMs": 1589397
+        },
+        {
+          "name": "夜は仄か",
+          "plays": 10,
+          "knownMs": 1412295
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 2
+        },
+        {
+          "year": "2019",
+          "plays": 19
+        },
+        {
+          "year": "2020",
+          "plays": 75
+        },
+        {
+          "year": "2021",
+          "plays": 34
+        },
+        {
+          "year": "2022",
+          "plays": 68
+        },
+        {
+          "year": "2023",
+          "plays": 84
+        },
+        {
+          "year": "2024",
+          "plays": 9
+        },
+        {
+          "year": "2025",
+          "plays": 11
+        }
+      ]
+    },
+    "Every Little Thing": {
+      "plays": 240,
+      "knownMs": 46027450,
+      "firstPlayedAt": "2018/05/07",
+      "latestPlayedAt": "2025/12/03",
+      "topTracks": [
+        {
+          "name": "Time goes by",
+          "plays": 22,
+          "knownMs": 3806308
+        },
+        {
+          "name": "出逢った頃のように",
+          "plays": 20,
+          "knownMs": 2843811
+        },
+        {
+          "name": "Dear My Friend",
+          "plays": 18,
+          "knownMs": 3221850
+        },
+        {
+          "name": "スイミー",
+          "plays": 13,
+          "knownMs": 1848474
+        },
+        {
+          "name": "Future World",
+          "plays": 13,
+          "knownMs": 2751355
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 5
+        },
+        {
+          "year": "2019",
+          "plays": 27
+        },
+        {
+          "year": "2020",
+          "plays": 3
+        },
+        {
+          "year": "2021",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 155
+        },
+        {
+          "year": "2023",
+          "plays": 4
+        },
+        {
+          "year": "2024",
+          "plays": 24
+        },
+        {
+          "year": "2025",
+          "plays": 16
+        }
+      ]
+    },
+    "FERN PLANET": {
+      "plays": 254,
+      "knownMs": 51329725,
+      "firstPlayedAt": "2020/04/05",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "ソルジャーガールズ",
+          "plays": 71,
+          "knownMs": 12653428
+        },
+        {
+          "name": "自己愛ism",
+          "plays": 50,
+          "knownMs": 9705337
+        },
+        {
+          "name": "イルシオン",
+          "plays": 33,
+          "knownMs": 7023215
+        },
+        {
+          "name": "横顔",
+          "plays": 29,
+          "knownMs": 6710560
+        },
+        {
+          "name": "絶対相対",
+          "plays": 26,
+          "knownMs": 5707650
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 212
+        },
+        {
+          "year": "2021",
+          "plays": 9
+        },
+        {
+          "year": "2022",
+          "plays": 10
+        },
+        {
+          "year": "2023",
+          "plays": 9
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 10
+        }
+      ]
+    },
+    "Foorin": {
+      "plays": 259,
+      "knownMs": 37606649,
+      "firstPlayedAt": "2018/09/13",
+      "latestPlayedAt": "2026/02/26",
+      "topTracks": [
+        {
+          "name": "パプリカ",
+          "plays": 207,
+          "knownMs": 29911391
+        },
+        {
+          "name": "パプリカ(Instrumental)",
+          "plays": 52,
+          "knownMs": 7695258
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 1
+        },
+        {
+          "year": "2019",
+          "plays": 118
+        },
+        {
+          "year": "2020",
+          "plays": 109
+        },
+        {
+          "year": "2021",
+          "plays": 3
+        },
+        {
+          "year": "2022",
+          "plays": 1
+        },
+        {
+          "year": "2023",
+          "plays": 8
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 14
+        },
+        {
+          "year": "2026",
+          "plays": 1
+        }
+      ]
+    },
+    "fountains of wayne": {
+      "plays": 7,
+      "knownMs": 1352272,
+      "firstPlayedAt": "2020/09/14",
+      "latestPlayedAt": "2021/10/09",
+      "topTracks": [
+        {
+          "name": "Someone To Love",
+          "plays": 5,
+          "knownMs": 1217740
+        },
+        {
+          "name": "'92 Subaru",
+          "plays": 2,
+          "knownMs": 134532
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 5
+        },
+        {
+          "year": "2021",
+          "plays": 2
+        }
+      ]
+    },
+    "Gesu No Kiwami Otome": {
+      "plays": 394,
+      "knownMs": 59580680,
+      "firstPlayedAt": "2018/06/23",
+      "latestPlayedAt": "2026/02/17",
+      "topTracks": [
+        {
+          "name": "私以外私じゃないの",
+          "plays": 37,
+          "knownMs": 5942023
+        },
+        {
+          "name": "ロマンスがありあまる",
+          "plays": 29,
+          "knownMs": 5297562
+        },
+        {
+          "name": "オトナチック",
+          "plays": 23,
+          "knownMs": 4529220
+        },
+        {
+          "name": "猟奇的なキスを私にして",
+          "plays": 19,
+          "knownMs": 3635951
+        },
+        {
+          "name": "キラーボール",
+          "plays": 17,
+          "knownMs": 2977623
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 59
+        },
+        {
+          "year": "2019",
+          "plays": 266
+        },
+        {
+          "year": "2020",
+          "plays": 7
+        },
+        {
+          "year": "2021",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 12
+        },
+        {
+          "year": "2023",
+          "plays": 14
+        },
+        {
+          "year": "2024",
+          "plays": 9
+        },
+        {
+          "year": "2025",
+          "plays": 20
+        },
+        {
+          "year": "2026",
+          "plays": 3
+        }
+      ]
+    },
+    "GLAY": {
+      "plays": 234,
+      "knownMs": 29121878,
+      "firstPlayedAt": "2018/02/02",
+      "latestPlayedAt": "2024/11/17",
+      "topTracks": [
+        {
+          "name": "HOWEVER",
+          "plays": 19,
+          "knownMs": 3398397
+        },
+        {
+          "name": "ずっと2人で…",
+          "plays": 14,
+          "knownMs": 3229717
+        },
+        {
+          "name": "Winter,again",
+          "plays": 11,
+          "knownMs": 1923014
+        },
+        {
+          "name": "BELOVED",
+          "plays": 10,
+          "knownMs": 1994681
+        },
+        {
+          "name": "誘惑",
+          "plays": 9,
+          "knownMs": 1492555
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 1
+        },
+        {
+          "year": "2019",
+          "plays": 74
+        },
+        {
+          "year": "2020",
+          "plays": 35
+        },
+        {
+          "year": "2021",
+          "plays": 30
+        },
+        {
+          "year": "2022",
+          "plays": 34
+        },
+        {
+          "year": "2023",
+          "plays": 3
+        },
+        {
+          "year": "2024",
+          "plays": 57
+        }
+      ]
+    },
+    "GLIM SPANKY": {
+      "plays": 148,
+      "knownMs": 23025878,
+      "firstPlayedAt": "2018/06/29",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "愚か者たち",
+          "plays": 77,
+          "knownMs": 12381601
+        },
+        {
+          "name": "In the air",
+          "plays": 45,
+          "knownMs": 6643079
+        },
+        {
+          "name": "There will be love there -愛のある場所- - Sound Inn “S” ver.",
+          "plays": 7,
+          "knownMs": 984270
+        },
+        {
+          "name": "All Of Us",
+          "plays": 5,
+          "knownMs": 893854
+        },
+        {
+          "name": "褒めろよ",
+          "plays": 3,
+          "knownMs": 475878
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 98
+        },
+        {
+          "year": "2019",
+          "plays": 31
+        },
+        {
+          "year": "2020",
+          "plays": 1
+        },
+        {
+          "year": "2021",
+          "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 10
+        },
+        {
+          "year": "2023",
+          "plays": 4
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        },
+        {
+          "year": "2025",
+          "plays": 1
+        }
+      ]
+    },
+    "Groovy groove": {
+      "plays": 2165,
+      "knownMs": 342595342,
+      "firstPlayedAt": "2020/06/12",
+      "latestPlayedAt": "2026/03/13",
+      "topTracks": [
+        {
+          "name": "Flamingo - A Cappella Cover Ver.",
+          "plays": 118,
+          "knownMs": 14000887
+        },
+        {
+          "name": "白日 - A Cappella Cover Ver.",
+          "plays": 104,
+          "knownMs": 16454373
+        },
+        {
+          "name": "海の幽霊 - A Cappella Cover Ver.",
+          "plays": 98,
+          "knownMs": 18246775
+        },
+        {
+          "name": "LOSER - A Cappella Cover Ver.",
+          "plays": 94,
+          "knownMs": 17843765
+        },
+        {
+          "name": "ハルノヒ - A Cappella Cover Ver.",
+          "plays": 91,
+          "knownMs": 18166579
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 730
+        },
+        {
+          "year": "2021",
+          "plays": 853
+        },
+        {
+          "year": "2022",
+          "plays": 125
+        },
+        {
+          "year": "2023",
+          "plays": 168
+        },
+        {
+          "year": "2024",
+          "plays": 173
+        },
+        {
+          "year": "2026",
+          "plays": 116
+        }
+      ]
+    },
+    "Huwie Ishizaki": {
+      "plays": 137,
+      "knownMs": 24845452,
+      "firstPlayedAt": "2018/08/23",
+      "latestPlayedAt": "2026/02/16",
+      "topTracks": [
+        {
+          "name": "さよならエレジー",
+          "plays": 74,
+          "knownMs": 14638012
+        },
+        {
+          "name": "夜間飛行",
+          "plays": 11,
+          "knownMs": 1004804
+        },
+        {
+          "name": "ピノとアメリ",
+          "plays": 5,
+          "knownMs": 856607
+        },
+        {
+          "name": "花瓶の花",
+          "plays": 3,
+          "knownMs": 126188
+        },
+        {
+          "name": "ピリオド",
+          "plays": 3,
+          "knownMs": 407748
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 62
+        },
+        {
+          "year": "2019",
+          "plays": 54
+        },
+        {
+          "year": "2020",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 1
+        },
+        {
+          "year": "2023",
+          "plays": 11
+        },
+        {
+          "year": "2024",
+          "plays": 3
+        },
+        {
+          "year": "2026",
+          "plays": 2
+        }
+      ]
+    },
+    "HY": {
+      "plays": 379,
+      "knownMs": 85734077,
+      "firstPlayedAt": "2018/07/03",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "AM11:00",
+          "plays": 355,
+          "knownMs": 84201008
+        },
+        {
+          "name": "三月の陽炎",
+          "plays": 9,
+          "knownMs": 923888
+        },
+        {
+          "name": "366日",
+          "plays": 7,
+          "knownMs": 207391
+        },
+        {
+          "name": "あなたへ",
+          "plays": 3,
+          "knownMs": 2020
+        },
+        {
+          "name": "NAO",
+          "plays": 1,
+          "knownMs": 366773
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 13
+        },
+        {
+          "year": "2019",
+          "plays": 8
+        },
+        {
+          "year": "2021",
+          "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 3
+        },
+        {
+          "year": "2023",
+          "plays": 4
+        },
+        {
+          "year": "2024",
+          "plays": 1
+        },
+        {
+          "year": "2025",
+          "plays": 306
+        },
+        {
+          "year": "2026",
+          "plays": 43
+        }
+      ]
+    },
+    "indigo la End": {
+      "plays": 342,
+      "knownMs": 49729226,
+      "firstPlayedAt": "2018/06/28",
+      "latestPlayedAt": "2026/03/21",
+      "topTracks": [
+        {
+          "name": "通り恋",
+          "plays": 244,
+          "knownMs": 36179471
+        },
+        {
+          "name": "夏夜のマジック",
+          "plays": 15,
+          "knownMs": 2838939
+        },
+        {
+          "name": "蒼糸",
+          "plays": 10,
+          "knownMs": 1821721
+        },
+        {
+          "name": "名前は片想い",
+          "plays": 10,
+          "knownMs": 860077
+        },
+        {
+          "name": "ハルの言う通り",
+          "plays": 5,
+          "knownMs": 539350
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 19
+        },
+        {
+          "year": "2019",
+          "plays": 26
+        },
+        {
+          "year": "2020",
+          "plays": 19
+        },
+        {
+          "year": "2021",
+          "plays": 11
+        },
+        {
+          "year": "2022",
+          "plays": 26
+        },
+        {
+          "year": "2023",
+          "plays": 86
+        },
+        {
+          "year": "2024",
+          "plays": 144
+        },
+        {
+          "year": "2025",
+          "plays": 4
+        },
+        {
+          "year": "2026",
+          "plays": 7
+        }
+      ]
+    },
+    "iwamizu": {
+      "plays": 556,
+      "knownMs": 87695761,
+      "firstPlayedAt": "2021/10/04",
+      "latestPlayedAt": "2026/03/06",
+      "topTracks": [
+        {
+          "name": "穢土",
+          "plays": 51,
+          "knownMs": 7323004
+        },
+        {
+          "name": "For Her",
+          "plays": 28,
+          "knownMs": 4203582
+        },
+        {
+          "name": "You're Gonna Be Ok",
+          "plays": 26,
+          "knownMs": 5198817
+        },
+        {
+          "name": "Kinmokusei",
+          "plays": 26,
+          "knownMs": 3386474
+        },
+        {
+          "name": "俗世",
+          "plays": 25,
+          "knownMs": 3533127
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 441
+        },
+        {
+          "year": "2022",
+          "plays": 92
+        },
+        {
+          "year": "2023",
+          "plays": 7
+        },
+        {
+          "year": "2024",
+          "plays": 11
+        },
+        {
+          "year": "2025",
+          "plays": 4
+        },
+        {
+          "year": "2026",
+          "plays": 1
+        }
+      ]
+    },
+    "jon-YAKITORY": {
+      "plays": 294,
+      "knownMs": 55582275,
+      "firstPlayedAt": "2021/03/31",
+      "latestPlayedAt": "2024/03/09",
+      "topTracks": [
+        {
+          "name": "蝸旋",
+          "plays": 104,
+          "knownMs": 21974323
+        },
+        {
+          "name": "シカバネーゼ",
+          "plays": 65,
+          "knownMs": 12694638
+        },
+        {
+          "name": "アンチシステム's",
+          "plays": 45,
+          "knownMs": 8318802
+        },
+        {
+          "name": "イート",
+          "plays": 43,
+          "knownMs": 6911847
+        },
+        {
+          "name": "フェイキング・オブ・コメディ",
+          "plays": 36,
+          "knownMs": 5619827
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 97
+        },
+        {
+          "year": "2022",
+          "plays": 171
+        },
+        {
+          "year": "2023",
+          "plays": 22
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        }
+      ]
+    },
+    "Kazuyoshi Saito": {
+      "plays": 404,
+      "knownMs": 83875603,
+      "firstPlayedAt": "2018/03/29",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "やさしくなりたい",
+          "plays": 200,
+          "knownMs": 37981016
+        },
+        {
+          "name": "歌うたいのバラッド",
+          "plays": 196,
+          "knownMs": 45407454
+        },
+        {
+          "name": "歩いて帰ろう",
+          "plays": 3,
+          "knownMs": 5410
+        },
+        {
+          "name": "青空ばかり",
+          "plays": 2,
+          "knownMs": 5130
+        },
+        {
+          "name": "Hey!Mr. Angryman",
+          "plays": 2,
+          "knownMs": 230778
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 8
+        },
+        {
+          "year": "2019",
+          "plays": 6
+        },
+        {
+          "year": "2020",
+          "plays": 1
+        },
+        {
+          "year": "2021",
+          "plays": 2
+        },
+        {
+          "year": "2022",
+          "plays": 2
+        },
+        {
+          "year": "2023",
+          "plays": 211
+        },
+        {
+          "year": "2024",
+          "plays": 172
+        },
+        {
+          "year": "2025",
+          "plays": 2
+        }
+      ]
+    },
+    "Kei Sugawara": {
+      "plays": 243,
+      "knownMs": 37223996,
+      "firstPlayedAt": "2021/07/30",
+      "latestPlayedAt": "2025/10/21",
+      "topTracks": [
+        {
+          "name": "シトラス",
+          "plays": 56,
+          "knownMs": 7554042
+        },
+        {
+          "name": "crash",
+          "plays": 32,
+          "knownMs": 4405358
+        },
+        {
+          "name": "シーサイド",
+          "plays": 19,
+          "knownMs": 4107832
+        },
+        {
+          "name": "ブランケット",
+          "plays": 16,
+          "knownMs": 2070534
+        },
+        {
+          "name": "エイプリル",
+          "plays": 14,
+          "knownMs": 2265612
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 2
+        },
+        {
+          "year": "2022",
+          "plays": 177
+        },
+        {
+          "year": "2023",
+          "plays": 19
+        },
+        {
+          "year": "2024",
+          "plays": 28
+        },
+        {
+          "year": "2025",
+          "plays": 17
+        }
+      ]
+    },
+    "Kenshi Yonezu": {
+      "plays": 1839,
+      "knownMs": 355539236,
+      "firstPlayedAt": "2020/08/05",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "Lemon",
+          "plays": 645,
+          "knownMs": 131830394
+        },
+        {
+          "name": "さよーならまたいつか！- Sayonara",
+          "plays": 393,
+          "knownMs": 66302471
+        },
+        {
+          "name": "灰色と青 ( + 菅田将暉 )",
+          "plays": 123,
+          "knownMs": 30452022
+        },
+        {
+          "name": "アイネクライネ",
+          "plays": 49,
+          "knownMs": 8761906
+        },
+        {
+          "name": "感電",
+          "plays": 45,
+          "knownMs": 9176065
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 363
+        },
+        {
+          "year": "2021",
+          "plays": 134
+        },
+        {
+          "year": "2022",
+          "plays": 42
+        },
+        {
+          "year": "2023",
+          "plays": 80
+        },
+        {
+          "year": "2024",
+          "plays": 209
+        },
+        {
+          "year": "2025",
+          "plays": 877
+        },
+        {
+          "year": "2026",
+          "plays": 134
+        }
+      ]
+    },
+    "King Gnu": {
+      "plays": 2916,
+      "knownMs": 511484631,
+      "firstPlayedAt": "2018/08/09",
+      "latestPlayedAt": "2026/02/25",
+      "topTracks": [
+        {
+          "name": "白日",
+          "plays": 496,
+          "knownMs": 107185440
+        },
+        {
+          "name": "飛行艇",
+          "plays": 226,
+          "knownMs": 45162600
+        },
+        {
+          "name": "傘",
+          "plays": 212,
+          "knownMs": 36517675
+        },
+        {
+          "name": "Slumberland",
+          "plays": 166,
+          "knownMs": 24784651
+        },
+        {
+          "name": "Prayer X",
+          "plays": 150,
+          "knownMs": 24392353
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 2
+        },
+        {
+          "year": "2019",
+          "plays": 1870
+        },
+        {
+          "year": "2020",
+          "plays": 410
+        },
+        {
+          "year": "2021",
+          "plays": 36
+        },
+        {
+          "year": "2022",
+          "plays": 56
+        },
+        {
+          "year": "2023",
+          "plays": 128
+        },
+        {
+          "year": "2024",
+          "plays": 230
+        },
+        {
+          "year": "2025",
+          "plays": 152
+        },
+        {
+          "year": "2026",
+          "plays": 32
+        }
+      ]
+    },
+    "Kiro Akiyama": {
+      "plays": 297,
+      "knownMs": 56838794,
+      "firstPlayedAt": "2019/01/30",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "Caffeine",
+          "plays": 179,
+          "knownMs": 36184783
+        },
+        {
+          "name": "ナイトダンサー",
+          "plays": 22,
+          "knownMs": 2985139
+        },
+        {
+          "name": "SKETCH",
+          "plays": 15,
+          "knownMs": 2385102
+        },
+        {
+          "name": "サーチライト",
+          "plays": 10,
+          "knownMs": 1367786
+        },
+        {
+          "name": "モノローグ",
+          "plays": 9,
+          "knownMs": 1353974
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 1
+        },
+        {
+          "year": "2020",
+          "plays": 9
+        },
+        {
+          "year": "2021",
+          "plays": 8
+        },
+        {
+          "year": "2022",
+          "plays": 1
+        },
+        {
+          "year": "2023",
+          "plays": 11
+        },
+        {
+          "year": "2024",
+          "plays": 5
+        },
+        {
+          "year": "2025",
+          "plays": 213
+        },
+        {
+          "year": "2026",
+          "plays": 49
+        }
+      ]
+    },
     "Klang Ruler": {
       "plays": 1079,
       "knownMs": 185742577,
@@ -545,6 +3154,211 @@
         }
       ]
     },
+    "kobasolo": {
+      "plays": 592,
+      "knownMs": 114480640,
+      "firstPlayedAt": "2018/06/26",
+      "latestPlayedAt": "2026/03/06",
+      "topTracks": [
+        {
+          "name": "ヒバナ feat.Sanra",
+          "plays": 132,
+          "knownMs": 24928260
+        },
+        {
+          "name": "奏(かなで) feat.安果音",
+          "plays": 65,
+          "knownMs": 9776142
+        },
+        {
+          "name": "命に嫌われている。 feat.相沢",
+          "plays": 30,
+          "knownMs": 8484943
+        },
+        {
+          "name": "あなたのことが好きだなんて言えないんです。",
+          "plays": 26,
+          "knownMs": 4737339
+        },
+        {
+          "name": "さよならスマイル",
+          "plays": 20,
+          "knownMs": 3972606
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 104
+        },
+        {
+          "year": "2019",
+          "plays": 35
+        },
+        {
+          "year": "2020",
+          "plays": 25
+        },
+        {
+          "year": "2021",
+          "plays": 302
+        },
+        {
+          "year": "2022",
+          "plays": 99
+        },
+        {
+          "year": "2023",
+          "plays": 21
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        },
+        {
+          "year": "2025",
+          "plays": 2
+        },
+        {
+          "year": "2026",
+          "plays": 2
+        }
+      ]
+    },
+    "Kozo Murashita": {
+      "plays": 289,
+      "knownMs": 44670884,
+      "firstPlayedAt": "2019/11/03",
+      "latestPlayedAt": "2026/03/21",
+      "topTracks": [
+        {
+          "name": "初恋",
+          "plays": 253,
+          "knownMs": 37378232
+        },
+        {
+          "name": "ゆうこ",
+          "plays": 4,
+          "knownMs": 319026
+        },
+        {
+          "name": "踊り子",
+          "plays": 3,
+          "knownMs": 282536
+        },
+        {
+          "name": "22才の別れ",
+          "plays": 2,
+          "knownMs": 291770
+        },
+        {
+          "name": "月あかり",
+          "plays": 1,
+          "knownMs": 256880
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 40
+        },
+        {
+          "year": "2020",
+          "plays": 2
+        },
+        {
+          "year": "2021",
+          "plays": 3
+        },
+        {
+          "year": "2022",
+          "plays": 15
+        },
+        {
+          "year": "2023",
+          "plays": 74
+        },
+        {
+          "year": "2024",
+          "plays": 143
+        },
+        {
+          "year": "2025",
+          "plays": 5
+        },
+        {
+          "year": "2026",
+          "plays": 7
+        }
+      ]
+    },
+    "LiSA": {
+      "plays": 147,
+      "knownMs": 20785901,
+      "firstPlayedAt": "2018/07/03",
+      "latestPlayedAt": "2025/09/30",
+      "topTracks": [
+        {
+          "name": "Catch the Moment",
+          "plays": 52,
+          "knownMs": 9870458
+        },
+        {
+          "name": "ＮＩＰＰＯＮ",
+          "plays": 47,
+          "knownMs": 6981324
+        },
+        {
+          "name": "炎",
+          "plays": 10,
+          "knownMs": 877548
+        },
+        {
+          "name": "紅蓮華",
+          "plays": 9,
+          "knownMs": 845363
+        },
+        {
+          "name": "再会 (produced by Ayase)",
+          "plays": 8,
+          "knownMs": 593289
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 75
+        },
+        {
+          "year": "2019",
+          "plays": 19
+        },
+        {
+          "year": "2020",
+          "plays": 7
+        },
+        {
+          "year": "2021",
+          "plays": 11
+        },
+        {
+          "year": "2022",
+          "plays": 5
+        },
+        {
+          "year": "2023",
+          "plays": 18
+        },
+        {
+          "year": "2024",
+          "plays": 5
+        },
+        {
+          "year": "2025",
+          "plays": 7
+        }
+      ]
+    },
     "Love Psychedelico": {
       "plays": 102,
       "knownMs": 23693479,
@@ -593,6 +3407,522 @@
         {
           "year": "2023",
           "plays": 2
+        }
+      ]
+    },
+    "LUNA SEA": {
+      "plays": 531,
+      "knownMs": 96076517,
+      "firstPlayedAt": "2019/11/22",
+      "latestPlayedAt": "2026/03/25",
+      "topTracks": [
+        {
+          "name": "ROSIER",
+          "plays": 266,
+          "knownMs": 55569170
+        },
+        {
+          "name": "TRUE BLUE",
+          "plays": 235,
+          "knownMs": 36646277
+        },
+        {
+          "name": "STORM",
+          "plays": 9,
+          "knownMs": 1481380
+        },
+        {
+          "name": "Closer",
+          "plays": 6,
+          "knownMs": 888222
+        },
+        {
+          "name": "宇宙の詩 〜Higher and Higher 〜",
+          "plays": 4,
+          "knownMs": 269167
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 1
+        },
+        {
+          "year": "2020",
+          "plays": 48
+        },
+        {
+          "year": "2021",
+          "plays": 13
+        },
+        {
+          "year": "2022",
+          "plays": 42
+        },
+        {
+          "year": "2023",
+          "plays": 144
+        },
+        {
+          "year": "2024",
+          "plays": 264
+        },
+        {
+          "year": "2025",
+          "plays": 6
+        },
+        {
+          "year": "2026",
+          "plays": 13
+        }
+      ]
+    },
+    "MAISONdes": {
+      "plays": 366,
+      "knownMs": 56940364,
+      "firstPlayedAt": "2021/03/12",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "Hello/Hello",
+          "plays": 70,
+          "knownMs": 14026936
+        },
+        {
+          "name": "ヨワネハキ",
+          "plays": 50,
+          "knownMs": 6230292
+        },
+        {
+          "name": "Cheers",
+          "plays": 26,
+          "knownMs": 4479921
+        },
+        {
+          "name": "ダンス・ダンス・ダダ",
+          "plays": 16,
+          "knownMs": 3586522
+        },
+        {
+          "name": "トウキョウ・シャンディ・ランデヴ",
+          "plays": 15,
+          "knownMs": 2087690
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 91
+        },
+        {
+          "year": "2022",
+          "plays": 109
+        },
+        {
+          "year": "2023",
+          "plays": 78
+        },
+        {
+          "year": "2024",
+          "plays": 24
+        },
+        {
+          "year": "2025",
+          "plays": 3
+        },
+        {
+          "year": "2026",
+          "plays": 61
+        }
+      ]
+    },
+    "majiko": {
+      "plays": 2386,
+      "knownMs": 476744356,
+      "firstPlayedAt": "2018/06/26",
+      "latestPlayedAt": "2026/02/21",
+      "topTracks": [
+        {
+          "name": "ひび割れた世界",
+          "plays": 292,
+          "knownMs": 75041295
+        },
+        {
+          "name": "心做し",
+          "plays": 172,
+          "knownMs": 38509482
+        },
+        {
+          "name": "Hypocrite Syndrome",
+          "plays": 140,
+          "knownMs": 30259880
+        },
+        {
+          "name": "エミリーと15の約束",
+          "plays": 107,
+          "knownMs": 26156974
+        },
+        {
+          "name": "君に最後の口づけを",
+          "plays": 83,
+          "knownMs": 18045749
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 868
+        },
+        {
+          "year": "2019",
+          "plays": 850
+        },
+        {
+          "year": "2020",
+          "plays": 156
+        },
+        {
+          "year": "2021",
+          "plays": 18
+        },
+        {
+          "year": "2022",
+          "plays": 39
+        },
+        {
+          "year": "2023",
+          "plays": 38
+        },
+        {
+          "year": "2024",
+          "plays": 102
+        },
+        {
+          "year": "2025",
+          "plays": 300
+        },
+        {
+          "year": "2026",
+          "plays": 15
+        }
+      ]
+    },
+    "Mika Nakashima": {
+      "plays": 170,
+      "knownMs": 38438959,
+      "firstPlayedAt": "2018/05/03",
+      "latestPlayedAt": "2025/08/25",
+      "topTracks": [
+        {
+          "name": "僕が死のうと思ったのは",
+          "plays": 38,
+          "knownMs": 10888788
+        },
+        {
+          "name": "雪の華",
+          "plays": 28,
+          "knownMs": 6038580
+        },
+        {
+          "name": "一番綺麗な私を",
+          "plays": 26,
+          "knownMs": 6199359
+        },
+        {
+          "name": "ORION",
+          "plays": 13,
+          "knownMs": 2149604
+        },
+        {
+          "name": "KISS OF DEATH（Produced by HYDE）",
+          "plays": 7,
+          "knownMs": 544439
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 14
+        },
+        {
+          "year": "2019",
+          "plays": 43
+        },
+        {
+          "year": "2020",
+          "plays": 68
+        },
+        {
+          "year": "2021",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 24
+        },
+        {
+          "year": "2023",
+          "plays": 3
+        },
+        {
+          "year": "2024",
+          "plays": 8
+        },
+        {
+          "year": "2025",
+          "plays": 4
+        }
+      ]
+    },
+    "MOON CHILD": {
+      "plays": 148,
+      "knownMs": 25896006,
+      "firstPlayedAt": "2019/01/02",
+      "latestPlayedAt": "2024/06/28",
+      "topTracks": [
+        {
+          "name": "ESCAPE",
+          "plays": 144,
+          "knownMs": 25271229
+        },
+        {
+          "name": "WILD CHERRY",
+          "plays": 1,
+          "knownMs": 50874
+        },
+        {
+          "name": "ストロベリーアイスクリームソーダ",
+          "plays": 1,
+          "knownMs": 205966
+        },
+        {
+          "name": "ポータブルロック",
+          "plays": 1,
+          "knownMs": 294533
+        },
+        {
+          "name": "ララバイ",
+          "plays": 1,
+          "knownMs": 73404
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 9
+        },
+        {
+          "year": "2021",
+          "plays": 3
+        },
+        {
+          "year": "2022",
+          "plays": 8
+        },
+        {
+          "year": "2023",
+          "plays": 85
+        },
+        {
+          "year": "2024",
+          "plays": 43
+        }
+      ]
+    },
+    "MOROHA": {
+      "plays": 341,
+      "knownMs": 77137766,
+      "firstPlayedAt": "2019/06/14",
+      "latestPlayedAt": "2025/10/12",
+      "topTracks": [
+        {
+          "name": "革命",
+          "plays": 50,
+          "knownMs": 8423067
+        },
+        {
+          "name": "五文銭",
+          "plays": 25,
+          "knownMs": 9127751
+        },
+        {
+          "name": "三文銭",
+          "plays": 19,
+          "knownMs": 5544413
+        },
+        {
+          "name": "tomorrow",
+          "plays": 18,
+          "knownMs": 4930298
+        },
+        {
+          "name": "勝ち負けじゃないと思える所まで俺は勝ちにこだわるよ",
+          "plays": 16,
+          "knownMs": 4578869
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 13
+        },
+        {
+          "year": "2020",
+          "plays": 35
+        },
+        {
+          "year": "2021",
+          "plays": 85
+        },
+        {
+          "year": "2022",
+          "plays": 32
+        },
+        {
+          "year": "2023",
+          "plays": 68
+        },
+        {
+          "year": "2024",
+          "plays": 57
+        },
+        {
+          "year": "2025",
+          "plays": 51
+        }
+      ]
+    },
+    "Mr.Children": {
+      "plays": 155,
+      "knownMs": 23563584,
+      "firstPlayedAt": "2018/06/10",
+      "latestPlayedAt": "2025/09/28",
+      "topTracks": [
+        {
+          "name": "HANABI",
+          "plays": 15,
+          "knownMs": 2557968
+        },
+        {
+          "name": "innocent world",
+          "plays": 14,
+          "knownMs": 2092758
+        },
+        {
+          "name": "名もなき詩",
+          "plays": 11,
+          "knownMs": 1103873
+        },
+        {
+          "name": "Sign",
+          "plays": 11,
+          "knownMs": 1400014
+        },
+        {
+          "name": "Tomorrow never knows",
+          "plays": 10,
+          "knownMs": 1263032
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 19
+        },
+        {
+          "year": "2019",
+          "plays": 35
+        },
+        {
+          "year": "2020",
+          "plays": 8
+        },
+        {
+          "year": "2021",
+          "plays": 58
+        },
+        {
+          "year": "2022",
+          "plays": 12
+        },
+        {
+          "year": "2023",
+          "plays": 15
+        },
+        {
+          "year": "2024",
+          "plays": 7
+        },
+        {
+          "year": "2025",
+          "plays": 1
+        }
+      ]
+    },
+    "Mrs. GREEN APPLE": {
+      "plays": 245,
+      "knownMs": 27440125,
+      "firstPlayedAt": "2018/07/04",
+      "latestPlayedAt": "2025/12/12",
+      "topTracks": [
+        {
+          "name": "Log",
+          "plays": 51,
+          "knownMs": 6311163
+        },
+        {
+          "name": "WHOO WHOO WHOO",
+          "plays": 27,
+          "knownMs": 2477894
+        },
+        {
+          "name": "青と夏",
+          "plays": 17,
+          "knownMs": 2251721
+        },
+        {
+          "name": "春愁",
+          "plays": 14,
+          "knownMs": 1146825
+        },
+        {
+          "name": "点描の唄",
+          "plays": 14,
+          "knownMs": 1381483
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 126
+        },
+        {
+          "year": "2019",
+          "plays": 23
+        },
+        {
+          "year": "2020",
+          "plays": 5
+        },
+        {
+          "year": "2021",
+          "plays": 2
+        },
+        {
+          "year": "2022",
+          "plays": 9
+        },
+        {
+          "year": "2023",
+          "plays": 23
+        },
+        {
+          "year": "2024",
+          "plays": 16
+        },
+        {
+          "year": "2025",
+          "plays": 41
         }
       ]
     },
@@ -698,6 +4028,128 @@
         }
       ]
     },
+    "natori": {
+      "plays": 356,
+      "knownMs": 57568327,
+      "firstPlayedAt": "2022/10/06",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "Overdose",
+          "plays": 89,
+          "knownMs": 14191945
+        },
+        {
+          "name": "プロポーズ",
+          "plays": 42,
+          "knownMs": 6085547
+        },
+        {
+          "name": "フライデー・ナイト",
+          "plays": 34,
+          "knownMs": 3395303
+        },
+        {
+          "name": "金木犀",
+          "plays": 23,
+          "knownMs": 4995989
+        },
+        {
+          "name": "Sleepwalk",
+          "plays": 23,
+          "knownMs": 3257887
+        }
+      ],
+      "years": [
+        {
+          "year": "2022",
+          "plays": 12
+        },
+        {
+          "year": "2023",
+          "plays": 104
+        },
+        {
+          "year": "2024",
+          "plays": 20
+        },
+        {
+          "year": "2025",
+          "plays": 205
+        },
+        {
+          "year": "2026",
+          "plays": 15
+        }
+      ]
+    },
+    "OFFICIAL HIGE DANDISM": {
+      "plays": 1113,
+      "knownMs": 219374172,
+      "firstPlayedAt": "2018/06/21",
+      "latestPlayedAt": "2025/10/23",
+      "topTracks": [
+        {
+          "name": "115万キロのフィルム",
+          "plays": 205,
+          "knownMs": 42092046
+        },
+        {
+          "name": "ノーダウト",
+          "plays": 169,
+          "knownMs": 27136765
+        },
+        {
+          "name": "Pretender",
+          "plays": 136,
+          "knownMs": 33863093
+        },
+        {
+          "name": "SWEET TWEET",
+          "plays": 63,
+          "knownMs": 15682926
+        },
+        {
+          "name": "I LOVE...",
+          "plays": 61,
+          "knownMs": 10506642
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 258
+        },
+        {
+          "year": "2019",
+          "plays": 102
+        },
+        {
+          "year": "2020",
+          "plays": 261
+        },
+        {
+          "year": "2021",
+          "plays": 78
+        },
+        {
+          "year": "2022",
+          "plays": 145
+        },
+        {
+          "year": "2023",
+          "plays": 113
+        },
+        {
+          "year": "2024",
+          "plays": 122
+        },
+        {
+          "year": "2025",
+          "plays": 34
+        }
+      ]
+    },
     "RADWIMPS": {
       "plays": 471,
       "knownMs": 61320224,
@@ -769,22 +4221,609 @@
         }
       ]
     },
-    "STANCE PUNKS": {
-      "plays": 1,
-      "knownMs": 3622,
-      "firstPlayedAt": "2018/09/15",
-      "latestPlayedAt": "2018/09/15",
+    "Ratrium": {
+      "plays": 3052,
+      "knownMs": 470337817,
+      "firstPlayedAt": "2018/10/13",
+      "latestPlayedAt": "2026/03/06",
       "topTracks": [
         {
-          "name": "黒いブーツ",
-          "plays": 1,
-          "knownMs": 3622
+          "name": "ビスケット・ストラテジー",
+          "plays": 186,
+          "knownMs": 33779987
+        },
+        {
+          "name": "人生いつも三遊間",
+          "plays": 130,
+          "knownMs": 27934604
+        },
+        {
+          "name": "clover",
+          "plays": 115,
+          "knownMs": 26981311
+        },
+        {
+          "name": "愛を伝えたいだとか - A Cappella Cover Ver.",
+          "plays": 114,
+          "knownMs": 13121462
+        },
+        {
+          "name": "ココダケノハナシ",
+          "plays": 112,
+          "knownMs": 17410655
         }
       ],
       "years": [
         {
           "year": "2018",
+          "plays": 13
+        },
+        {
+          "year": "2019",
+          "plays": 5
+        },
+        {
+          "year": "2020",
+          "plays": 2321
+        },
+        {
+          "year": "2021",
+          "plays": 541
+        },
+        {
+          "year": "2022",
+          "plays": 88
+        },
+        {
+          "year": "2023",
+          "plays": 19
+        },
+        {
+          "year": "2024",
+          "plays": 19
+        },
+        {
+          "year": "2026",
+          "plays": 46
+        }
+      ]
+    },
+    "Red Hot Chili Peppers": {
+      "plays": 139,
+      "knownMs": 22497244,
+      "firstPlayedAt": "2018/09/28",
+      "latestPlayedAt": "2025/08/30",
+      "topTracks": [
+        {
+          "name": "Californication",
+          "plays": 16,
+          "knownMs": 2048840
+        },
+        {
+          "name": "Can't Stop",
+          "plays": 14,
+          "knownMs": 1427121
+        },
+        {
+          "name": "Stone Cold Bush - Remastered 2003",
+          "plays": 8,
+          "knownMs": 1196731
+        },
+        {
+          "name": "Dani California",
+          "plays": 7,
+          "knownMs": 1172559
+        },
+        {
+          "name": "Dark Necessities",
+          "plays": 7,
+          "knownMs": 634416
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 16
+        },
+        {
+          "year": "2019",
+          "plays": 41
+        },
+        {
+          "year": "2020",
+          "plays": 23
+        },
+        {
+          "year": "2021",
           "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 1
+        },
+        {
+          "year": "2023",
+          "plays": 17
+        },
+        {
+          "year": "2024",
+          "plays": 16
+        },
+        {
+          "year": "2025",
+          "plays": 24
+        }
+      ]
+    },
+    "Remioromen": {
+      "plays": 160,
+      "knownMs": 30716327,
+      "firstPlayedAt": "2020/01/30",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "粉雪",
+          "plays": 106,
+          "knownMs": 21832134
+        },
+        {
+          "name": "3月9日",
+          "plays": 48,
+          "knownMs": 8172327
+        },
+        {
+          "name": "南風",
+          "plays": 2,
+          "knownMs": 262876
+        },
+        {
+          "name": "もっと遠くへ",
+          "plays": 1,
+          "knownMs": 320533
+        },
+        {
+          "name": "太陽の下",
+          "plays": 1,
+          "knownMs": 53689
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 9
+        },
+        {
+          "year": "2022",
+          "plays": 141
+        },
+        {
+          "year": "2023",
+          "plays": 4
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        },
+        {
+          "year": "2025",
+          "plays": 1
+        },
+        {
+          "year": "2026",
+          "plays": 3
+        }
+      ]
+    },
+    "Reol": {
+      "plays": 165,
+      "knownMs": 26677821,
+      "firstPlayedAt": "2018/06/29",
+      "latestPlayedAt": "2025/11/11",
+      "topTracks": [
+        {
+          "name": "エンド",
+          "plays": 57,
+          "knownMs": 12355962
+        },
+        {
+          "name": "サイサキ",
+          "plays": 49,
+          "knownMs": 6152871
+        },
+        {
+          "name": "平面鏡",
+          "plays": 13,
+          "knownMs": 1376756
+        },
+        {
+          "name": "あ可よろし",
+          "plays": 9,
+          "knownMs": 2127007
+        },
+        {
+          "name": "ミッシング",
+          "plays": 8,
+          "knownMs": 1364469
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 113
+        },
+        {
+          "year": "2019",
+          "plays": 15
+        },
+        {
+          "year": "2020",
+          "plays": 8
+        },
+        {
+          "year": "2021",
+          "plays": 7
+        },
+        {
+          "year": "2022",
+          "plays": 7
+        },
+        {
+          "year": "2023",
+          "plays": 8
+        },
+        {
+          "year": "2025",
+          "plays": 7
+        }
+      ]
+    },
+    "Robocar POLI": {
+      "plays": 276,
+      "knownMs": 16519052,
+      "firstPlayedAt": "2022/01/15",
+      "latestPlayedAt": "2023/03/11",
+      "topTracks": [
+        {
+          "name": "ゆうかんなレスキューたい",
+          "plays": 42,
+          "knownMs": 3330984
+        },
+        {
+          "name": "よいっしょー!はたらく車の歌",
+          "plays": 36,
+          "knownMs": 2198352
+        },
+        {
+          "name": "ブルームズ ハーバーチーム",
+          "plays": 32,
+          "knownMs": 2030038
+        },
+        {
+          "name": "スッスッサッサ 掃除車クリニ―",
+          "plays": 31,
+          "knownMs": 1254061
+        },
+        {
+          "name": "あんぜんうんてん、スクールビー",
+          "plays": 27,
+          "knownMs": 1677330
+        }
+      ],
+      "years": [
+        {
+          "year": "2022",
+          "plays": 275
+        },
+        {
+          "year": "2023",
+          "plays": 1
+        }
+      ]
+    },
+    "Satoshi Hayashibe": {
+      "plays": 143,
+      "knownMs": 34160561,
+      "firstPlayedAt": "2020/03/01",
+      "latestPlayedAt": "2022/12/19",
+      "topTracks": [
+        {
+          "name": "あいたい",
+          "plays": 18,
+          "knownMs": 3905760
+        },
+        {
+          "name": "駅",
+          "plays": 14,
+          "knownMs": 3932908
+        },
+        {
+          "name": "側にいて",
+          "plays": 11,
+          "knownMs": 2620562
+        },
+        {
+          "name": "糸",
+          "plays": 11,
+          "knownMs": 3087720
+        },
+        {
+          "name": "ごめんね・・・",
+          "plays": 9,
+          "knownMs": 2488783
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 132
+        },
+        {
+          "year": "2022",
+          "plays": 11
+        }
+      ]
+    },
+    "SEKAI NO OWARI": {
+      "plays": 153,
+      "knownMs": 25125003,
+      "firstPlayedAt": "2018/02/01",
+      "latestPlayedAt": "2025/11/19",
+      "topTracks": [
+        {
+          "name": "虹色の戦争",
+          "plays": 70,
+          "knownMs": 14302030
+        },
+        {
+          "name": "RPG",
+          "plays": 34,
+          "knownMs": 4065401
+        },
+        {
+          "name": "Habit",
+          "plays": 12,
+          "knownMs": 1773322
+        },
+        {
+          "name": "RAIN",
+          "plays": 6,
+          "knownMs": 583104
+        },
+        {
+          "name": "YOKOHAMA blues",
+          "plays": 4,
+          "knownMs": 626996
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 11
+        },
+        {
+          "year": "2019",
+          "plays": 4
+        },
+        {
+          "year": "2020",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 90
+        },
+        {
+          "year": "2023",
+          "plays": 39
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        },
+        {
+          "year": "2025",
+          "plays": 1
+        }
+      ]
+    },
+    "Sharam Q": {
+      "plays": 256,
+      "knownMs": 58234323,
+      "firstPlayedAt": "2019/03/30",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "シングルベッド",
+          "plays": 240,
+          "knownMs": 56745457
+        },
+        {
+          "name": "いいわけ",
+          "plays": 7,
+          "knownMs": 639058
+        },
+        {
+          "name": "ズルい女",
+          "plays": 6,
+          "knownMs": 362282
+        },
+        {
+          "name": "空を見なよ",
+          "plays": 2,
+          "knownMs": 276341
+        },
+        {
+          "name": "上・京・物・語",
+          "plays": 1,
+          "knownMs": 211185
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 15
+        },
+        {
+          "year": "2020",
+          "plays": 2
+        },
+        {
+          "year": "2021",
+          "plays": 2
+        },
+        {
+          "year": "2022",
+          "plays": 4
+        },
+        {
+          "year": "2023",
+          "plays": 5
+        },
+        {
+          "year": "2025",
+          "plays": 190
+        },
+        {
+          "year": "2026",
+          "plays": 38
+        }
+      ]
+    },
+    "Sheena Ringo": {
+      "plays": 176,
+      "knownMs": 17140517,
+      "firstPlayedAt": "2018/06/23",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "丸ノ内サディスティック",
+          "plays": 25,
+          "knownMs": 2892705
+        },
+        {
+          "name": "人生は夢だらけ",
+          "plays": 15,
+          "knownMs": 885983
+        },
+        {
+          "name": "ここでキスして。",
+          "plays": 13,
+          "knownMs": 2221851
+        },
+        {
+          "name": "長く短い祭",
+          "plays": 10,
+          "knownMs": 1255272
+        },
+        {
+          "name": "おとなの掟",
+          "plays": 9,
+          "knownMs": 493993
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 111
+        },
+        {
+          "year": "2019",
+          "plays": 19
+        },
+        {
+          "year": "2020",
+          "plays": 14
+        },
+        {
+          "year": "2021",
+          "plays": 8
+        },
+        {
+          "year": "2022",
+          "plays": 5
+        },
+        {
+          "year": "2023",
+          "plays": 13
+        },
+        {
+          "year": "2024",
+          "plays": 1
+        },
+        {
+          "year": "2025",
+          "plays": 4
+        },
+        {
+          "year": "2026",
+          "plays": 1
+        }
+      ]
+    },
+    "Shiggy Jr.": {
+      "plays": 253,
+      "knownMs": 41386612,
+      "firstPlayedAt": "2018/06/28",
+      "latestPlayedAt": "2025/10/24",
+      "topTracks": [
+        {
+          "name": "サマータイムラブ",
+          "plays": 70,
+          "knownMs": 11393547
+        },
+        {
+          "name": "Sun is coming up",
+          "plays": 49,
+          "knownMs": 11017472
+        },
+        {
+          "name": "恋したらベイベー",
+          "plays": 18,
+          "knownMs": 2310650
+        },
+        {
+          "name": "Juuuump!!",
+          "plays": 15,
+          "knownMs": 1617249
+        },
+        {
+          "name": "ホットチリソース",
+          "plays": 11,
+          "knownMs": 1917998
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 168
+        },
+        {
+          "year": "2019",
+          "plays": 48
+        },
+        {
+          "year": "2020",
+          "plays": 5
+        },
+        {
+          "year": "2021",
+          "plays": 2
+        },
+        {
+          "year": "2022",
+          "plays": 11
+        },
+        {
+          "year": "2023",
+          "plays": 15
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        },
+        {
+          "year": "2025",
+          "plays": 2
         }
       ]
     },
@@ -843,62 +4882,215 @@
         }
       ]
     },
-    "The BACK HORN": {
-      "plays": 378,
-      "knownMs": 72929142,
-      "firstPlayedAt": "2018/06/10",
-      "latestPlayedAt": "2026/02/19",
+    "SPITZ": {
+      "plays": 352,
+      "knownMs": 53144804,
+      "firstPlayedAt": "2018/02/02",
+      "latestPlayedAt": "2026/03/23",
       "topTracks": [
         {
-          "name": "コバルトブルー",
-          "plays": 135,
-          "knownMs": 26811982
+          "name": "チェリー",
+          "plays": 138,
+          "knownMs": 24417161
         },
         {
-          "name": "美しい名前",
-          "plays": 20,
-          "knownMs": 3871387
+          "name": "ロビンソン",
+          "plays": 53,
+          "knownMs": 8485058
         },
         {
-          "name": "サニー",
-          "plays": 17,
-          "knownMs": 2553873
+          "name": "空も飛べるはず",
+          "plays": 24,
+          "knownMs": 3749596
         },
         {
-          "name": "冬のミルク - New Recording",
-          "plays": 9,
-          "knownMs": 1763874
+          "name": "群青",
+          "plays": 21,
+          "knownMs": 2765909
         },
         {
-          "name": "風船",
-          "plays": 8,
-          "knownMs": 1807306
+          "name": "楓",
+          "plays": 18,
+          "knownMs": 2589970
         }
       ],
       "years": [
         {
           "year": "2018",
-          "plays": 41
+          "plays": 30
         },
         {
           "year": "2019",
-          "plays": 33
+          "plays": 31
         },
         {
           "year": "2020",
-          "plays": 63
+          "plays": 19
         },
         {
           "year": "2021",
-          "plays": 1
+          "plays": 12
         },
         {
           "year": "2022",
-          "plays": 21
+          "plays": 39
         },
         {
           "year": "2023",
-          "plays": 164
+          "plays": 141
+        },
+        {
+          "year": "2024",
+          "plays": 57
+        },
+        {
+          "year": "2025",
+          "plays": 22
+        },
+        {
+          "year": "2026",
+          "plays": 1
+        }
+      ]
+    },
+    "STANCE PUNKS": {
+      "plays": 1,
+      "knownMs": 3622,
+      "firstPlayedAt": "2018/09/15",
+      "latestPlayedAt": "2018/09/15",
+      "topTracks": [
+        {
+          "name": "黒いブーツ",
+          "plays": 1,
+          "knownMs": 3622
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 1
+        }
+      ]
+    },
+    "Suchmos": {
+      "plays": 293,
+      "knownMs": 71731797,
+      "firstPlayedAt": "2018/02/01",
+      "latestPlayedAt": "2025/08/07",
+      "topTracks": [
+        {
+          "name": "STAY TUNE",
+          "plays": 30,
+          "knownMs": 5462428
+        },
+        {
+          "name": "VOLT-AGE",
+          "plays": 20,
+          "knownMs": 4465603
+        },
+        {
+          "name": "MINT",
+          "plays": 17,
+          "knownMs": 2504982
+        },
+        {
+          "name": "808",
+          "plays": 15,
+          "knownMs": 3550530
+        },
+        {
+          "name": "FUNNY GOLD",
+          "plays": 14,
+          "knownMs": 3591775
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 103
+        },
+        {
+          "year": "2019",
+          "plays": 18
+        },
+        {
+          "year": "2020",
+          "plays": 139
+        },
+        {
+          "year": "2021",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 4
+        },
+        {
+          "year": "2023",
+          "plays": 6
+        },
+        {
+          "year": "2024",
+          "plays": 15
+        },
+        {
+          "year": "2025",
+          "plays": 2
+        }
+      ]
+    },
+    "Sukima Switch": {
+      "plays": 205,
+      "knownMs": 35444938,
+      "firstPlayedAt": "2018/08/01",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "奏(かなで)",
+          "plays": 139,
+          "knownMs": 25288173
+        },
+        {
+          "name": "全力少年",
+          "plays": 51,
+          "knownMs": 8275200
+        },
+        {
+          "name": "ボクノート",
+          "plays": 4,
+          "knownMs": 745572
+        },
+        {
+          "name": "雫",
+          "plays": 3,
+          "knownMs": 196060
+        },
+        {
+          "name": "藍",
+          "plays": 2,
+          "knownMs": 240132
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 7
+        },
+        {
+          "year": "2019",
+          "plays": 13
+        },
+        {
+          "year": "2020",
+          "plays": 3
+        },
+        {
+          "year": "2022",
+          "plays": 163
+        },
+        {
+          "year": "2023",
+          "plays": 14
         },
         {
           "year": "2024",
@@ -906,15 +5098,74 @@
         },
         {
           "year": "2025",
-          "plays": 45
+          "plays": 1
         },
         {
           "year": "2026",
-          "plays": 7
+          "plays": 1
         }
       ]
     },
-    "The Back Horn": {
+    "Tani Yuuki": {
+      "plays": 568,
+      "knownMs": 117289195,
+      "firstPlayedAt": "2020/08/11",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "W / X / Y",
+          "plays": 502,
+          "knownMs": 105318098
+        },
+        {
+          "name": "もう一度",
+          "plays": 14,
+          "knownMs": 2423307
+        },
+        {
+          "name": "Myra",
+          "plays": 10,
+          "knownMs": 1994839
+        },
+        {
+          "name": "おかえり",
+          "plays": 10,
+          "knownMs": 1580392
+        },
+        {
+          "name": "愛言葉",
+          "plays": 7,
+          "knownMs": 1600276
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 3
+        },
+        {
+          "year": "2023",
+          "plays": 3
+        },
+        {
+          "year": "2024",
+          "plays": 114
+        },
+        {
+          "year": "2025",
+          "plays": 400
+        },
+        {
+          "year": "2026",
+          "plays": 47
+        }
+      ]
+    },
+    "The BACK HORN": {
       "plays": 378,
       "knownMs": 72929142,
       "firstPlayedAt": "2018/06/10",
@@ -1014,6 +5265,403 @@
         }
       ]
     },
+    "the pillows": {
+      "plays": 379,
+      "knownMs": 66904067,
+      "firstPlayedAt": "2018/11/05",
+      "latestPlayedAt": "2026/02/19",
+      "topTracks": [
+        {
+          "name": "MY FOOT",
+          "plays": 132,
+          "knownMs": 30629559
+        },
+        {
+          "name": "Funny Bunny",
+          "plays": 30,
+          "knownMs": 2866168
+        },
+        {
+          "name": "ハイブリッド レインボウ",
+          "plays": 21,
+          "knownMs": 2764793
+        },
+        {
+          "name": "My girl (Document Version)",
+          "plays": 18,
+          "knownMs": 2752944
+        },
+        {
+          "name": "ノンフィクション",
+          "plays": 14,
+          "knownMs": 1712080
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 127
+        },
+        {
+          "year": "2019",
+          "plays": 14
+        },
+        {
+          "year": "2020",
+          "plays": 4
+        },
+        {
+          "year": "2021",
+          "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 49
+        },
+        {
+          "year": "2023",
+          "plays": 148
+        },
+        {
+          "year": "2024",
+          "plays": 9
+        },
+        {
+          "year": "2025",
+          "plays": 23
+        },
+        {
+          "year": "2026",
+          "plays": 4
+        }
+      ]
+    },
+    "The Screen Tones": {
+      "plays": 478,
+      "knownMs": 31023233,
+      "firstPlayedAt": "2019/03/30",
+      "latestPlayedAt": "2023/02/08",
+      "topTracks": [
+        {
+          "name": "今日の献立",
+          "plays": 26,
+          "knownMs": 95148
+        },
+        {
+          "name": "Stay Alone",
+          "plays": 23,
+          "knownMs": 1797746
+        },
+        {
+          "name": "タテブエAlone",
+          "plays": 17,
+          "knownMs": 541441
+        },
+        {
+          "name": "Jiro's Tittle",
+          "plays": 14,
+          "knownMs": 404623
+        },
+        {
+          "name": "ある日の東京",
+          "plays": 10,
+          "knownMs": 1032966
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 5
+        },
+        {
+          "year": "2020",
+          "plays": 1
+        },
+        {
+          "year": "2021",
+          "plays": 444
+        },
+        {
+          "year": "2022",
+          "plays": 23
+        },
+        {
+          "year": "2023",
+          "plays": 5
+        }
+      ]
+    },
+    "The Versions": {
+      "plays": 162,
+      "knownMs": 20059912,
+      "firstPlayedAt": "2020/05/27",
+      "latestPlayedAt": "2025/07/07",
+      "topTracks": [
+        {
+          "name": "Riding (Day)",
+          "plays": 21,
+          "knownMs": 1925025
+        },
+        {
+          "name": "Kakariko Village (Night)",
+          "plays": 20,
+          "knownMs": 4840971
+        },
+        {
+          "name": "Field (Day)",
+          "plays": 18,
+          "knownMs": 2876884
+        },
+        {
+          "name": "Field (Night)",
+          "plays": 18,
+          "knownMs": 2782240
+        },
+        {
+          "name": "Sheikah Tower",
+          "plays": 16,
+          "knownMs": 1897128
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 19
+        },
+        {
+          "year": "2024",
+          "plays": 117
+        },
+        {
+          "year": "2025",
+          "plays": 26
+        }
+      ]
+    },
+    "Tokyo Incidents": {
+      "plays": 153,
+      "knownMs": 20772324,
+      "firstPlayedAt": "2018/07/19",
+      "latestPlayedAt": "2023/12/14",
+      "topTracks": [
+        {
+          "name": "修羅場 - adult ver.",
+          "plays": 32,
+          "knownMs": 5744937
+        },
+        {
+          "name": "群青日和",
+          "plays": 24,
+          "knownMs": 3099335
+        },
+        {
+          "name": "能動的三分間",
+          "plays": 14,
+          "knownMs": 1330279
+        },
+        {
+          "name": "永遠の不在証明",
+          "plays": 6,
+          "knownMs": 1056644
+        },
+        {
+          "name": "閃光少女",
+          "plays": 5,
+          "knownMs": 413373
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 5
+        },
+        {
+          "year": "2019",
+          "plays": 4
+        },
+        {
+          "year": "2020",
+          "plays": 7
+        },
+        {
+          "year": "2021",
+          "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 26
+        },
+        {
+          "year": "2023",
+          "plays": 110
+        }
+      ]
+    },
+    "TOMONARI SORA\t": {
+      "plays": 250,
+      "knownMs": 31678495,
+      "firstPlayedAt": "2025/06/17",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "睨めっ娘",
+          "plays": 229,
+          "knownMs": 29294239
+        },
+        {
+          "name": "鬼ノ宴",
+          "plays": 16,
+          "knownMs": 1754539
+        },
+        {
+          "name": "ACTOR",
+          "plays": 3,
+          "knownMs": 372682
+        },
+        {
+          "name": "宵祭り - Yoimatsuri",
+          "plays": 1,
+          "knownMs": 208205
+        },
+        {
+          "name": "咆哮 - HOKO",
+          "plays": 1,
+          "knownMs": 48830
+        }
+      ],
+      "years": [
+        {
+          "year": "2025",
+          "plays": 194
+        },
+        {
+          "year": "2026",
+          "plays": 56
+        }
+      ]
+    },
+    "tuki.": {
+      "plays": 964,
+      "knownMs": 181721622,
+      "firstPlayedAt": "2023/10/28",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "晩餐歌",
+          "plays": 97,
+          "knownMs": 17452134
+        },
+        {
+          "name": "地獄恋文",
+          "plays": 62,
+          "knownMs": 9099667
+        },
+        {
+          "name": "一輪花",
+          "plays": 61,
+          "knownMs": 12329740
+        },
+        {
+          "name": "騙シ愛 - Damashiai",
+          "plays": 61,
+          "knownMs": 12535283
+        },
+        {
+          "name": "サクラキミワタシ",
+          "plays": 60,
+          "knownMs": 10706058
+        }
+      ],
+      "years": [
+        {
+          "year": "2023",
+          "plays": 9
+        },
+        {
+          "year": "2024",
+          "plays": 360
+        },
+        {
+          "year": "2025",
+          "plays": 436
+        },
+        {
+          "year": "2026",
+          "plays": 159
+        }
+      ]
+    },
+    "UNCHAIN": {
+      "plays": 399,
+      "knownMs": 74699417,
+      "firstPlayedAt": "2018/12/01",
+      "latestPlayedAt": "2026/03/21",
+      "topTracks": [
+        {
+          "name": "少女ジレンマ",
+          "plays": 85,
+          "knownMs": 14987195
+        },
+        {
+          "name": "ロビンソン",
+          "plays": 31,
+          "knownMs": 6031717
+        },
+        {
+          "name": "丸の内サディスティック",
+          "plays": 23,
+          "knownMs": 3870572
+        },
+        {
+          "name": "LA・LA・LA LOVE SONG",
+          "plays": 21,
+          "knownMs": 3770225
+        },
+        {
+          "name": "全力少年",
+          "plays": 14,
+          "knownMs": 2822670
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 23
+        },
+        {
+          "year": "2019",
+          "plays": 214
+        },
+        {
+          "year": "2020",
+          "plays": 26
+        },
+        {
+          "year": "2021",
+          "plays": 24
+        },
+        {
+          "year": "2022",
+          "plays": 9
+        },
+        {
+          "year": "2023",
+          "plays": 30
+        },
+        {
+          "year": "2024",
+          "plays": 57
+        },
+        {
+          "year": "2025",
+          "plays": 10
+        },
+        {
+          "year": "2026",
+          "plays": 6
+        }
+      ]
+    },
     "UNLIMITS": {
       "plays": 252,
       "knownMs": 39651029,
@@ -1073,224 +5721,259 @@
         }
       ]
     },
-    "amazarashi": {
-      "plays": 513,
-      "knownMs": 83655942,
-      "firstPlayedAt": "2018/06/28",
-      "latestPlayedAt": "2026/02/17",
+    "Uru": {
+      "plays": 1462,
+      "knownMs": 359911141,
+      "firstPlayedAt": "2020/02/22",
+      "latestPlayedAt": "2026/02/13",
       "topTracks": [
         {
-          "name": "ヒーロー",
-          "plays": 60,
-          "knownMs": 14263189
+          "name": "別の人の彼女になったよ",
+          "plays": 227,
+          "knownMs": 54929752
         },
         {
-          "name": "空に歌えば",
-          "plays": 31,
-          "knownMs": 3349362
+          "name": "プロローグ",
+          "plays": 120,
+          "knownMs": 30147247
         },
         {
-          "name": "季節は次々死んでいく",
-          "plays": 26,
-          "knownMs": 5845578
+          "name": "PUZZLE",
+          "plays": 73,
+          "knownMs": 19671132
         },
         {
-          "name": "多数決",
-          "plays": 21,
-          "knownMs": 3917257
+          "name": "あなたがいることで",
+          "plays": 63,
+          "knownMs": 15476562
         },
         {
-          "name": "月曜日",
-          "plays": 17,
-          "knownMs": 3244628
+          "name": "雪の華",
+          "plays": 63,
+          "knownMs": 17733688
         }
       ],
       "years": [
         {
-          "year": "2018",
-          "plays": 184
-        },
-        {
-          "year": "2019",
-          "plays": 81
-        },
-        {
           "year": "2020",
-          "plays": 60
+          "plays": 919
         },
         {
           "year": "2021",
-          "plays": 13
+          "plays": 283
         },
         {
           "year": "2022",
-          "plays": 50
+          "plays": 225
         },
         {
           "year": "2023",
-          "plays": 49
+          "plays": 22
         },
         {
           "year": "2024",
-          "plays": 59
+          "plays": 9
         },
         {
           "year": "2025",
-          "plays": 13
+          "plays": 2
         },
         {
           "year": "2026",
-          "plays": 4
-        }
-      ]
-    },
-    "fountains of wayne": {
-      "plays": 7,
-      "knownMs": 1352272,
-      "firstPlayedAt": "2020/09/14",
-      "latestPlayedAt": "2021/10/09",
-      "topTracks": [
-        {
-          "name": "Someone To Love",
-          "plays": 5,
-          "knownMs": 1217740
-        },
-        {
-          "name": "'92 Subaru",
-          "plays": 2,
-          "knownMs": 134532
-        }
-      ],
-      "years": [
-        {
-          "year": "2020",
-          "plays": 5
-        },
-        {
-          "year": "2021",
           "plays": 2
         }
       ]
     },
-    "majiko": {
-      "plays": 2386,
-      "knownMs": 476744356,
-      "firstPlayedAt": "2018/06/26",
-      "latestPlayedAt": "2026/02/21",
+    "Vaundy": {
+      "plays": 880,
+      "knownMs": 151680773,
+      "firstPlayedAt": "2020/02/28",
+      "latestPlayedAt": "2026/03/24",
       "topTracks": [
         {
-          "name": "ひび割れた世界",
-          "plays": 292,
-          "knownMs": 75041295
+          "name": "風神",
+          "plays": 219,
+          "knownMs": 40254860
         },
         {
-          "name": "心做し",
-          "plays": 172,
-          "knownMs": 38509482
+          "name": "踊り子",
+          "plays": 192,
+          "knownMs": 32874379
         },
         {
-          "name": "Hypocrite Syndrome",
-          "plays": 140,
-          "knownMs": 30259880
+          "name": "不可幸力",
+          "plays": 65,
+          "knownMs": 9880255
         },
         {
-          "name": "エミリーと15の約束",
-          "plays": 107,
-          "knownMs": 26156974
+          "name": "怪獣の花唄",
+          "plays": 62,
+          "knownMs": 8693591
         },
         {
-          "name": "君に最後の口づけを",
-          "plays": 83,
-          "knownMs": 18045749
+          "name": "東京フラッシュ",
+          "plays": 60,
+          "knownMs": 13121976
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 330
+        },
+        {
+          "year": "2021",
+          "plays": 16
+        },
+        {
+          "year": "2022",
+          "plays": 21
+        },
+        {
+          "year": "2023",
+          "plays": 47
+        },
+        {
+          "year": "2024",
+          "plays": 14
+        },
+        {
+          "year": "2025",
+          "plays": 400
+        },
+        {
+          "year": "2026",
+          "plays": 52
+        }
+      ]
+    },
+    "wacci": {
+      "plays": 2093,
+      "knownMs": 534791555,
+      "firstPlayedAt": "2018/08/01",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "別の人の彼女になったよ",
+          "plays": 2045,
+          "knownMs": 527097372
+        },
+        {
+          "name": "恋だろ",
+          "plays": 29,
+          "knownMs": 5303901
+        },
+        {
+          "name": "空に笑えば",
+          "plays": 7,
+          "knownMs": 1063492
+        },
+        {
+          "name": "別の人の彼女になったよ - From THE FIRST TAKE",
+          "plays": 2,
+          "knownMs": 7530
+        },
+        {
+          "name": "感情",
+          "plays": 2,
+          "knownMs": 402043
         }
       ],
       "years": [
         {
           "year": "2018",
-          "plays": 868
+          "plays": 2
         },
         {
           "year": "2019",
-          "plays": 850
+          "plays": 1
         },
         {
           "year": "2020",
-          "plays": 156
+          "plays": 2
         },
         {
           "year": "2021",
-          "plays": 18
+          "plays": 5
         },
         {
           "year": "2022",
-          "plays": 39
+          "plays": 341
         },
         {
           "year": "2023",
-          "plays": 38
+          "plays": 575
         },
         {
           "year": "2024",
-          "plays": 102
+          "plays": 590
         },
         {
           "year": "2025",
-          "plays": 300
+          "plays": 507
         },
         {
           "year": "2026",
-          "plays": 15
+          "plays": 70
         }
       ]
     },
-    "tuki.": {
-      "plays": 964,
-      "knownMs": 181721622,
-      "firstPlayedAt": "2023/10/28",
-      "latestPlayedAt": "2026/03/23",
+    "whaledontsleep": {
+      "plays": 560,
+      "knownMs": 112426923,
+      "firstPlayedAt": "2020/11/10",
+      "latestPlayedAt": "2026/03/06",
       "topTracks": [
         {
-          "name": "晩餐歌",
-          "plays": 97,
-          "knownMs": 17452134
+          "name": "ねむるまち",
+          "plays": 225,
+          "knownMs": 38856945
         },
         {
-          "name": "地獄恋文",
-          "plays": 62,
-          "knownMs": 9099667
+          "name": "寝れない夜に",
+          "plays": 218,
+          "knownMs": 59754704
         },
         {
-          "name": "一輪花",
-          "plays": 61,
-          "knownMs": 12329740
+          "name": "金木犀",
+          "plays": 84,
+          "knownMs": 8996368
         },
         {
-          "name": "騙シ愛 - Damashiai",
-          "plays": 61,
-          "knownMs": 12535283
+          "name": "ひぐらし",
+          "plays": 7,
+          "knownMs": 1658760
         },
         {
-          "name": "サクラキミワタシ",
-          "plays": 60,
-          "knownMs": 10706058
+          "name": "ひかりをためる",
+          "plays": 3,
+          "knownMs": 332040
         }
       ],
       "years": [
         {
+          "year": "2020",
+          "plays": 1
+        },
+        {
+          "year": "2021",
+          "plays": 461
+        },
+        {
+          "year": "2022",
+          "plays": 74
+        },
+        {
           "year": "2023",
-          "plays": 9
+          "plays": 12
         },
         {
           "year": "2024",
-          "plays": 360
-        },
-        {
-          "year": "2025",
-          "plays": 436
+          "plays": 9
         },
         {
           "year": "2026",
-          "plays": 159
+          "plays": 3
         }
       ]
     },
@@ -1354,6 +6037,384 @@
         {
           "year": "2026",
           "plays": 9
+        }
+      ]
+    },
+    "YOASOBI": {
+      "plays": 1116,
+      "knownMs": 206514110,
+      "firstPlayedAt": "2020/06/04",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "夜に駆ける",
+          "plays": 226,
+          "knownMs": 49589958
+        },
+        {
+          "name": "群青",
+          "plays": 131,
+          "knownMs": 26625642
+        },
+        {
+          "name": "ハルジオン",
+          "plays": 103,
+          "knownMs": 17037205
+        },
+        {
+          "name": "たぶん",
+          "plays": 99,
+          "knownMs": 21346608
+        },
+        {
+          "name": "あの夢をなぞって",
+          "plays": 89,
+          "knownMs": 19259174
+        }
+      ],
+      "years": [
+        {
+          "year": "2020",
+          "plays": 453
+        },
+        {
+          "year": "2021",
+          "plays": 403
+        },
+        {
+          "year": "2022",
+          "plays": 91
+        },
+        {
+          "year": "2023",
+          "plays": 111
+        },
+        {
+          "year": "2024",
+          "plays": 29
+        },
+        {
+          "year": "2025",
+          "plays": 26
+        },
+        {
+          "year": "2026",
+          "plays": 3
+        }
+      ]
+    },
+    "あいみょん": {
+      "plays": 1834,
+      "knownMs": 320096608,
+      "firstPlayedAt": "2018/07/05",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "君はロックを聴かない",
+          "plays": 352,
+          "knownMs": 65414016
+        },
+        {
+          "name": "貴方解剖純愛歌〜死ね〜",
+          "plays": 262,
+          "knownMs": 57748586
+        },
+        {
+          "name": "愛を伝えたいだとか",
+          "plays": 226,
+          "knownMs": 43534196
+        },
+        {
+          "name": "生きていたんだよな",
+          "plays": 125,
+          "knownMs": 20408923
+        },
+        {
+          "name": "マリーゴールド",
+          "plays": 75,
+          "knownMs": 11259627
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 1135
+        },
+        {
+          "year": "2019",
+          "plays": 252
+        },
+        {
+          "year": "2020",
+          "plays": 58
+        },
+        {
+          "year": "2021",
+          "plays": 17
+        },
+        {
+          "year": "2022",
+          "plays": 57
+        },
+        {
+          "year": "2023",
+          "plays": 261
+        },
+        {
+          "year": "2024",
+          "plays": 17
+        },
+        {
+          "year": "2025",
+          "plays": 22
+        },
+        {
+          "year": "2026",
+          "plays": 15
+        }
+      ]
+    },
+    "いとうかなこ": {
+      "plays": 197,
+      "knownMs": 32676518,
+      "firstPlayedAt": "2018/07/19",
+      "latestPlayedAt": "2025/11/02",
+      "topTracks": [
+        {
+          "name": "ファティマ",
+          "plays": 22,
+          "knownMs": 4646203
+        },
+        {
+          "name": "RASTER",
+          "plays": 16,
+          "knownMs": 62680
+        },
+        {
+          "name": "カオスロジック",
+          "plays": 8,
+          "knownMs": 1103588
+        },
+        {
+          "name": "聖数3の二乗",
+          "plays": 7,
+          "knownMs": 1341058
+        },
+        {
+          "name": "Uncontrollable",
+          "plays": 7,
+          "knownMs": 831508
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 31
+        },
+        {
+          "year": "2019",
+          "plays": 18
+        },
+        {
+          "year": "2020",
+          "plays": 16
+        },
+        {
+          "year": "2021",
+          "plays": 10
+        },
+        {
+          "year": "2022",
+          "plays": 54
+        },
+        {
+          "year": "2023",
+          "plays": 50
+        },
+        {
+          "year": "2024",
+          "plays": 8
+        },
+        {
+          "year": "2025",
+          "plays": 10
+        }
+      ]
+    },
+    "しゃろう": {
+      "plays": 734,
+      "knownMs": 101125006,
+      "firstPlayedAt": "2022/04/06",
+      "latestPlayedAt": "2025/10/02",
+      "topTracks": [
+        {
+          "name": "3:03 PM",
+          "plays": 57,
+          "knownMs": 6704989
+        },
+        {
+          "name": "2:23 AM",
+          "plays": 52,
+          "knownMs": 9074103
+        },
+        {
+          "name": "10℃",
+          "plays": 51,
+          "knownMs": 8235162
+        },
+        {
+          "name": "You and Me",
+          "plays": 48,
+          "knownMs": 5671737
+        },
+        {
+          "name": "しゅわしゅわハニーレモン350ml",
+          "plays": 42,
+          "knownMs": 3781836
+        }
+      ],
+      "years": [
+        {
+          "year": "2022",
+          "plays": 604
+        },
+        {
+          "year": "2023",
+          "plays": 27
+        },
+        {
+          "year": "2024",
+          "plays": 36
+        },
+        {
+          "year": "2025",
+          "plays": 67
+        }
+      ]
+    },
+    "すいそうぐらし": {
+      "plays": 679,
+      "knownMs": 131736852,
+      "firstPlayedAt": "2021/08/20",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "濡れたスカート。",
+          "plays": 115,
+          "knownMs": 19829329
+        },
+        {
+          "name": "大人なフリして。",
+          "plays": 110,
+          "knownMs": 23357404
+        },
+        {
+          "name": "嘘でも好きって。",
+          "plays": 95,
+          "knownMs": 17169909
+        },
+        {
+          "name": "雨上がり、夏の距離。",
+          "plays": 76,
+          "knownMs": 14424217
+        },
+        {
+          "name": "私だけが好きだった。",
+          "plays": 73,
+          "knownMs": 14945461
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 152
+        },
+        {
+          "year": "2023",
+          "plays": 478
+        },
+        {
+          "year": "2024",
+          "plays": 16
+        },
+        {
+          "year": "2025",
+          "plays": 29
+        }
+      ]
+    },
+    "ずっと真夜中でいいのに。": {
+      "plays": 688,
+      "knownMs": 132414482,
+      "firstPlayedAt": "2018/09/13",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "秒針を噛む",
+          "plays": 160,
+          "knownMs": 32431459
+        },
+        {
+          "name": "脳裏上のクラッカー",
+          "plays": 90,
+          "knownMs": 19953324
+        },
+        {
+          "name": "ヒューマノイド",
+          "plays": 56,
+          "knownMs": 10428354
+        },
+        {
+          "name": "勘冴えて悔しいわ",
+          "plays": 37,
+          "knownMs": 7130260
+        },
+        {
+          "name": "サターン",
+          "plays": 29,
+          "knownMs": 4222461
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 139
+        },
+        {
+          "year": "2019",
+          "plays": 227
+        },
+        {
+          "year": "2020",
+          "plays": 147
+        },
+        {
+          "year": "2021",
+          "plays": 45
+        },
+        {
+          "year": "2022",
+          "plays": 31
+        },
+        {
+          "year": "2023",
+          "plays": 25
+        },
+        {
+          "year": "2024",
+          "plays": 20
+        },
+        {
+          "year": "2025",
+          "plays": 52
+        },
+        {
+          "year": "2026",
+          "plays": 2
         }
       ]
     },
@@ -1421,6 +6482,132 @@
         {
           "year": "2026",
           "plays": 3
+        }
+      ]
+    },
+    "コブクロ": {
+      "plays": 188,
+      "knownMs": 36456401,
+      "firstPlayedAt": "2019/03/30",
+      "latestPlayedAt": "2024/08/20",
+      "topTracks": [
+        {
+          "name": "蕾(つぼみ)",
+          "plays": 106,
+          "knownMs": 21862926
+        },
+        {
+          "name": "蕾 (つぼみ)",
+          "plays": 61,
+          "knownMs": 12180151
+        },
+        {
+          "name": "桜",
+          "plays": 9,
+          "knownMs": 1027475
+        },
+        {
+          "name": "風",
+          "plays": 1,
+          "knownMs": 298
+        },
+        {
+          "name": "あの太陽が、この世界を照らし続けるように。",
+          "plays": 1,
+          "knownMs": 360040
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 21
+        },
+        {
+          "year": "2020",
+          "plays": 1
+        },
+        {
+          "year": "2021",
+          "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 160
+        },
+        {
+          "year": "2023",
+          "plays": 3
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        }
+      ]
+    },
+    "ゴールデンボンバー": {
+      "plays": 433,
+      "knownMs": 70423193,
+      "firstPlayedAt": "2019/03/30",
+      "latestPlayedAt": "2026/03/22",
+      "topTracks": [
+        {
+          "name": "女々しくて",
+          "plays": 204,
+          "knownMs": 34393401
+        },
+        {
+          "name": "元カレ殺ス",
+          "plays": 142,
+          "knownMs": 22907394
+        },
+        {
+          "name": "僕クエスト",
+          "plays": 12,
+          "knownMs": 1579493
+        },
+        {
+          "name": "令和",
+          "plays": 8,
+          "knownMs": 1057604
+        },
+        {
+          "name": "Dance My Generation",
+          "plays": 7,
+          "knownMs": 796358
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 5
+        },
+        {
+          "year": "2020",
+          "plays": 85
+        },
+        {
+          "year": "2021",
+          "plays": 29
+        },
+        {
+          "year": "2022",
+          "plays": 5
+        },
+        {
+          "year": "2023",
+          "plays": 1
+        },
+        {
+          "year": "2024",
+          "plays": 279
+        },
+        {
+          "year": "2025",
+          "plays": 15
+        },
+        {
+          "year": "2026",
+          "plays": 14
         }
       ]
     },
@@ -1495,6 +6682,60 @@
         }
       ]
     },
+    "サスケ": {
+      "plays": 487,
+      "knownMs": 82220985,
+      "firstPlayedAt": "2019/03/30",
+      "latestPlayedAt": "2026/03/21",
+      "topTracks": [
+        {
+          "name": "青いベンチ",
+          "plays": 475,
+          "knownMs": 80918931
+        },
+        {
+          "name": "青いベンチ - －10th Anniversary－",
+          "plays": 8,
+          "knownMs": 1017758
+        },
+        {
+          "name": "青いベンチ~Like a Street Ver.~",
+          "plays": 2,
+          "knownMs": 259473
+        },
+        {
+          "name": "雨の遊園地",
+          "plays": 2,
+          "knownMs": 24823
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 250
+        },
+        {
+          "year": "2023",
+          "plays": 77
+        },
+        {
+          "year": "2024",
+          "plays": 145
+        },
+        {
+          "year": "2025",
+          "plays": 3
+        },
+        {
+          "year": "2026",
+          "plays": 6
+        }
+      ]
+    },
     "ストレイテナー": {
       "plays": 149,
       "knownMs": 17925291,
@@ -1559,6 +6800,144 @@
         {
           "year": "2025",
           "plays": 4
+        }
+      ]
+    },
+    "ポルカドットスティングレイ": {
+      "plays": 639,
+      "knownMs": 118992361,
+      "firstPlayedAt": "2018/06/28",
+      "latestPlayedAt": "2025/10/21",
+      "topTracks": [
+        {
+          "name": "ICHIDAIJI",
+          "plays": 94,
+          "knownMs": 17062387
+        },
+        {
+          "name": "ヒミツ",
+          "plays": 54,
+          "knownMs": 9668877
+        },
+        {
+          "name": "フレミング",
+          "plays": 48,
+          "knownMs": 9191603
+        },
+        {
+          "name": "リスミー",
+          "plays": 46,
+          "knownMs": 10517981
+        },
+        {
+          "name": "煌めく",
+          "plays": 42,
+          "knownMs": 8091146
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 195
+        },
+        {
+          "year": "2019",
+          "plays": 145
+        },
+        {
+          "year": "2020",
+          "plays": 165
+        },
+        {
+          "year": "2021",
+          "plays": 14
+        },
+        {
+          "year": "2022",
+          "plays": 96
+        },
+        {
+          "year": "2023",
+          "plays": 14
+        },
+        {
+          "year": "2024",
+          "plays": 5
+        },
+        {
+          "year": "2025",
+          "plays": 5
+        }
+      ]
+    },
+    "ヨルシカ": {
+      "plays": 2130,
+      "knownMs": 373695318,
+      "firstPlayedAt": "2018/09/13",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "ただ君に晴れ",
+          "plays": 127,
+          "knownMs": 18516628
+        },
+        {
+          "name": "風を食む",
+          "plays": 124,
+          "knownMs": 27541717
+        },
+        {
+          "name": "言って。",
+          "plays": 121,
+          "knownMs": 20308946
+        },
+        {
+          "name": "だから僕は音楽を辞めた",
+          "plays": 92,
+          "knownMs": 16952068
+        },
+        {
+          "name": "花に亡霊",
+          "plays": 72,
+          "knownMs": 12727417
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 49
+        },
+        {
+          "year": "2019",
+          "plays": 11
+        },
+        {
+          "year": "2020",
+          "plays": 1169
+        },
+        {
+          "year": "2021",
+          "plays": 528
+        },
+        {
+          "year": "2022",
+          "plays": 106
+        },
+        {
+          "year": "2023",
+          "plays": 124
+        },
+        {
+          "year": "2024",
+          "plays": 101
+        },
+        {
+          "year": "2025",
+          "plays": 28
+        },
+        {
+          "year": "2026",
+          "plays": 14
         }
       ]
     },
@@ -1696,6 +7075,443 @@
         }
       ]
     },
+    "友成空": {
+      "plays": 485,
+      "knownMs": 65897695,
+      "firstPlayedAt": "2021/09/28",
+      "latestPlayedAt": "2025/06/16",
+      "topTracks": [
+        {
+          "name": "睨めっ娘",
+          "plays": 376,
+          "knownMs": 51408784
+        },
+        {
+          "name": "鬼ノ宴",
+          "plays": 70,
+          "knownMs": 8418787
+        },
+        {
+          "name": "コーヒー",
+          "plays": 6,
+          "knownMs": 1155456
+        },
+        {
+          "name": "ACTOR",
+          "plays": 5,
+          "knownMs": 555652
+        },
+        {
+          "name": "I LOVE ME!",
+          "plays": 5,
+          "knownMs": 996165
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 2
+        },
+        {
+          "year": "2024",
+          "plays": 254
+        },
+        {
+          "year": "2025",
+          "plays": 229
+        }
+      ]
+    },
+    "宇多田ヒカル": {
+      "plays": 547,
+      "knownMs": 116769186,
+      "firstPlayedAt": "2018/02/01",
+      "latestPlayedAt": "2026/03/23",
+      "topTracks": [
+        {
+          "name": "Flavor Of Life",
+          "plays": 19,
+          "knownMs": 4072206
+        },
+        {
+          "name": "One Last Kiss",
+          "plays": 19,
+          "knownMs": 3219371
+        },
+        {
+          "name": "花束を君に",
+          "plays": 17,
+          "knownMs": 2368299
+        },
+        {
+          "name": "First Love",
+          "plays": 16,
+          "knownMs": 2107677
+        },
+        {
+          "name": "Beautiful World",
+          "plays": 14,
+          "knownMs": 3625027
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 211
+        },
+        {
+          "year": "2019",
+          "plays": 165
+        },
+        {
+          "year": "2020",
+          "plays": 7
+        },
+        {
+          "year": "2021",
+          "plays": 62
+        },
+        {
+          "year": "2022",
+          "plays": 29
+        },
+        {
+          "year": "2023",
+          "plays": 6
+        },
+        {
+          "year": "2024",
+          "plays": 59
+        },
+        {
+          "year": "2025",
+          "plays": 7
+        },
+        {
+          "year": "2026",
+          "plays": 1
+        }
+      ]
+    },
+    "家入レオ": {
+      "plays": 174,
+      "knownMs": 24159737,
+      "firstPlayedAt": "2018/06/23",
+      "latestPlayedAt": "2025/11/07",
+      "topTracks": [
+        {
+          "name": "サブリナ",
+          "plays": 61,
+          "knownMs": 8864030
+        },
+        {
+          "name": "君がくれた夏",
+          "plays": 24,
+          "knownMs": 2766822
+        },
+        {
+          "name": "Silly",
+          "plays": 15,
+          "knownMs": 1812181
+        },
+        {
+          "name": "恋のはじまり",
+          "plays": 12,
+          "knownMs": 1395862
+        },
+        {
+          "name": "僕たちの未来",
+          "plays": 10,
+          "knownMs": 2384128
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 107
+        },
+        {
+          "year": "2019",
+          "plays": 27
+        },
+        {
+          "year": "2020",
+          "plays": 12
+        },
+        {
+          "year": "2021",
+          "plays": 7
+        },
+        {
+          "year": "2022",
+          "plays": 8
+        },
+        {
+          "year": "2023",
+          "plays": 10
+        },
+        {
+          "year": "2024",
+          "plays": 1
+        },
+        {
+          "year": "2025",
+          "plays": 2
+        }
+      ]
+    },
+    "川崎鷹也": {
+      "plays": 562,
+      "knownMs": 96571054,
+      "firstPlayedAt": "2022/12/01",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "魔法の絨毯",
+          "plays": 491,
+          "knownMs": 81683630
+        },
+        {
+          "name": "君の為のキミノウタ",
+          "plays": 15,
+          "knownMs": 2900331
+        },
+        {
+          "name": "サクラウサギ",
+          "plays": 11,
+          "knownMs": 2482054
+        },
+        {
+          "name": "カレンダー",
+          "plays": 8,
+          "knownMs": 1465747
+        },
+        {
+          "name": "僕と僕",
+          "plays": 6,
+          "knownMs": 686811
+        }
+      ],
+      "years": [
+        {
+          "year": "2022",
+          "plays": 1
+        },
+        {
+          "year": "2023",
+          "plays": 7
+        },
+        {
+          "year": "2024",
+          "plays": 105
+        },
+        {
+          "year": "2025",
+          "plays": 408
+        },
+        {
+          "year": "2026",
+          "plays": 41
+        }
+      ]
+    },
+    "柴田淳": {
+      "plays": 1155,
+      "knownMs": 259298373,
+      "firstPlayedAt": "2018/09/14",
+      "latestPlayedAt": "2025/07/20",
+      "topTracks": [
+        {
+          "name": "つぐない",
+          "plays": 42,
+          "knownMs": 8046604
+        },
+        {
+          "name": "片想い",
+          "plays": 37,
+          "knownMs": 10415632
+        },
+        {
+          "name": "メモリーグラス",
+          "plays": 35,
+          "knownMs": 6310974
+        },
+        {
+          "name": "月光浴",
+          "plays": 34,
+          "knownMs": 8543530
+        },
+        {
+          "name": "幻",
+          "plays": 34,
+          "knownMs": 6075750
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 2
+        },
+        {
+          "year": "2019",
+          "plays": 25
+        },
+        {
+          "year": "2020",
+          "plays": 376
+        },
+        {
+          "year": "2021",
+          "plays": 199
+        },
+        {
+          "year": "2022",
+          "plays": 127
+        },
+        {
+          "year": "2023",
+          "plays": 15
+        },
+        {
+          "year": "2024",
+          "plays": 410
+        },
+        {
+          "year": "2025",
+          "plays": 1
+        }
+      ]
+    },
+    "槇原敬之": {
+      "plays": 1397,
+      "knownMs": 279568883,
+      "firstPlayedAt": "2018/06/22",
+      "latestPlayedAt": "2026/03/24",
+      "topTracks": [
+        {
+          "name": "もう恋なんてしない",
+          "plays": 610,
+          "knownMs": 122273881
+        },
+        {
+          "name": "どんなときも。",
+          "plays": 401,
+          "knownMs": 82911409
+        },
+        {
+          "name": "空と君のあいだに",
+          "plays": 196,
+          "knownMs": 46342802
+        },
+        {
+          "name": "遠く遠く",
+          "plays": 34,
+          "knownMs": 3582154
+        },
+        {
+          "name": "僕が一番欲しかったもの",
+          "plays": 14,
+          "knownMs": 2616755
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 2
+        },
+        {
+          "year": "2019",
+          "plays": 14
+        },
+        {
+          "year": "2020",
+          "plays": 13
+        },
+        {
+          "year": "2021",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 580
+        },
+        {
+          "year": "2023",
+          "plays": 170
+        },
+        {
+          "year": "2024",
+          "plays": 592
+        },
+        {
+          "year": "2025",
+          "plays": 7
+        },
+        {
+          "year": "2026",
+          "plays": 15
+        }
+      ]
+    },
+    "水曜日のカンパネラ": {
+      "plays": 720,
+      "knownMs": 119102988,
+      "firstPlayedAt": "2018/07/11",
+      "latestPlayedAt": "2025/11/03",
+      "topTracks": [
+        {
+          "name": "エジソン",
+          "plays": 296,
+          "knownMs": 49469690
+        },
+        {
+          "name": "織姫",
+          "plays": 50,
+          "knownMs": 7380169
+        },
+        {
+          "name": "バッキンガム",
+          "plays": 50,
+          "knownMs": 9104772
+        },
+        {
+          "name": "卑弥呼",
+          "plays": 48,
+          "knownMs": 7262407
+        },
+        {
+          "name": "一寸法師",
+          "plays": 41,
+          "knownMs": 5356533
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 5
+        },
+        {
+          "year": "2019",
+          "plays": 2
+        },
+        {
+          "year": "2022",
+          "plays": 628
+        },
+        {
+          "year": "2023",
+          "plays": 32
+        },
+        {
+          "year": "2024",
+          "plays": 50
+        },
+        {
+          "year": "2025",
+          "plays": 3
+        }
+      ]
+    },
     "水槽": {
       "plays": 2011,
       "knownMs": 290152767,
@@ -1744,6 +7560,317 @@
         {
           "year": "2024",
           "plays": 237
+        }
+      ]
+    },
+    "水樹奈々": {
+      "plays": 287,
+      "knownMs": 61291649,
+      "firstPlayedAt": "2019/08/05",
+      "latestPlayedAt": "2024/08/05",
+      "topTracks": [
+        {
+          "name": "Synchrogazer",
+          "plays": 40,
+          "knownMs": 7732620
+        },
+        {
+          "name": "Vitalization",
+          "plays": 26,
+          "knownMs": 5479069
+        },
+        {
+          "name": "Exterminate",
+          "plays": 24,
+          "knownMs": 4443714
+        },
+        {
+          "name": "Glorious Break",
+          "plays": 21,
+          "knownMs": 4024661
+        },
+        {
+          "name": "METANOIA",
+          "plays": 19,
+          "knownMs": 4354035
+        }
+      ],
+      "years": [
+        {
+          "year": "2019",
+          "plays": 259
+        },
+        {
+          "year": "2020",
+          "plays": 16
+        },
+        {
+          "year": "2021",
+          "plays": 1
+        },
+        {
+          "year": "2022",
+          "plays": 3
+        },
+        {
+          "year": "2023",
+          "plays": 4
+        },
+        {
+          "year": "2024",
+          "plays": 4
+        }
+      ]
+    },
+    "理芽": {
+      "plays": 168,
+      "knownMs": 25147468,
+      "firstPlayedAt": "2021/03/02",
+      "latestPlayedAt": "2023/04/01",
+      "topTracks": [
+        {
+          "name": "法螺話",
+          "plays": 33,
+          "knownMs": 5136961
+        },
+        {
+          "name": "食虫植物",
+          "plays": 29,
+          "knownMs": 3758134
+        },
+        {
+          "name": "さみしいひと",
+          "plays": 27,
+          "knownMs": 3759277
+        },
+        {
+          "name": "胎児に月はキスをしない",
+          "plays": 18,
+          "knownMs": 2343364
+        },
+        {
+          "name": "クライベイビー",
+          "plays": 13,
+          "knownMs": 2108772
+        }
+      ],
+      "years": [
+        {
+          "year": "2021",
+          "plays": 6
+        },
+        {
+          "year": "2022",
+          "plays": 151
+        },
+        {
+          "year": "2023",
+          "plays": 11
+        }
+      ]
+    },
+    "神様、僕は気づいてしまった": {
+      "plays": 542,
+      "knownMs": 90125026,
+      "firstPlayedAt": "2018/07/07",
+      "latestPlayedAt": "2025/10/23",
+      "topTracks": [
+        {
+          "name": "CQCQ",
+          "plays": 177,
+          "knownMs": 32501850
+        },
+        {
+          "name": "僕の手に触れるな",
+          "plays": 86,
+          "knownMs": 13430742
+        },
+        {
+          "name": "宣戦布告",
+          "plays": 44,
+          "knownMs": 5554027
+        },
+        {
+          "name": "UNHAPPY CLUB",
+          "plays": 41,
+          "knownMs": 7924808
+        },
+        {
+          "name": "わたしの命を抉ってみせて",
+          "plays": 32,
+          "knownMs": 5029051
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 302
+        },
+        {
+          "year": "2019",
+          "plays": 87
+        },
+        {
+          "year": "2020",
+          "plays": 81
+        },
+        {
+          "year": "2021",
+          "plays": 12
+        },
+        {
+          "year": "2022",
+          "plays": 26
+        },
+        {
+          "year": "2023",
+          "plays": 17
+        },
+        {
+          "year": "2024",
+          "plays": 8
+        },
+        {
+          "year": "2025",
+          "plays": 9
+        }
+      ]
+    },
+    "福山雅治": {
+      "plays": 194,
+      "knownMs": 36737343,
+      "firstPlayedAt": "2018/02/01",
+      "latestPlayedAt": "2025/12/01",
+      "topTracks": [
+        {
+          "name": "家族になろうよ",
+          "plays": 143,
+          "knownMs": 28431208
+        },
+        {
+          "name": "桜坂",
+          "plays": 21,
+          "knownMs": 3752068
+        },
+        {
+          "name": "糸",
+          "plays": 5,
+          "knownMs": 561203
+        },
+        {
+          "name": "虹",
+          "plays": 5,
+          "knownMs": 488561
+        },
+        {
+          "name": "甲子園",
+          "plays": 3,
+          "knownMs": 408914
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 14
+        },
+        {
+          "year": "2019",
+          "plays": 13
+        },
+        {
+          "year": "2020",
+          "plays": 17
+        },
+        {
+          "year": "2021",
+          "plays": 2
+        },
+        {
+          "year": "2022",
+          "plays": 133
+        },
+        {
+          "year": "2023",
+          "plays": 10
+        },
+        {
+          "year": "2024",
+          "plays": 2
+        },
+        {
+          "year": "2025",
+          "plays": 3
+        }
+      ]
+    },
+    "秦基博": {
+      "plays": 680,
+      "knownMs": 138294526,
+      "firstPlayedAt": "2018/06/23",
+      "latestPlayedAt": "2026/03/22",
+      "topTracks": [
+        {
+          "name": "鱗(うろこ)",
+          "plays": 372,
+          "knownMs": 81051370
+        },
+        {
+          "name": "ひまわりの約束",
+          "plays": 205,
+          "knownMs": 40166564
+        },
+        {
+          "name": "透明だった世界",
+          "plays": 40,
+          "knownMs": 4596518
+        },
+        {
+          "name": "Rain",
+          "plays": 10,
+          "knownMs": 2004465
+        },
+        {
+          "name": "Girl",
+          "plays": 8,
+          "knownMs": 1308432
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 39
+        },
+        {
+          "year": "2019",
+          "plays": 20
+        },
+        {
+          "year": "2020",
+          "plays": 14
+        },
+        {
+          "year": "2021",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 198
+        },
+        {
+          "year": "2023",
+          "plays": 97
+        },
+        {
+          "year": "2024",
+          "plays": 284
+        },
+        {
+          "year": "2025",
+          "plays": 13
+        },
+        {
+          "year": "2026",
+          "plays": 11
         }
       ]
     },
@@ -1878,6 +8005,77 @@
         {
           "year": "2026",
           "plays": 116
+        }
+      ]
+    },
+    "鈴木瑛美子": {
+      "plays": 311,
+      "knownMs": 59598922,
+      "firstPlayedAt": "2018/06/26",
+      "latestPlayedAt": "2026/02/19",
+      "topTracks": [
+        {
+          "name": "フロントメモリー",
+          "plays": 274,
+          "knownMs": 55765249
+        },
+        {
+          "name": "みんな空の下",
+          "plays": 28,
+          "knownMs": 3220104
+        },
+        {
+          "name": "栄冠は君に輝く - 唄入り",
+          "plays": 6,
+          "knownMs": 485337
+        },
+        {
+          "name": "FLY MY WAY",
+          "plays": 1,
+          "knownMs": 54102
+        },
+        {
+          "name": "Soul Full of Music",
+          "plays": 1,
+          "knownMs": 15790
+        }
+      ],
+      "years": [
+        {
+          "year": "2018",
+          "plays": 180
+        },
+        {
+          "year": "2019",
+          "plays": 92
+        },
+        {
+          "year": "2020",
+          "plays": 13
+        },
+        {
+          "year": "2021",
+          "plays": 4
+        },
+        {
+          "year": "2022",
+          "plays": 8
+        },
+        {
+          "year": "2023",
+          "plays": 5
+        },
+        {
+          "year": "2024",
+          "plays": 3
+        },
+        {
+          "year": "2025",
+          "plays": 2
+        },
+        {
+          "year": "2026",
+          "plays": 4
         }
       ]
     }

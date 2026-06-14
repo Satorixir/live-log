@@ -20,6 +20,7 @@ const elements = {
   liveRows: document.querySelector("#liveRows"),
   topVenues: document.querySelector("#topVenues"),
   topArtists: document.querySelector("#topArtists"),
+  topSpotifyArtists: document.querySelector("#topSpotifyArtists"),
   venueMapList: document.querySelector("#venueMapList"),
   artistDetailTitle: document.querySelector("#artistDetailTitle"),
   artistDetail: document.querySelector("#artistDetail"),
@@ -65,6 +66,19 @@ function renderArtistRanking(target, rows) {
         <li>
           <button class="inline-button" type="button" data-artist="${escapeHtml(name)}">${escapeHtml(name)}</button>
           <span>${count}回</span>
+        </li>
+      `
+    )
+    .join("");
+}
+
+function renderSpotifyArtistRanking(target, rows) {
+  target.innerHTML = rows
+    .map(
+      (row) => `
+        <li>
+          <button class="inline-button" type="button" data-artist="${escapeHtml(row.name)}">${escapeHtml(row.name)}</button>
+          <span>${row.plays.toLocaleString()}回</span>
         </li>
       `
     )
@@ -246,6 +260,27 @@ function renderSpotifyDetail(stats) {
   `;
 }
 
+function renderVenueSummary(venues) {
+  if (!venues.length) {
+    return `<p class="muted">ライブ記録はまだありません</p>`;
+  }
+  return `
+    <ol class="compact-list">
+      ${venues
+        .slice(0, 4)
+        .map(([venue, count]) => `<li>${escapeHtml(venue)} <span>${count}回</span></li>`)
+        .join("")}
+    </ol>
+  `;
+}
+
+function renderLiveTimeline(rows) {
+  if (!rows.length) {
+    return `<p class="muted">ライブ履歴はまだありません</p>`;
+  }
+  return `<ol class="mini-timeline">${renderMiniTimeline(rows)}</ol>`;
+}
+
 function renderArtistDetail(name) {
   const artist = name || state.summary.topArtists?.[0]?.[0] || "";
   state.selectedArtist = artist;
@@ -295,21 +330,20 @@ function renderArtistDetail(name) {
           ? `<a class="external-button" href="${escapeHtml(officialUrl)}" target="_blank" rel="noreferrer">公式サイト</a>`
           : ""
       }
-      <button class="ghost-button" type="button" data-filter-artist="${escapeHtml(artist)}">一覧を絞る</button>
+      ${
+        rows.length
+          ? `<button class="ghost-button" type="button" data-filter-artist="${escapeHtml(artist)}">一覧を絞る</button>`
+          : ""
+      }
     </div>
     <div class="artist-subsection">
       <h3>よく行く会場</h3>
-      <ol class="compact-list">
-        ${venues
-          .slice(0, 4)
-          .map(([venue, count]) => `<li>${escapeHtml(venue)} <span>${count}回</span></li>`)
-          .join("")}
-      </ol>
+      ${renderVenueSummary(venues)}
     </div>
     ${renderSpotifyDetail(spotifyStats)}
     <div class="artist-subsection">
       <h3>ライブ履歴</h3>
-      <ol class="mini-timeline">${renderMiniTimeline(rows)}</ol>
+      ${renderLiveTimeline(rows)}
     </div>
   `;
 }
@@ -341,6 +375,13 @@ function bindEvents() {
   });
 
   elements.topArtists.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-artist]");
+    if (button) {
+      renderArtistDetail(button.dataset.artist);
+    }
+  });
+
+  elements.topSpotifyArtists.addEventListener("click", (event) => {
     const button = event.target.closest("[data-artist]");
     if (button) {
       renderArtistDetail(button.dataset.artist);
@@ -391,6 +432,7 @@ async function init() {
   renderSummary();
   renderRanking(elements.topVenues, state.summary.topVenues);
   renderArtistRanking(elements.topArtists, state.summary.topArtists);
+  renderSpotifyArtistRanking(elements.topSpotifyArtists, spotifyArtistStats.summary?.topArtists || []);
   renderVenueLinks(state.summary.topVenues);
   renderArtistDetail();
   bindEvents();
