@@ -416,7 +416,7 @@ async function init() {
 
   let spotifyArtistStats = {};
   try {
-    const response = await fetch("data/spotify_artist_stats.json");
+    const response = await fetch("data/spotify_artist_stats.json?v=20260614-spotify-ranking-json");
     if (response.ok) {
       spotifyArtistStats = await response.json();
     }
