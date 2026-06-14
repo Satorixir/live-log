@@ -3,6 +3,7 @@ const state = {
   facets: {},
   summary: {},
   artistProfiles: {},
+  spotifyArtistStats: {},
   selectedArtist: "",
 };
 
@@ -194,6 +195,57 @@ function renderMiniTimeline(rows) {
     .join("");
 }
 
+function listeningHours(ms) {
+  return (ms / 1000 / 60 / 60).toFixed(1);
+}
+
+function renderSpotifyDetail(stats) {
+  if (!stats) {
+    return `
+      <div class="artist-subsection">
+        <h3>Spotify視聴</h3>
+        <p class="muted">このアーティストの視聴履歴はまだ見つかっていません</p>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="artist-subsection spotify-detail">
+      <h3>Spotify視聴</h3>
+      <dl class="artist-stats">
+        <div>
+          <dt>再生</dt>
+          <dd>${stats.plays.toLocaleString()}回</dd>
+        </div>
+        <div>
+          <dt>時間</dt>
+          <dd>${listeningHours(stats.knownMs)}h</dd>
+        </div>
+        <div>
+          <dt>初回</dt>
+          <dd>${escapeHtml(stats.firstPlayedAt || "-")}</dd>
+        </div>
+        <div>
+          <dt>最新</dt>
+          <dd>${escapeHtml(stats.latestPlayedAt || "-")}</dd>
+        </div>
+      </dl>
+      <ol class="compact-list track-list">
+        ${stats.topTracks
+          .map(
+            (track) => `
+              <li>
+                <strong>${escapeHtml(track.name)}</strong>
+                <span>${track.plays.toLocaleString()}回 / ${listeningHours(track.knownMs)}h</span>
+              </li>
+            `
+          )
+          .join("")}
+      </ol>
+    </div>
+  `;
+}
+
 function renderArtistDetail(name) {
   const artist = name || state.summary.topArtists?.[0]?.[0] || "";
   state.selectedArtist = artist;
@@ -207,6 +259,7 @@ function renderArtistDetail(name) {
 
   const rows = state.lives.filter((live) => live.artist === artist);
   const profile = state.artistProfiles[artist] || {};
+  const spotifyStats = state.spotifyArtistStats[artist];
   const venues = countValues(rows, "venue");
   const first = rows.at(-1)?.date || "-";
   const latest = rows[0]?.date || "-";
@@ -253,6 +306,7 @@ function renderArtistDetail(name) {
           .join("")}
       </ol>
     </div>
+    ${renderSpotifyDetail(spotifyStats)}
     <div class="artist-subsection">
       <h3>ライブ履歴</h3>
       <ol class="mini-timeline">${renderMiniTimeline(rows)}</ol>
@@ -319,10 +373,17 @@ async function init() {
     artistProfiles = await response.json();
   }
 
+  let spotifyArtistStats = window.LIVE_LOG_SPOTIFY_ARTIST_STATS || {};
+  if (!window.LIVE_LOG_SPOTIFY_ARTIST_STATS) {
+    const response = await fetch("data/spotify_artist_stats.json");
+    spotifyArtistStats = await response.json();
+  }
+
   state.lives = data.lives;
   state.facets = data.facets;
   state.summary = data.summary;
   state.artistProfiles = artistProfiles;
+  state.spotifyArtistStats = spotifyArtistStats.artists || {};
 
   fillSelect(elements.yearFilter, state.facets.years);
   fillSelect(elements.artistFilter, state.facets.artists);

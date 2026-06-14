@@ -428,6 +428,23 @@ td {
   font-size: 12px;
 }
 
+.spotify-detail {
+  padding-top: 2px;
+}
+
+.track-list li {
+  display: grid;
+  gap: 2px;
+}
+
+.track-list strong {
+  font-size: 13px;
+}
+
+.track-list span {
+  font-size: 12px;
+}
+
 .venue-links a {
   color: var(--accent-dark);
   font-weight: 700;
