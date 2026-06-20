@@ -4,35 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ライブ参戦記録</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260620-setlist-style">
   </head>
   <body>
-    <header class="app-header">
-      <div>
-        <p class="eyebrow">Live Log</p>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="#records" aria-label="Live Log トップ">
+          <span class="brand-mark">L</span>
+          <span>Live Log</span>
+        </a>
+        <nav class="primary-nav" aria-label="主要メニュー">
+          <a href="#records">公演記録</a>
+          <a href="#artists">アーティスト</a>
+          <a href="#venues">会場</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="app-header">
+      <div class="header-copy">
+        <p class="eyebrow">My concert archive</p>
         <h1>ライブ参戦記録</h1>
+        <p class="header-description">ライブの予定と参加履歴、日々聴いている音楽の記録。</p>
       </div>
       <div class="summary-strip" aria-label="サマリー">
         <div>
           <span id="totalCount">-</span>
-          <small>参戦</small>
+          <small>公演記録</small>
         </div>
         <div>
           <span id="yearRange">-</span>
-          <small>期間</small>
+          <small>記録期間</small>
         </div>
         <div>
           <span id="venueCount">-</span>
-          <small>会場</small>
+          <small>登録会場</small>
         </div>
       </div>
-    </header>
+    </section>
 
     <main>
       <section class="toolbar" aria-label="検索とフィルタ">
         <label class="search-field">
-          <span>検索</span>
-          <input id="searchInput" type="search" placeholder="アーティスト、会場、備考">
+          <span>公演を検索</span>
+          <input id="searchInput" type="search" placeholder="アーティスト名、会場名、メモから検索">
         </label>
         <label>
           <span>年</span>
@@ -55,10 +70,13 @@
         <button id="resetButton" type="button">リセット</button>
       </section>
 
-      <section class="content-grid">
+      <section id="records" class="content-grid">
         <div class="table-panel">
           <div class="panel-heading">
-            <h2>一覧</h2>
+            <div>
+              <p class="section-kicker">Concert archive</p>
+              <h2>公演記録</h2>
+            </div>
             <p id="resultCount">-</p>
           </div>
           <div class="table-wrap">
@@ -77,8 +95,8 @@
           </div>
         </div>
 
-        <aside class="side-panel">
-          <section class="artist-detail-panel">
+        <aside class="side-panel" aria-label="音楽統計">
+          <section id="artists" class="artist-detail-panel">
             <div class="side-heading">
               <h2 id="artistDetailTitle">アーティスト</h2>
               <button id="clearArtistButton" class="ghost-button" type="button">解除</button>
@@ -86,18 +104,22 @@
             <div id="artistDetail" class="artist-detail"></div>
           </section>
           <section>
+            <p class="section-kicker">Spotify history</p>
             <h2>よく聴くアーティスト</h2>
             <ol id="topSpotifyArtists" class="ranking"></ol>
           </section>
           <section>
+            <p class="section-kicker">Venue stats</p>
             <h2>よく行く会場</h2>
             <ol id="topVenues" class="ranking"></ol>
           </section>
           <section>
+            <p class="section-kicker">Artist stats</p>
             <h2>よく観るアーティスト</h2>
             <ol id="topArtists" class="ranking"></ol>
           </section>
-          <section>
+          <section id="venues">
+            <p class="section-kicker">Venue guide</p>
             <h2>会場マップ</h2>
             <ul id="venueMapList" class="venue-links"></ul>
           </section>
@@ -108,6 +130,6 @@
     <script src="data/lives.js?v=20260614"></script>
     <script src="data/artist_profiles.js?v=20260614"></script>
     <script src="data/spotify_artist_stats.js?v=20260614"></script>
-    <script src="app.js?v=20260614-spotify-ranking-fallback"></script>
+    <script src="app.js?v=20260620-setlist-style"></script>
   </body>
 </html>

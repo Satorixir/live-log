@@ -164,10 +164,24 @@ function artistCell(live) {
 function venueCell(live) {
   const label = escapeHtml(live.venue || "-");
   const query = live.mapQuery || live.venue || live.place;
+  const place =
+    live.place && live.place !== live.venue
+      ? `<small class="venue-place">${escapeHtml(live.place)}</small>`
+      : "";
   if (!query || query === "?") {
-    return label;
+    return `<span class="venue-name">${label}</span>${place}`;
   }
-  return `<a class="venue-link" href="${mapUrl(live)}" target="_blank" rel="noreferrer">${label}</a>`;
+  return `<a class="venue-link" href="${mapUrl(live)}" target="_blank" rel="noreferrer">${label}</a>${place}`;
+}
+
+function dateCell(date) {
+  const [year = "-", month = "-", day = "-"] = String(date || "").split("/");
+  return `
+    <time datetime="${escapeHtml(String(date || "").replaceAll("/", "-"))}">
+      <span>${escapeHtml(year)}</span>
+      <strong>${escapeHtml(month)}/${escapeHtml(day)}</strong>
+    </time>
+  `;
 }
 
 function renderRows() {
@@ -184,8 +198,8 @@ function renderRows() {
   elements.liveRows.innerHTML = rows
     .map(
       (live) => `
-        <tr>
-          <td class="date">${escapeHtml(live.date || "-")}</td>
+        <tr class="${live.note?.includes("参加できず") ? "is-missed" : ""}">
+          <td class="date">${dateCell(live.date)}</td>
           <td>${artistCell(live)}</td>
           <td>${venueCell(live)}</td>
           <td class="price">${escapeHtml(live.ticketPrice || "-")}</td>
