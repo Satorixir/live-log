@@ -70,10 +70,10 @@ select {
 
 .brand-mark {
   display: grid;
-  width: 30px;
+  width: 32px;
   height: 30px;
   place-items: center;
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), #f15b35);
   border-radius: 3px;
   font-size: 18px;
   line-height: 1;
@@ -155,8 +155,8 @@ h2 {
 
 .summary-strip {
   display: grid;
-  grid-template-columns: repeat(3, minmax(108px, 1fr));
-  min-width: min(430px, 100%);
+  grid-template-columns: repeat(4, minmax(96px, 1fr));
+  min-width: min(560px, 100%);
   background: var(--surface);
   border: 1px solid var(--line);
   border-top: 3px solid var(--accent);
@@ -473,11 +473,6 @@ td {
   padding-left: 26px;
 }
 
-.venue-links {
-  padding-left: 0;
-  list-style: none;
-}
-
 .ranking li,
 .venue-links li {
   min-height: 35px;
@@ -507,6 +502,48 @@ td {
   font-weight: 700;
   text-align: left;
   cursor: pointer;
+}
+
+.track-ranking {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: track-ranking;
+}
+
+.track-ranking li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: start;
+  counter-increment: track-ranking;
+}
+
+.track-ranking li::before {
+  content: counter(track-ranking);
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  background: #efefef;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: #555;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.track-ranking .inline-button {
+  display: block;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.track-ranking small {
+  display: block;
+  margin-top: 1px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .inline-button:hover,
@@ -562,6 +599,19 @@ td {
 }
 
 .artist-stats div:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.artist-overview-stats .wide-stat {
+  grid-column: 1 / -1;
+  border-right: 0;
+}
+
+.artist-overview-stats div:nth-child(4) {
+  border-bottom: 1px solid var(--line);
+}
+
+.artist-overview-stats .wide-stat:nth-last-child(-n + 2) {
   border-bottom: 0;
 }
 
@@ -751,6 +801,7 @@ td {
   }
 
   .summary-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     min-width: 0;
   }
 

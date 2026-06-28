@@ -2,15 +2,18 @@ const state = {
   lives: [],
   facets: {},
   summary: {},
+  spotifySummary: {},
   artistProfiles: {},
   spotifyArtistStats: {},
   selectedArtist: "",
+  defaultArtist: "",
 };
 
 const elements = {
   totalCount: document.querySelector("#totalCount"),
   yearRange: document.querySelector("#yearRange"),
-  venueCount: document.querySelector("#venueCount"),
+  spotifyPlayCount: document.querySelector("#spotifyPlayCount"),
+  spotifyHourCount: document.querySelector("#spotifyHourCount"),
   resultCount: document.querySelector("#resultCount"),
   searchInput: document.querySelector("#searchInput"),
   yearFilter: document.querySelector("#yearFilter"),
@@ -18,10 +21,9 @@ const elements = {
   venueFilter: document.querySelector("#venueFilter"),
   resetButton: document.querySelector("#resetButton"),
   liveRows: document.querySelector("#liveRows"),
-  topVenues: document.querySelector("#topVenues"),
   topArtists: document.querySelector("#topArtists"),
   topSpotifyArtists: document.querySelector("#topSpotifyArtists"),
-  venueMapList: document.querySelector("#venueMapList"),
+  topSpotifyTracks: document.querySelector("#topSpotifyTracks"),
   artistDetailTitle: document.querySelector("#artistDetailTitle"),
   artistDetail: document.querySelector("#artistDetail"),
   clearArtistButton: document.querySelector("#clearArtistButton"),
@@ -46,11 +48,14 @@ function fillSelect(select, values) {
 }
 
 function renderSummary() {
-  const { total, firstDate, latestDate, venueCount } = state.summary;
+  const { total, firstDate, latestDate } = state.summary;
+  const plays = state.spotifySummary.plays || 0;
+  const hours = Number(listeningHours(state.spotifySummary.knownMs || 0));
   elements.totalCount.textContent = total ?? "-";
   elements.yearRange.textContent =
     firstDate && latestDate ? `${firstDate.slice(0, 4)}-${latestDate.slice(0, 4)}` : "-";
-  elements.venueCount.textContent = venueCount ?? "-";
+  elements.spotifyPlayCount.textContent = plays ? plays.toLocaleString() : "-";
+  elements.spotifyHourCount.textContent = hours ? `${hours.toLocaleString()}h` : "-";
 }
 
 function renderRanking(target, rows) {
@@ -90,6 +95,27 @@ function renderSpotifyArtistRanking(target, rows) {
     .join("");
 }
 
+function renderSpotifyTrackRanking(target, rows) {
+  if (!rows.length) {
+    target.innerHTML = `<li class="muted">Spotifyの曲データを読み込めませんでした</li>`;
+    return;
+  }
+
+  target.innerHTML = rows
+    .map(
+      (row) => `
+        <li>
+          <button class="inline-button" type="button" data-artist="${escapeHtml(row.artist)}">
+            ${escapeHtml(row.name)}
+            <small>${escapeHtml(row.artist)}</small>
+          </button>
+          <span>${row.plays.toLocaleString()}回</span>
+        </li>
+      `
+    )
+    .join("");
+}
+
 function getTopSpotifyArtists(stats) {
   if (stats.summary?.topArtists?.length) {
     return stats.summary.topArtists;
@@ -105,25 +131,18 @@ function getTopSpotifyArtists(stats) {
     .slice(0, 10);
 }
 
-function renderVenueLinks(rows) {
-  const byVenue = new Map();
-  state.lives.forEach((live) => {
-    if (live.venue && !byVenue.has(live.venue)) {
-      byVenue.set(live.venue, live);
-    }
-  });
-
-  elements.venueMapList.innerHTML = rows
-    .map(([name, count]) => {
-      const live = byVenue.get(name);
-      return `
-        <li>
-          <a href="${mapUrl(live)}" target="_blank" rel="noreferrer">${escapeHtml(name)}</a>
-          <span>${count}回</span>
-        </li>
-      `;
-    })
-    .join("");
+function getTopSpotifyTracks(stats) {
+  return Object.entries(stats.artists || {})
+    .flatMap(([artist, artistStats]) =>
+      (artistStats.topTracks || []).map((track) => ({
+        artist,
+        name: track.name,
+        plays: track.plays || 0,
+        knownMs: track.knownMs || 0,
+      }))
+    )
+    .sort((a, b) => b.plays - a.plays || a.name.localeCompare(b.name, "ja"))
+    .slice(0, 10);
 }
 
 function currentFilters() {
@@ -294,20 +313,6 @@ function renderSpotifyDetail(stats) {
   `;
 }
 
-function renderVenueSummary(venues) {
-  if (!venues.length) {
-    return `<p class="muted">ライブ記録はまだありません</p>`;
-  }
-  return `
-    <ol class="compact-list">
-      ${venues
-        .slice(0, 4)
-        .map(([venue, count]) => `<li>${escapeHtml(venue)} <span>${count}回</span></li>`)
-        .join("")}
-    </ol>
-  `;
-}
-
 function renderLiveTimeline(rows) {
   if (!rows.length) {
     return `<p class="muted">ライブ履歴はまだありません</p>`;
@@ -316,7 +321,7 @@ function renderLiveTimeline(rows) {
 }
 
 function renderArtistDetail(name) {
-  const artist = name || state.summary.topArtists?.[0]?.[0] || "";
+  const artist = name || state.defaultArtist || state.summary.topArtists?.[0]?.[0] || "";
   state.selectedArtist = artist;
 
   if (!artist) {
@@ -329,33 +334,37 @@ function renderArtistDetail(name) {
   const rows = state.lives.filter((live) => live.artist === artist);
   const profile = state.artistProfiles[artist] || {};
   const spotifyStats = state.spotifyArtistStats[artist];
-  const venues = countValues(rows, "venue");
   const first = rows.at(-1)?.date || "-";
   const latest = rows[0]?.date || "-";
   const officialUrl = profile.officialUrl || rows.find((live) => live.artistUrl)?.artistUrl || "";
-  const noteCount = rows.filter((live) => live.note).length;
+  const spotifyPlays = spotifyStats?.plays || 0;
+  const trackCount = spotifyStats?.topTracks?.length || 0;
 
   elements.artistDetailTitle.textContent = artist;
-  elements.clearArtistButton.hidden = artist === state.summary.topArtists?.[0]?.[0];
+  elements.clearArtistButton.hidden = artist === state.defaultArtist;
   elements.artistDetail.innerHTML = `
     ${renderTagList(profile.tags)}
     ${profile.memo ? `<p class="artist-memo">${escapeHtml(profile.memo)}</p>` : ""}
-    <dl class="artist-stats">
+    <dl class="artist-stats artist-overview-stats">
       <div>
-        <dt>記録</dt>
+        <dt>ライブ</dt>
         <dd>${rows.length}回</dd>
       </div>
       <div>
-        <dt>期間</dt>
+        <dt>Spotify</dt>
+        <dd>${spotifyPlays ? spotifyPlays.toLocaleString() : "-"}回</dd>
+      </div>
+      <div>
+        <dt>聴取時間</dt>
+        <dd>${spotifyStats ? `${listeningHours(spotifyStats.knownMs)}h` : "-"}</dd>
+      </div>
+      <div>
+        <dt>曲</dt>
+        <dd>${trackCount ? `${trackCount}曲` : "-"}</dd>
+      </div>
+      <div class="wide-stat">
+        <dt>ライブ期間</dt>
         <dd>${escapeHtml(first)} - ${escapeHtml(latest)}</dd>
-      </div>
-      <div>
-        <dt>会場</dt>
-        <dd>${venues.length}箇所</dd>
-      </div>
-      <div>
-        <dt>メモ</dt>
-        <dd>${noteCount}件</dd>
       </div>
     </dl>
     <div class="artist-actions">
@@ -369,10 +378,6 @@ function renderArtistDetail(name) {
           ? `<button class="ghost-button" type="button" data-filter-artist="${escapeHtml(artist)}">一覧を絞る</button>`
           : ""
       }
-    </div>
-    <div class="artist-subsection">
-      <h3>よく行く会場</h3>
-      ${renderVenueSummary(venues)}
     </div>
     ${renderSpotifyDetail(spotifyStats)}
     <div class="artist-subsection">
@@ -416,6 +421,13 @@ function bindEvents() {
   });
 
   elements.topSpotifyArtists.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-artist]");
+    if (button) {
+      renderArtistDetail(button.dataset.artist);
+    }
+  });
+
+  elements.topSpotifyTracks.addEventListener("click", (event) => {
     const button = event.target.closest("[data-artist]");
     if (button) {
       renderArtistDetail(button.dataset.artist);
@@ -470,17 +482,19 @@ async function init() {
   state.lives = data.lives;
   state.facets = data.facets;
   state.summary = data.summary;
+  state.spotifySummary = spotifyArtistStats.summary || {};
   state.artistProfiles = artistProfiles;
   state.spotifyArtistStats = spotifyArtistStats.artists || {};
 
   fillSelect(elements.yearFilter, state.facets.years);
   fillSelect(elements.artistFilter, state.facets.artists);
   fillSelect(elements.venueFilter, state.facets.venues);
+  const topSpotifyArtists = getTopSpotifyArtists(spotifyArtistStats);
+  state.defaultArtist = topSpotifyArtists[0]?.name || state.summary.topArtists?.[0]?.[0] || "";
   renderSummary();
-  renderRanking(elements.topVenues, state.summary.topVenues);
   renderArtistRanking(elements.topArtists, state.summary.topArtists);
-  renderSpotifyArtistRanking(elements.topSpotifyArtists, getTopSpotifyArtists(spotifyArtistStats));
-  renderVenueLinks(state.summary.topVenues);
+  renderSpotifyArtistRanking(elements.topSpotifyArtists, topSpotifyArtists);
+  renderSpotifyTrackRanking(elements.topSpotifyTracks, getTopSpotifyTracks(spotifyArtistStats));
   renderArtistDetail();
   bindEvents();
   renderRows();

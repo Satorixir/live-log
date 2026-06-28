@@ -3,42 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ライブ参戦記録</title>
-    <link rel="stylesheet" href="styles.css?v=20260620-setlist-style">
+    <title>Resonance Log</title>
+    <link rel="stylesheet" href="styles.css?v=20260628-music-log">
   </head>
   <body>
     <header class="site-header">
       <div class="site-header-inner">
-        <a class="brand" href="#records" aria-label="Live Log トップ">
-          <span class="brand-mark">L</span>
-          <span>Live Log</span>
+        <a class="brand" href="#records" aria-label="Resonance Log トップ">
+          <span class="brand-mark">R</span>
+          <span>Resonance Log</span>
         </a>
         <nav class="primary-nav" aria-label="主要メニュー">
-          <a href="#records">公演記録</a>
+          <a href="#records">ライブ</a>
           <a href="#artists">アーティスト</a>
-          <a href="#venues">会場</a>
+          <a href="#listening">Spotify</a>
         </nav>
       </div>
     </header>
 
     <section class="app-header">
       <div class="header-copy">
-        <p class="eyebrow">My concert archive</p>
-        <h1>ライブ参戦記録</h1>
-        <p class="header-description">ライブの予定と参加履歴、日々聴いている音楽の記録。</p>
+        <p class="eyebrow">Personal music archive</p>
+        <h1>Resonance Log</h1>
+        <p class="header-description">ライブの予定と参加履歴、Spotifyの視聴履歴をまとめた音楽ログ。</p>
       </div>
       <div class="summary-strip" aria-label="サマリー">
         <div>
           <span id="totalCount">-</span>
-          <small>公演記録</small>
+          <small>ライブ記録</small>
+        </div>
+        <div>
+          <span id="spotifyPlayCount">-</span>
+          <small>Spotify再生</small>
+        </div>
+        <div>
+          <span id="spotifyHourCount">-</span>
+          <small>再生時間</small>
         </div>
         <div>
           <span id="yearRange">-</span>
           <small>記録期間</small>
-        </div>
-        <div>
-          <span id="venueCount">-</span>
-          <small>登録会場</small>
         </div>
       </div>
     </section>
@@ -74,8 +78,8 @@
         <div class="table-panel">
           <div class="panel-heading">
             <div>
-              <p class="section-kicker">Concert archive</p>
-              <h2>公演記録</h2>
+              <p class="section-kicker">Live archive</p>
+              <h2>ライブ記録</h2>
             </div>
             <p id="resultCount">-</p>
           </div>
@@ -103,25 +107,20 @@
             </div>
             <div id="artistDetail" class="artist-detail"></div>
           </section>
-          <section>
+          <section id="listening">
             <p class="section-kicker">Spotify history</p>
             <h2>よく聴くアーティスト</h2>
             <ol id="topSpotifyArtists" class="ranking"></ol>
           </section>
           <section>
-            <p class="section-kicker">Venue stats</p>
-            <h2>よく行く会場</h2>
-            <ol id="topVenues" class="ranking"></ol>
+            <p class="section-kicker">Favorite tracks</p>
+            <h2>よく聴く曲</h2>
+            <ol id="topSpotifyTracks" class="ranking track-ranking"></ol>
           </section>
           <section>
-            <p class="section-kicker">Artist stats</p>
+            <p class="section-kicker">Live stats</p>
             <h2>よく観るアーティスト</h2>
             <ol id="topArtists" class="ranking"></ol>
-          </section>
-          <section id="venues">
-            <p class="section-kicker">Venue guide</p>
-            <h2>会場マップ</h2>
-            <ul id="venueMapList" class="venue-links"></ul>
           </section>
         </aside>
       </section>
@@ -130,6 +129,6 @@
     <script src="data/lives.js?v=20260614"></script>
     <script src="data/artist_profiles.js?v=20260614"></script>
     <script src="data/spotify_artist_stats.js?v=20260614"></script>
-    <script src="app.js?v=20260620-setlist-style"></script>
+    <script src="app.js?v=20260628-music-log"></script>
   </body>
 </html>
