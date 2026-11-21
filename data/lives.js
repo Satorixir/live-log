@@ -1,5 +1,5 @@
 window.LIVE_LOG_DATA = {
-  "generatedAt": "2026-11-21T18:54:59",
+  "generatedAt": "2026-11-21T18:55:59",
   "source": "live_log.csv",
   "lives": [
     {
@@ -11,7 +11,7 @@ window.LIVE_LOG_DATA = {
       "ticketPrice": "",
       "ticketPriceValue": null,
       "place": "神奈川県",
-      "note": "参加予定・17:00開演",
+      "note": "参加予定・17:00開演・申込券種未確認／公式料金（税込）：S席10,500円・A席9,500円・B席8,500円（A・B着席指定も同額）",
       "mapQuery": "ぴあアリーナMM 神奈川県"
     },
     {
