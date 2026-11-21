@@ -1,5 +1,5 @@
 window.LIVE_LOG_DATA = {
-  "generatedAt": "2026-11-21T18:55:59",
+  "generatedAt": "2026-11-21T18:58:23",
   "source": "live_log.csv",
   "lives": [
     {
@@ -8,10 +8,10 @@ window.LIVE_LOG_DATA = {
       "artist": "キタニタツヤ",
       "artistUrl": "",
       "venue": "ぴあアリーナMM",
-      "ticketPrice": "",
-      "ticketPriceValue": null,
+      "ticketPrice": "￥10,500",
+      "ticketPriceValue": 10500,
       "place": "神奈川県",
-      "note": "参加予定・17:00開演・申込券種未確認／公式料金（税込）：S席10,500円・A席9,500円・B席8,500円（A・B着席指定も同額）",
+      "note": "参加予定・17:00開演・S席（推定）",
       "mapQuery": "ぴあアリーナMM 神奈川県"
     },
     {
