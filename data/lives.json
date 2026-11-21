@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-11-21T18:40:27",
+  "generatedAt": "2026-11-21T18:54:59",
   "source": "live_log.csv",
   "lives": [
+    {
+      "date": "2027/01/17",
+      "year": 2027,
+      "artist": "キタニタツヤ",
+      "artistUrl": "",
+      "venue": "ぴあアリーナMM",
+      "ticketPrice": "",
+      "ticketPriceValue": null,
+      "place": "神奈川県",
+      "note": "参加予定・17:00開演",
+      "mapQuery": "ぴあアリーナMM 神奈川県"
+    },
     {
       "date": "2026/12/19",
       "year": 2026,
@@ -1001,6 +1013,7 @@
   ],
   "facets": {
     "years": [
+      2027,
       2026,
       2025,
       2024,
@@ -1053,14 +1066,15 @@
       "Special Others",
       "STANCE PUNKS",
       "STANCE PUNKS / B-DASH",
-      "The Back Horn",
       "The BACK HORN",
+      "The Back Horn",
       "The Fratellis",
       "The Predetors",
       "tuki.",
       "UNLIMITS",
       "yama",
       "そこに鳴る",
+      "キタニタツヤ",
       "サカナクション",
       "ストレイテナー",
       "ストレイテー / 10-FEET / smorgas",
@@ -1095,6 +1109,7 @@
       "Zepp Haneda",
       "Zepp Shinjuku",
       "Zepp Tokyo",
+      "ぴあアリーナMM",
       "下北沢 ERA",
       "下北沢ReG",
       "中野サンプラザ",
@@ -1125,11 +1140,11 @@
     ]
   },
   "summary": {
-    "total": 83,
+    "total": 84,
     "firstDate": "2005/07/16",
-    "latestDate": "2026/12/19",
-    "venueCount": 40,
-    "artistCount": 60,
+    "latestDate": "2027/01/17",
+    "venueCount": 41,
+    "artistCount": 61,
     "topVenues": [
       [
         "千葉Look",
