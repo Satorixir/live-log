@@ -1,133 +1,98 @@
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Soundprint</title>
-    <link rel="stylesheet" href="styles.css?v=20260628-soundprint-logo">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="brand" href="#records" aria-label="Soundprint トップ">
-          <img class="brand-logo" src="assets/soundprint-logo.svg" alt="Soundprint">
-        </a>
-        <nav class="primary-nav" aria-label="主要メニュー">
-          <a href="#records">ライブ</a>
-          <a href="#artists">アーティスト</a>
-          <a href="#listening">Spotify</a>
-        </nav>
-      </div>
-    </header>
-
-    <section class="app-header">
-      <div class="header-copy">
-        <p class="eyebrow">Personal music archive</p>
-        <h1>Soundprint</h1>
-        <p class="header-description">ライブの予定と参加履歴、Spotifyの視聴履歴をまとめた音楽ログ。</p>
-      </div>
-      <div class="summary-strip" aria-label="サマリー">
-        <div>
-          <span id="totalCount">-</span>
-          <small>ライブ記録</small>
-        </div>
-        <div>
-          <span id="spotifyPlayCount">-</span>
-          <small>Spotify再生</small>
-        </div>
-        <div>
-          <span id="spotifyHourCount">-</span>
-          <small>再生時間</small>
-        </div>
-        <div>
-          <span id="yearRange">-</span>
-          <small>記録期間</small>
-        </div>
-      </div>
-    </section>
-
-    <main>
-      <section class="toolbar" aria-label="検索とフィルタ">
-        <label class="search-field">
-          <span>公演を検索</span>
-          <input id="searchInput" type="search" placeholder="アーティスト名、会場名、メモから検索">
-        </label>
-        <label>
-          <span>年</span>
-          <select id="yearFilter">
-            <option value="">すべて</option>
-          </select>
-        </label>
-        <label>
-          <span>アーティスト</span>
-          <select id="artistFilter">
-            <option value="">すべて</option>
-          </select>
-        </label>
-        <label>
-          <span>会場</span>
-          <select id="venueFilter">
-            <option value="">すべて</option>
-          </select>
-        </label>
-        <button id="resetButton" type="button">リセット</button>
-      </section>
-
-      <section id="records" class="content-grid">
-        <div class="table-panel">
-          <div class="panel-heading">
-            <div>
-              <p class="section-kicker">Live archive</p>
-              <h2>ライブ記録</h2>
-            </div>
-            <p id="resultCount">-</p>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>開演日</th>
-                  <th>アーティスト</th>
-                  <th>会場</th>
-                  <th>チケット</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody id="liveRows"></tbody>
-            </table>
-          </div>
-        </div>
-
-        <aside class="side-panel" aria-label="音楽統計">
-          <section id="artists" class="artist-detail-panel">
-            <div class="side-heading">
-              <h2 id="artistDetailTitle">アーティスト</h2>
-              <button id="clearArtistButton" class="ghost-button" type="button">解除</button>
-            </div>
-            <div id="artistDetail" class="artist-detail"></div>
-          </section>
-          <section id="listening">
-            <p class="section-kicker">Spotify history</p>
-            <h2>よく聴くアーティスト</h2>
-            <ol id="topSpotifyArtists" class="ranking"></ol>
-          </section>
-          <section>
-            <p class="section-kicker">Favorite tracks</p>
-            <h2>よく聴く曲</h2>
-            <ol id="topSpotifyTracks" class="ranking track-ranking"></ol>
-          </section>
-          <section>
-            <p class="section-kicker">Live stats</p>
-            <h2>よく観るアーティスト</h2>
-            <ol id="topArtists" class="ranking"></ol>
-          </section>
-        </aside>
-      </section>
-    </main>
-
-    <script src="data/lives.js?v=20261121-5"></script>
-    <script src="data/artist_profiles.js?v=20260614"></script>
-    <script src="data/spotify_artist_stats.js?v=20260614"></script>
-    <script src="app.js?v=20260628-soundprint-logo"></script>
-  </body>
-</html>
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Soundprint — ライブアーカイブ</title>
+<link rel="stylesheet" href="assets/mock-map/leaflet.css"><style>
+*{box-sizing:border-box}body{margin:0;background:#f4f1e8;color:#202820;font:15px/1.55 "Helvetica Neue","Hiragino Sans",sans-serif}main,header{max-width:1160px;margin:auto;padding:0 5%}header{display:flex;align-items:center;justify-content:space-between;height:76px;border-bottom:1px solid #b8bcad}header b{font-size:29px;letter-spacing:-2px}nav a{color:inherit;margin-left:18px;font-size:13px}h1,h2,h3,p{margin:0}h1,h2{font-size:clamp(25px,4vw,42px);letter-spacing:-.06em}section{margin:38px 0 54px}.heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}.micro,time,.stamp{font:12px/1.4 ui-monospace,monospace;letter-spacing:.05em}.tickets{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:16px}.ticket{display:flex;min-height:148px;border-radius:8px;background:#ff7849;overflow:hidden}.ticket:nth-child(even){background:#bfd7a1}.stub{width:92px;flex:none;border-right:2px dashed #26352666;text-align:center;padding:22px 6px}.day{font:bold 42px/1 ui-monospace,monospace;display:block}.info{padding:23px 18px}.info h3{font-size:27px;letter-spacing:-.04em}.barcode{width:54px;height:15px;background:repeating-linear-gradient(90deg,#243125 0 2px,transparent 2px 4px,#243125 4px 5px,transparent 5px 8px);margin:10px auto 0}.board{background:#192c25;color:#f9f6e9;border-radius:14px;padding:22px}.years{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:18px}button,input{font:inherit}button{cursor:pointer}.years button,.clear{background:transparent;color:inherit;border:1px solid #748078;border-radius:4px;padding:5px 9px;font:13px ui-monospace,monospace}.years button[aria-pressed=true]{background:#e4f49a;color:#192c25;border-color:#e4f49a}.layout{display:grid;grid-template-columns:1.6fr 1fr;gap:18px}.map{position:relative;isolation:isolate;aspect-ratio:1.55;background:#d8e1c7;border-radius:8px;overflow:hidden;color:#233929}.map svg{position:absolute;inset:0;width:100%;height:100%;z-index:-1}.pin{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;background:none;border:0;color:#1e3026;line-height:1.1;font-size:11px;font-weight:bold}.pin b{border:2px solid #203b2a;border-radius:50%;background:#f2a96b;display:grid;place-items:center;font:700 14px ui-monospace,monospace}.pin[aria-pressed=true] b{background:#233f2f;color:white}.pin span{background:#ecf0deeb;padding:2px 4px;border-radius:3px;white-space:nowrap}.panel{max-height:365px;overflow:auto}.panel h3{font-size:20px}.venue{border-top:1px solid #57665a;padding:8px 0}.venue summary{cursor:pointer}.venue p{color:#d1d9ca;font-size:13px;margin:4px 0}.venue a{color:#def298;font-size:12px}.caption{font-size:12px;color:#c9d2c4;margin-top:9px}.clear{margin:6px 0}.archive input{padding:9px 12px;border:1px solid #a5ac9a;border-radius:5px;background:#fffcf3;max-width:47%}.record{display:grid;grid-template-columns:100px 1fr 1fr;align-items:center;gap:12px;border-top:1px solid #c5c9ba;padding:10px 0}.record small{color:#465448}@media(max-width:750px){.layout{grid-template-columns:1fr}.panel{max-height:240px}.board{padding:13px}.record{grid-template-columns:85px 1fr}.record small{grid-column:2}.map{min-height:235px}.heading{flex-wrap:wrap}.archive input{max-width:100%}nav a{margin-left:8px}}
+.map{aspect-ratio:1.35;background:#d8e1c7}.map iframe{width:100%;height:100%;border:0}.map svg{position:static;inset:auto;width:revert;height:revert;z-index:auto}#mapSetup{margin-top:10px;font-size:13px}#mapSetup summary{cursor:pointer}#mapForm{margin:10px 0}#mapSetup input{max-width:100%}.venue-dot{background:#fd824e;border:2px solid #283a29;color:#16251c;border-radius:50% 50% 50% 12%;display:grid;place-items:center;font:bold 12px monospace;box-shadow:0 1px 4px #2228}.map .leaflet-control a{color:#284e42}#listening{padding:24px clamp(14px,3vw,34px);background:#fffaf0;border:1px solid #c2c7b4;border-radius:14px}.music-tools{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}.music-tools input,.music-tools select,#music-more{padding:6px 9px;background:#fffdf5;border:1px solid #a3af98;border-radius:5px}.music-row{display:grid;grid-template-columns:minmax(90px,1.3fr) 1fr 1fr;gap:12px;align-items:center;padding:8px 0;border-top:1px solid #deded2}.music-label,.music-foot,#music-period{font-size:12px;color:#53604f}.music-foot{margin-top:12px}.meter{display:block;height:5px;border-radius:4px;background:#e5e7db;margin:3px 0}.meter i{display:block;height:100%;background:#467958;border-radius:inherit}.shows .meter i{background:#c6653a}.music-row span{font-variant-numeric:tabular-nums}.music-row strong{overflow-wrap:anywhere}#music-more{margin-top:8px}</style>
+<header><b>◖ Soundprint</b><nav><a href="#listening">Spotify比較</a><a href="#atlas">会場マップ</a><a href="#archive">記録一覧</a></nav></header>
+<main><section><div class="heading"><h1>次のライブ</h1><span class="micro">2026.11.21 時点</span></div><div class="tickets" id="tickets"></div></section>
+<section id="atlas"><div class="heading"><h2>ライブの足あと</h2><span class="micro">2005 — 2027</span></div><div class="board"><div class="years" id="years" aria-label="表示する年"></div><div class="layout"><div><div class="map" id="map" aria-label="年別の会場マップ"></div><p class="caption" id="mapStatus" role="status"></p>
+</div><div class="panel" id="panel" aria-live="polite"></div></div></div></section>
+<section id="listening"><div class="heading"><h2>再生数と参戦回数</h2></div>
+<p id="music-period"></p><div class="music-tools"><label>表示年 <select id="music-year"></select></label><label>並び順 <select id="music-order"><option value="plays">Spotify再生順</option><option value="shows">ライブ参戦順</option></select></label><input id="music-query" type="search" aria-label="比較するアーティストを検索" placeholder="アーティストを検索"></div>
+<div class="music-row music-label"><b>アーティスト</b><b>Spotify再生</b><b>ライブ参戦</b></div><div id="music-chart"></div><button id="music-more">もっと見る</button>
+<p class="music-foot">Spotifyは保存済み集計の132名が対象。棒の長さは各列の最多を基準にしています。対バンは出演者ごとに1回。予定・不参加・PV撮影・出演者未記録は参戦数から除外。「—」は対象期間または名義のSpotify集計がないことを示します。</p></section>
+<section class="archive" id="archive"><div class="heading"><h2>ライブ記録 <small id="count" class="micro"></small></h2><input id="search" type="search" aria-label="記録を検索" placeholder="出演者・会場で検索"></div><div id="records"></div></section></main>
+<script src="assets/mock-map/leaflet.js"></script><script src="data/spotify_artist_stats.js"></script><script src="data/lives.js"></script><script>
+const live=window.LIVE_LOG_DATA.lives,asOf='2026/11/21';
+const id=s=>document.getElementById(s);
+function el(tag,txt,cls){const n=document.createElement(tag);if(txt!==undefined)n.textContent=txt;if(cls)n.className=cls;return n}
+let year='2026',region='';
+const next=live.filter(r=>r.date>=asOf).map(r=>r.date).sort()[0];
+for(const r of live.filter(r=>r.date===next)){const card=el('article',undefined,'ticket'),stub=el('div',undefined,'stub'),body=el('div',undefined,'info');stub.append(el('time',r.date.slice(0,7)),el('b',r.date.slice(-2),'day'),el('div',undefined,'barcode'));body.append(el('span','参加予定','stamp'),el('h3',r.artist),el('p',r.venue+(r.note.match(/\d\d:\d\d開演/) ? ' · '+r.note.match(/\d\d:\d\d開演/)[0]:'')));card.append(stub,body);id('tickets').append(card)}
+const spotify=window.LIVE_LOG_SPOTIFY_ARTIST_STATS.artists;
+const listeningYears=new Set(Object.values(spotify).flatMap(a=>a.years.map(r=>r.year)));
+const periods=['全期間',...[...new Set([...live.map(r=>r.date.slice(0,4)),...listeningYears])].sort()];
+function selectYear(value){
+ year=value;region='';musicLimit=10;id('music-year').value=value;render();showMusic();
+}
+for(const value of periods){
+ const button=el('button',value);button.onclick=()=>selectYear(value);id('years').append(button);
+ id('music-year').add(new Option(value==='全期間'?value:value+'年',value));
+}
+id('music-year').onchange=e=>selectYear(e.target.value);
+id('music-year').value=year;
+function render(){
+const rows=live.filter(r=>year==='全期間'||r.date.startsWith(year));for(const b of id('years').children)b.setAttribute('aria-pressed',b.textContent===year);
+drawMap(rows);
+const visible=rows.filter(r=>!region||r.venue===region),panel=id('panel');panel.replaceChildren(el('h3',year+(year==='全期間'?'':'年')+' · '+(region||'全会場')),el('p',visible.length+'件の記録','caption'));if(region){const b=el('button','全会場に戻す','clear');b.onclick=()=>{region='';mappedYear=null;render()};panel.append(b)}
+for(const v of new Set(visible.map(r=>r.venue))){const items=visible.filter(r=>r.venue===v),d=el('details',undefined,'venue');d.append(el('summary',(v==='?'?'会場不明':v)+' · '+items.length+'件'));for(const r of items)d.append(el('p',r.date+'　'+r.artist));if(v!=='?'){const a=el('a','Google マップで開く ↗');a.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(items[0].mapQuery);a.target='_blank';a.rel='noopener';d.append(a);const focus=el('button','地図に表示','clear');focus.onclick=()=>{region=v;render();atlas.setView(positions[v],16);venuePins.get(v)?.openPopup()};d.append('　',focus)}panel.append(d)}
+const list=visible.filter(r=>(r.artist+' '+r.venue).toLowerCase().includes(id('search').value.trim().toLowerCase()));id('count').textContent=list.length+'件';id('records').replaceChildren();for(const r of list){const row=el('div',undefined,'record');row.append(el('time',r.date),el('b',r.artist),el('small',(r.venue==='?'?'会場不明':r.venue)+(r.date>asOf?' · 予定':r.note.includes('参加できず')?' · 不参加':'')));id('records').append(row)}if(!list.length)id('records').append(el('p','該当する記録はありません。'))}
+const positions={"Bunkamura": [35.6605, 139.6959], "duo MUSIC EXCHANGE": [35.6587, 139.6954], "Kアリーナ横浜": [35.4663, 139.6317], "LaLa arena TOKYO-BAY": [35.6819, 139.9884], "LINE CUBE SHIBUYA": [35.6631, 139.6985], "Live House FNV": [35.6894, 139.7115], "NHKホール": [35.6666, 139.6966], "SGC HALL ARIAKE": [35.6328, 139.7902], "Shibuya LOVEZ": [35.665, 139.696], "Shibuya WWW X": [35.6616, 139.6987], "Spotify O-nest": [35.6588, 139.6952], "Zepp Haneda": [35.5482, 139.7534], "Zepp Shinjuku": [35.6955, 139.7008], "Zepp Tokyo": [35.6252, 139.7817], "ぴあアリーナMM": [35.4574, 139.6291], "下北沢 ERA": [35.6631, 139.6692], "下北沢ReG": [35.6583, 139.6674], "中野サンプラザ": [35.7074, 139.6657], "代々木体育館": [35.6677, 139.7001], "代官山UNIT": [35.6479, 139.703], "千葉ANGA": [35.6101, 140.119], "千葉Look": [35.6154, 140.1194], "原宿ASTRO HALL": [35.6692, 139.7064], "幕張メッセ": [35.6473, 140.0355], "恵比寿 LIQUIDROOM": [35.6492, 139.7104], "新宿Loft": [35.6948, 139.7044], "新木場Studio Coast": [35.642, 139.8253], "日本武道館": [35.6933, 139.7498], "日比谷野外音楽堂": [35.6714, 139.754], "日産スタジアム": [35.51, 139.6062], "東京キネマ倶楽部": [35.7208, 139.779], "東京ドーム": [35.7056, 139.7519], "東京ビッグサイト": [35.6298, 139.7942], "東宝ビルトスタジオ": [35.6264, 139.599], "横浜アリーナ": [35.5122, 139.62], "渋谷 CLUB QUATTRO": [35.6608, 139.6973], "渋谷AX": [35.6656, 139.6994], "渋谷O-Crest": [35.6588, 139.6955], "渋谷公会堂": [35.6631, 139.6985], "稲毛K's Dream": [35.6371, 140.09], "豊洲PIT": [35.6468, 139.7897], "赤坂BLITZ": [35.6721, 139.7351]};
+const atlas=L.map('map',{scrollWheelZoom:false});
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(atlas);
+const markers=L.layerGroup().addTo(atlas);
+let mappedYear=null;
+const venuePins=new Map();
+function drawMap(rows){
+ if(mappedYear===year)return;
+ mappedYear=year;
+ markers.clearLayers();venuePins.clear();
+ const venues=[...new Set(rows.map(row=>row.venue))].filter(v=>positions[v]);
+ for(const venue of venues){
+  const shows=rows.filter(row=>row.venue===venue);
+  const pin=L.marker(positions[venue],{title:venue,alt:venue,icon:L.divIcon({className:'venue-dot',html:String(shows.length),iconSize:[24,24],iconAnchor:[12,22]})}).addTo(markers);
+  const content=el('div');content.append(el('strong',venue));for(const show of shows)content.append(el('div',show.date+'　'+show.artist));
+  pin.bindPopup(content,{maxHeight:160});venuePins.set(venue,pin);
+ }
+ if(venues.length)atlas.fitBounds(venues.map(v=>positions[v]),{padding:[28,28],maxZoom:15,animate:false});
+ id('mapStatus').textContent=venues.length+'会場 · ピンの数字は公演数。位置は概算です。'+(rows.some(r=>!positions[r.venue])?' 会場不明の公演は一覧で確認できます。':'');
+}
+const concertsByYear={"2026": {"tuki.": 2, "ヨルシカ": 1, "Ado": 1, "Love Psychedelico": 1}, "2025": {"DADARAY": 2, "優里": 1, "凛として時雨": 1, "Klang Ruler": 1, "サカナクション": 1, "9mm Parabellum Bullet": 1}, "2024": {"優里": 1, "そこに鳴る": 1, "菅田将暉": 1, "藤井風": 1, "水槽": 1, "Klang Ruler": 1, "yama": 1, "令和ロマン": 1, "MOROHA": 1}, "2023": {"Klang Ruler": 2, "そこに鳴る": 1}, "2019": {"DADARAY": 1}, "2017": {"amazarashi": 1}, "2015": {"Special Others": 1}, "2014": {"レキシ": 1, "UNLIMITS": 1, "ユメ見ガチ": 1}, "2013": {"鬼束ちひろ": 1}, "2012": {"レキシ": 1, "大人計画": 1, "fountains of wayne": 1}, "2011": {"Mutemath": 1, "サカナクション": 1, "Belle and Sebastian": 1, "ストレイテナー": 1}, "2010": {"MUSE": 1}, "2009": {"Chicago Poodle": 1}, "2008": {"THE PREDATORS": 1, "HAWAIIAN6": 1, "The BACK HORN": 1}, "2007": {"STANCE PUNKS": 2, "B-DASH": 1, "Base Ball Bear": 1, "チャットモンチー": 1, "シュノーケル": 1, "The Fratellis": 1, "Jr.MONSTER": 1, "The BACK HORN": 1, "ELLEGARDEN": 1}, "2006": {"RADWIMPS": 1, "locofrank": 2, "B-DASH": 1, "HOT SQUALL": 1, "The BACK HORN": 2, "10-FEET": 4, "Base Ball Bear": 1, "マキシマム ザ ホルモン": 1, "NoAir": 1, "GELUGUGU": 1, "albert": 1, "smorgas": 1, "ストレイテナー": 1, "ELLEGARDEN": 1, "ジェット機": 1, "ザ・マスミサイル": 1, "太陽族": 1, "ムラマサ☆": 1, "STANCE PUNKS": 1, "ロードオブメジャー": 1, "Bivattchee": 2}, "2005": {"藍坊主": 1, "STANCE PUNKS": 2, "locofrank": 1}};
+const musicKey=name=>name.normalize('NFKC').toLowerCase().replace(/\s+/g,'');
+function comparisonEntries(){
+ const all=year==='全期間', covered=all||listeningYears.has(year), music=new Map();
+ for(const [name,stats] of Object.entries(spotify)){
+  const plays=all?stats.plays:(stats.years.find(row=>row.year===year)?.plays??0);
+  music.set(musicKey(name),{name,plays:covered?plays:null,shows:0});
+ }
+ for(const [period,artists] of Object.entries(concertsByYear)){
+  if(!all&&period!==year)continue;
+  for(const [name,count] of Object.entries(artists)){
+   const key=musicKey(name),entry=music.get(key)??{name,plays:null,shows:0};
+   entry.shows+=count;music.set(key,entry);
+  }
+ }
+ const label=all?'全期間':year+'年';
+ id('music-period').textContent=label+' ｜ '+(all?'Spotify履歴：2018/02/01〜2026/03/25':!covered?'Spotify履歴：記録なし':year==='2026'?'Spotify履歴：3月25日まで':year==='2018'?'Spotify履歴：2月1日から':'Spotifyの年別再生履歴');
+ return [...music.values()].filter(a=>a.plays>0||a.shows>0);
+}
+let musicLimit=10;
+function metric(value,max,cls){
+ const cell=el('span',value===null?'—':value.toLocaleString()+'回',cls);
+ const bar=el('span',undefined,'meter'),fill=el('i');fill.style.width=(100*value/max)+'%';bar.append(fill);cell.append(bar);return cell;
+}
+function showMusic(){
+ const entries=comparisonEntries();
+ const maxPlays=Math.max(1,...entries.map(a=>a.plays)),maxShows=Math.max(1,...entries.map(a=>a.shows));
+ const by=id('music-order').value,other=by==='plays'?'shows':'plays';
+ const list=entries.filter(a=>musicKey(a.name).includes(musicKey(id('music-query').value.trim()))).sort((a,b)=>(b[by]??-1)-(a[by]??-1)||(b[other]??-1)-(a[other]??-1)||a.name.localeCompare(b.name,'ja'));
+ const chart=id('music-chart');chart.replaceChildren();
+ for(const a of list.slice(0,musicLimit)){
+  const row=el('div',undefined,'music-row');row.append(el('strong',a.name),metric(a.plays,maxPlays,'plays'),metric(a.shows,maxShows,'shows'));chart.append(row);
+ }
+ if(!list.length)chart.append(el('p',entries.length?'該当するアーティストはいません。':'この期間には再生履歴・参戦済みの記録がありません。'));
+ id('music-more').hidden=list.length<=musicLimit;
+}
+id('music-order').onchange=id('music-query').oninput=()=>{musicLimit=10;showMusic()};
+id('music-more').onclick=()=>{musicLimit+=10;showMusic()};showMusic();
+id('search').oninput=render;render();
+</script></html>
