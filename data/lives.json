@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-08T00:05:48",
-  "source": "Live記録 310f761cd0b980718203f48524874968_all.csv",
+  "generatedAt": "2026-11-21T18:40:27",
+  "source": "live_log.csv",
   "lives": [
     {
       "date": "2026/12/19",
@@ -25,6 +25,18 @@
       "place": "SGC HALL ARIAKE",
       "note": "",
       "mapQuery": "SGC HALL ARIAKE"
+    },
+    {
+      "date": "2026/07/29",
+      "year": 2026,
+      "artist": "ヨルシカ",
+      "artistUrl": "https://yorushika.com/",
+      "venue": "横浜アリーナ",
+      "ticketPrice": "￥12,000",
+      "ticketPriceValue": 12000,
+      "place": "横浜アリーナ",
+      "note": "LIVE TOUR 2026「一人称」／S席",
+      "mapQuery": "横浜アリーナ"
     },
     {
       "date": "2026/07/05",
@@ -1056,6 +1068,7 @@
       "マキシマム ザ ホルモン 恋のメガラバツアー",
       "ムラマサ☆ /  ザ マスミサイル / 太陽族 / STANCE PUNKS / ジェット機 / ロードオブメジャー",
       "ユメ見ガチ",
+      "ヨルシカ",
       "レキシ",
       "優里",
       "凛として時雨",
@@ -1101,6 +1114,7 @@
       "東京ドーム",
       "東京ビッグサイト",
       "東宝ビルトスタジオ",
+      "横浜アリーナ",
       "渋谷 CLUB QUATTRO",
       "渋谷AX",
       "渋谷O-Crest",
@@ -1111,11 +1125,11 @@
     ]
   },
   "summary": {
-    "total": 82,
+    "total": 83,
     "firstDate": "2005/07/16",
     "latestDate": "2026/12/19",
-    "venueCount": 39,
-    "artistCount": 59,
+    "venueCount": 40,
+    "artistCount": 60,
     "topVenues": [
       [
         "千葉Look",
