@@ -1,7 +1,19 @@
 window.LIVE_LOG_DATA = {
-  "generatedAt": "2026-11-21T18:58:23",
+  "generatedAt": "2026-11-21T18:59:24",
   "source": "live_log.csv",
   "lives": [
+    {
+      "date": "2027/04/18",
+      "year": 2027,
+      "artist": "ASIAN KUNG-FU GENERATION",
+      "artistUrl": "",
+      "venue": "ぴあアリーナMM",
+      "ticketPrice": "",
+      "ticketPriceValue": null,
+      "place": "神奈川県",
+      "note": "30th Anniversary Special Concert “THE BEST OF AKG”／参加予定・最速抽選当選・16:00開場／17:00開演・券種未確認（S指定11,000円／A指定8,800円／B指定6,600円）",
+      "mapQuery": "ぴあアリーナMM 神奈川県"
+    },
     {
       "date": "2027/01/17",
       "year": 2027,
@@ -15,6 +27,18 @@ window.LIVE_LOG_DATA = {
       "mapQuery": "ぴあアリーナMM 神奈川県"
     },
     {
+      "date": "2026/12/22",
+      "year": 2026,
+      "artist": "柴田淳",
+      "artistUrl": "",
+      "venue": "Shibuya LOVEZ",
+      "ticketPrice": "￥9,900",
+      "ticketPriceValue": 9900,
+      "place": "東京都",
+      "note": "月夜PARTY 25th ANNIVERSARY SPECIAL／参加予定・一般発売（先着）・17:30開場／18:30開演・全席指定・ドリンク代別",
+      "mapQuery": "Shibuya LOVEZ 東京都"
+    },
+    {
       "date": "2026/12/19",
       "year": 2026,
       "artist": "藤井風",
@@ -25,6 +49,18 @@ window.LIVE_LOG_DATA = {
       "place": "東京ドーム",
       "note": "",
       "mapQuery": "東京ドーム"
+    },
+    {
+      "date": "2026/12/19",
+      "year": 2026,
+      "artist": "majiko",
+      "artistUrl": "https://www.majiko.net/",
+      "venue": "duo MUSIC EXCHANGE",
+      "ticketPrice": "￥7,800",
+      "ticketPriceValue": 7800,
+      "place": "東京都",
+      "note": "majiko ONE MAN LIVE “POCKET”／参加予定・プレオーダー当選・16:00開場／17:00開演・オールスタンディング",
+      "mapQuery": "duo MUSIC EXCHANGE 東京都"
     },
     {
       "date": "2026/10/12",
@@ -1038,6 +1074,7 @@ window.LIVE_LOG_DATA = {
       "Ado",
       "albert Live",
       "amazarashi",
+      "ASIAN KUNG-FU GENERATION",
       "B-DASH",
       "Base Ball Bear",
       "Belle and Sebastian",
@@ -1066,8 +1103,8 @@ window.LIVE_LOG_DATA = {
       "Special Others",
       "STANCE PUNKS",
       "STANCE PUNKS / B-DASH",
-      "The BACK HORN",
       "The Back Horn",
+      "The BACK HORN",
       "The Fratellis",
       "The Predetors",
       "tuki.",
@@ -1087,6 +1124,7 @@ window.LIVE_LOG_DATA = {
       "優里",
       "凛として時雨",
       "大人計画",
+      "柴田淳",
       "水槽",
       "菅田将暉",
       "蓮沼M-716",
@@ -1098,12 +1136,14 @@ window.LIVE_LOG_DATA = {
     "venues": [
       "?",
       "Bunkamura",
+      "duo MUSIC EXCHANGE",
       "Kアリーナ横浜",
       "LaLa arena TOKYO-BAY",
       "LINE CUBE SHIBUYA",
       "Live House FNV",
       "NHKホール",
       "SGC HALL ARIAKE",
+      "Shibuya LOVEZ",
       "Shibuya WWW X",
       "Spotify O-nest",
       "Zepp Haneda",
@@ -1140,11 +1180,11 @@ window.LIVE_LOG_DATA = {
     ]
   },
   "summary": {
-    "total": 84,
+    "total": 87,
     "firstDate": "2005/07/16",
-    "latestDate": "2027/01/17",
-    "venueCount": 41,
-    "artistCount": 61,
+    "latestDate": "2027/04/18",
+    "venueCount": 43,
+    "artistCount": 63,
     "topVenues": [
       [
         "千葉Look",
